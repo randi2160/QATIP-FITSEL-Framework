@@ -1,0 +1,163 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20160515</FitNesseVersion>
+  <rootPath>TutorialSuitesOfTests.BackEndAutomationExample.CustomizeConnection</rootPath>
+    <result>
+    <counts>
+      <right>5</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <date>2016-06-20T16:54:43-04:00</date>
+    <runTimeInMillis>10170</runTimeInMillis>
+    <content>&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_SUT"&gt;QaTip.Fitnesse.Demo.DoTestFixture&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+Customize generic connection to DB test&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="3"&gt;&lt;span class="fit_member"&gt;ConnectTodb&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;connectToSQLclient?&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;status?&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;results?&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; void&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; Open&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; 2&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="3"&gt;&lt;span class="fit_member"&gt;ConnectTodb&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;connectToSQLclient?&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;status?&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;results?&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; void&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; Open&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; 2&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_interpreter"&gt;QaTip.Fitnesse.Demo.DoFixture.DBFixtures.ValidateCustomerFixture&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;Customers&lt;/td&gt;
+		&lt;td&gt;30&lt;/td&gt;
+		&lt;td colspan="2"&gt;order by CustomerName desc&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;CustomerName?&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;ContactName?&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;Address?&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;city?&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;PostalCode?&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td class="pass"&gt;khemlall&lt;/td&gt;
+		&lt;td class="pass"&gt;khemlall mangal&lt;/td&gt;
+		&lt;td class="pass"&gt;102 snow dorp lane&lt;/td&gt;
+		&lt;td class="pass"&gt;carneys point&lt;/td&gt;
+		&lt;td class="pass"&gt;08069&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="3"&gt;&lt;span class="fit_member"&gt;ConnectTodb&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;connectToSQLclient?&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;status?&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;results?&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; void&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; Open&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; 2&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;GetSingleFieldDataSql&lt;a title="create page" href="TutorialSuitesOfTests.BackEndAutomationExample.GetSingleFieldDataSql?edit&amp;amp;nonExistent=true"&gt;[?]&lt;/a&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="2"&gt;&lt;span class="fit_member"&gt;ConnectTodb&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;maxwaitms&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;GetSingleFieldDataSql&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;10&lt;/td&gt;
+		&lt;td&gt;select * from Customers&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; 10&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="4"&gt;&lt;span class="fit_member"&gt;RunSqlCommands&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;DbConnection&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;DbConnection?&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;ListSql&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;all items?&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Server=ACNU329C4BY\\SQLEXPRESS;Database=QATIP;Trusted_Connection=True;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; Server=ACNU329C4BY\\SQLEXPRESS;Database=QATIP;Trusted_Connection=True;&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;select * from Customers&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; null&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+</content>
+    <relativePageName>CustomizeConnection</relativePageName>
+          </result>
+  <executionLog>
+    <testSystem>fit:Fitsharp\Runner.exe</testSystem>
+    <command>Fitsharp\Runner.exe -r fitnesse.fitserver.FitServer,FitSharp\fit.dll,FitSharp\fitLibrary.dll -c FitSharp\suite.config.xml ..\Fitnesse\Fixtures\Fitnesse_Dlls\QaTip.Fitnesse.Demo.dll ACNU329C4BY 48297 3863</command>
+    <exitCode>0</exitCode>
+    <stdOut>khemlall
+khemlall mangal
+102 snow dorp lane
+carneys point
+08069
+usa
+2
+khemlall
+khemlall mangal
+102 snow dorp lane
+carneys point
+08069
+usa
+2
+6/20/2016 4:54:53 PM: Customers Sql query: select * from Customers order by CustomerName desc
+6/20/2016 4:54:53 PM: 6/20/2016 4:54:53 PM Query returned results.
+khemlall
+khemlall mangal
+102 snow dorp lane
+carneys point
+08069
+usa
+2
+6/20/2016 4:54:53 PM: Using the sql query below to return an single data field value:
+6/20/2016 4:54:53 PM: select * from Customers
+</stdOut>
+    <stdErr></stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>1</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>12472</totalRunTimeInMillis>
+</testResults>
+

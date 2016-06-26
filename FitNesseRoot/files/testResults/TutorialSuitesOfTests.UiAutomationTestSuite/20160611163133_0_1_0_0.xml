@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<suiteResults>
+  <FitNesseVersion>v20160515</FitNesseVersion>
+  <rootPath>TutorialSuitesOfTests.UiAutomationTestSuite</rootPath>
+  <pageHistoryReference>
+    <name>TutorialSuitesOfTests.UiAutomationTestSuite.SearchTestSuite.PerformSearchByIsbn</name>
+    <date>2016-06-11T16:31:33-04:00</date>
+    <pageHistoryLink>TutorialSuitesOfTests.UiAutomationTestSuite.SearchTestSuite.PerformSearchByIsbn?pageHistory&amp;resultDate=20160611163133</pageHistoryLink>
+    <counts>
+      <right>3</right>
+      <wrong>1</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>80344</runTimeInMillis>
+  </pageHistoryReference>
+  <executionLog>
+    <testSystem>fit:Fitsharp\Runner.exe</testSystem>
+    <command>Fitsharp\Runner.exe -r fitnesse.fitserver.FitServer,FitSharp\fit.dll,FitSharp\fitLibrary.dll -c FitSharp\suite.config.xml ..\Fitnesse\Fixtures\Fitnesse_Dlls\QaTip.Fitnesse.Demo.dll ACNU329C4BY 64104 3863</command>
+    <exitCode>1</exitCode>
+    <stdOut>6/11/2016 4:31:34 PM: Executing test using Internet Explorer browser.
+Started InternetExplorerDriver server (32-bit)
+2.53.0.0
+Listening on port 64106
+Only local connections are allowed
+6/11/2016 4:32:50 PM: Closing Browser...
+</stdOut>
+    <stdErr></stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>1</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>84049</totalRunTimeInMillis>
+</suiteResults>
+

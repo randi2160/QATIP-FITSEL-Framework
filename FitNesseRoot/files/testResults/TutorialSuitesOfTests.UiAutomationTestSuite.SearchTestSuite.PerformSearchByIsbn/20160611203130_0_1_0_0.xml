@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20160515</FitNesseVersion>
+  <rootPath>TutorialSuitesOfTests.UiAutomationTestSuite.SearchTestSuite.PerformSearchByIsbn</rootPath>
+    <result>
+    <counts>
+      <right>3</right>
+      <wrong>1</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <date>2016-06-11T20:31:30-04:00</date>
+    <runTimeInMillis>59267</runTimeInMillis>
+    <content>&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_SUT"&gt;QaTip.Fitnesse.Demo.DoTestFixture&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;variable defined: searchquery=9781476738024&lt;/span&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;h1&gt;&lt;span class="blue "&gt;Steps&lt;/span&gt;&lt;/h1&gt;
+&lt;h5&gt;&lt;span class="blue "&gt;&lt;i&gt;1. Navigate to Barnes and Noble.com&lt;/i&gt;&lt;/span&gt;&lt;/h5&gt;
+&lt;h5&gt;&lt;span class="blue "&gt;&lt;i&gt;2. Validate that you are on the barnes and Noble.com Website&lt;/i&gt;&lt;/span&gt;&lt;/h5&gt;
+&lt;h5&gt;&lt;span class="blue "&gt;&lt;i&gt;3. Locate the Search Box and click on Search&lt;/i&gt;&lt;/span&gt;&lt;/h5&gt;
+&lt;h5&gt;&lt;span class="blue "&gt;&lt;i&gt;4. Type ISBN into the search box and click on Search&lt;/i&gt;&lt;/span&gt;&lt;/h5&gt;
+&lt;h5&gt;&lt;span class="blue "&gt;&lt;i&gt;5. Verify that user can is taken to the description page&lt;/i&gt;&lt;/span&gt;&lt;/h5&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="6"&gt;&lt;span class="fit_member"&gt;NavigateTo&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;url&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;KeywordContainedInTitle&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;NavigateToUrl&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;KeywordContainedInTitle?&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;NavigationSuccessful?&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;getpagetitle&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;http://bn.com&lt;/td&gt;
+		&lt;td&gt;Barnes&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td class="pass"&gt;Barnes&lt;/td&gt;
+		&lt;td class="fail"&gt;Success &lt;span class="fit_label"&gt;expected&lt;/span&gt;&lt;hr /&gt;null &lt;span class="fit_label"&gt;actual&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; null&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="4"&gt;&lt;span class="fit_member"&gt;Perform Search&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;SearchBoxExist?&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;searchbox?&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;searchQuery&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;Execute Search&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td class="pass"&gt;YES&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; YES&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;9781476738024&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; null&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="2"&gt;&lt;span class="fit_member"&gt;testhelper&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;WaitSeconds&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;wait&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;15&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; Slept 15 seconds&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="3"&gt;&lt;span class="fit_member"&gt;GetSearchResults&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;productTitle?&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;author?&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;productPrice?&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td class="pass"&gt;A Man Called Ove&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; Fredrik Backman&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; $9.71  $16.00 Save 39%&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;CleanUpAndCloseBrowser&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;CloseBrowser&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; null&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+ &lt;br/&gt;</content>
+    <relativePageName>PerformSearchByIsbn</relativePageName>
+          </result>
+  <executionLog>
+    <testSystem></testSystem>
+    <command></command>
+    <exitCode>0</exitCode>
+    <stdOut>6/11/2016 8:31:30 PM: Executing test using Internet Explorer browser.
+Started InternetExplorerDriver server (32-bit)
+2.53.0.0
+Listening on port 8824
+Only local connections are allowed
+6/11/2016 8:32:29 PM: Closing Browser...
+</stdOut>
+    <stdErr></stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>1</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>59267</totalRunTimeInMillis>
+</testResults>
+

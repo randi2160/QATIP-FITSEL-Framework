@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20160515</FitNesseVersion>
+  <rootPath>TutorialSuitesOfTests.FirstTestSayHello</rootPath>
+    <executionLog>
+    <testSystem>fit:Fitsharp\Runner.exe</testSystem>
+    <command>Fitsharp\Runner.exe -r fitnesse.fitserver.FitServer,Fitsharp\fit.dll,Fitsharp\fitLibrary.dll -c Fitsharp\suite.config.xml ..\fixtures\FitNesse_Dlls\QaTip.Fitnesse.Demo.dll ACNU329C4BY 9045 3863</command>
+    <exitCode>1</exitCode>
+    <stdOut>System.IO.FileNotFoundException: Could not load file or assembly 'file:///C:\Training\fixtures\FitNesse_Dlls\QaTip.Fitnesse.Demo.dll' or one of its dependencies. The system cannot find the file specified.
+File name: 'file:///C:\Training\fixtures\FitNesse_Dlls\QaTip.Fitnesse.Demo.dll'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark&amp; stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark&amp; stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadFrom(String assemblyFile, Evidence securityEvidence, Byte[] hashValue, AssemblyHashAlgorithm hashAlgorithm, Boolean forIntrospection, Boolean suppressSecurityChecks, StackCrawlMark&amp; stackMark)
+   at System.Reflection.Assembly.LoadFrom(String assemblyFile)
+   at fitSharp.Machine.Engine.CurrentDomain.LoadAssembly(String assemblyPath)
+   at fitSharp.Machine.Engine.ApplicationUnderTest.Assemblies.AddAssembly(String assemblyName)
+   at fitSharp.Machine.Engine.ApplicationUnderTest.AddAssemblies(IEnumerable`1 assemblyNames)
+   at fitnesse.fitserver.FitServer.ParseCommandLineArguments(IEnumerable`1 args)
+   at fitnesse.fitserver.FitServer.Run(IList`1 CommandLineArguments)
+   at fitnesse.fitserver.FitServer.Run(IList`1 commandLineArguments, Memory memory, ProgressReporter reporter)
+   at fitSharp.Machine.Application.Shell.Run()
+   at fitSharp.Machine.Application.Shell.Execute()
+   at fitSharp.Machine.Application.Shell.Run(IList`1 commandLineArguments)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+</stdOut>
+    <stdErr></stdErr>
+    <exception>FitClient: external process terminated before a connection could be established.</exception>
+    <exception>FitClient was killed</exception>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>1</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>6098</totalRunTimeInMillis>
+</testResults>
+

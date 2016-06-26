@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EEC56A1C-1AD6-496A-9C34-49534F9E1374}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QaTip.Fitnesse.Demo</RootNamespace>
+    <AssemblyName>QaTip.Fitnesse.Demo</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Fitnesse_Dlls\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="fit">
+      <HintPath>..\..\..\fit\fit.dll</HintPath>
+    </Reference>
+    <Reference Include="FitLibrary">
+      <HintPath>..\..\..\FitLibrary\FitLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="fitSharp">
+      <HintPath>..\..\..\fit\fitSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.DataAccess, Version=2.112.2.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Oracle.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess">
+      <HintPath>..\packages\Oracle.ManagedDataAccess.12.1.24160419\lib\net40\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WebDriver">
+      <HintPath>..\packages\Selenium.WebDriver.2.53.0\lib\net40\WebDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver.Support">
+      <HintPath>..\packages\Selenium.Support.2.53.0\lib\net40\WebDriver.Support.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CoreHelpers.cs" />
+    <Compile Include="DoFixture\BaseDomainObject.cs" />
+    <Compile Include="DoFixture\Constants.cs" />
+    <Compile Include="DoFixture\DataAccess.cs" />
+    <Compile Include="DoFixture\dbConnectionFixture.cs" />
+    <Compile Include="DoFixture\DBFixtures\domainObject\customer.cs" />
+    <Compile Include="DoFixture\DBFixtures\domainObject\customerobject.cs" />
+    <Compile Include="DoFixture\DBFixtures\ValiateCustomerInfoTableFixture.cs" />
+    <Compile Include="DoFixture\DBFixtures\ValidateCustomerFixture.cs" />
+    <Compile Include="DoFixture\DemoTestSetupFixture.cs" />
+    <Compile Include="DoFixture\DoTestFixture.cs" />
+    <Compile Include="DoFixture\ManageDirectoriesFixture.cs" />
+    <Compile Include="DoFixture\QatipOracleCommand.cs" />
+    <Compile Include="DoFixture\QAtipTestHelperFixture.cs" />
+    <Compile Include="DoFixture\runsqlFixture.cs" />
+    <Compile Include="DoFixture\testhelperFixture.cs" />
+    <Compile Include="DoFixture\UiFxitures\BrowserShutDownFixture.cs" />
+    <Compile Include="DoFixture\UiFxitures\DomainObject\dbconnectionmap.cs" />
+    <Compile Include="DoFixture\UiFxitures\DomainObject\managedirectoriesmap.cs" />
+    <Compile Include="DoFixture\UiFxitures\DomainObject\navigationmap.cs" />
+    <Compile Include="DoFixture\UiFxitures\DomainObject\pagereadmap.cs" />
+    <Compile Include="DoFixture\UiFxitures\DomainObject\searchmap.cs" />
+    <Compile Include="DoFixture\UiFxitures\LogInFixture.cs" />
+    <Compile Include="DoFixture\UiFxitures\ManageNavigationFixture.cs" />
+    <Compile Include="DoFixture\UiFxitures\ManageSearchFixture.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="dependencies\chromedriver.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="dependencies\IEDriverServer.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="IEDriverServer.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,11 @@
+!contents -R2 -g -p -f -h
+
+!|QaTip.Fitnesse.Demo.DoTestFixture|
+
+
+
+!|helloworld      |
+|myname |SayHello?   |
+|randy|Hellorandy|
+
+

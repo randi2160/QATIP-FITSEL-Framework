@@ -1,0 +1,149 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20160515</FitNesseVersion>
+  <rootPath>TutorialSuitesOfTests.UiAutomationTestSuite.SearchTestSuite.PerformSearchByIsbn</rootPath>
+    <result>
+    <counts>
+      <right>2</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>1</exceptions>
+    </counts>
+    <date>2016-06-09T12:12:15-04:00</date>
+    <runTimeInMillis>46575</runTimeInMillis>
+    <content>&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_SUT"&gt;QaTip.Fitnesse.Demo.DoTestFixture&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;variable defined: searchquery=9781476738024&lt;/span&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;h1&gt;&lt;span class="blue "&gt;Steps&lt;/span&gt;&lt;/h1&gt;
+&lt;h5&gt;&lt;span class="blue "&gt;&lt;i&gt;1. Navigate to Barnes and Noble.com&lt;/i&gt;&lt;/span&gt;&lt;/h5&gt;
+&lt;h5&gt;&lt;span class="blue "&gt;&lt;i&gt;2. Validate that you are on the barnes and Noble.com Website&lt;/i&gt;&lt;/span&gt;&lt;/h5&gt;
+&lt;h5&gt;&lt;span class="blue "&gt;&lt;i&gt;3. Locate the Search Box and click on Search&lt;/i&gt;&lt;/span&gt;&lt;/h5&gt;
+&lt;h5&gt;&lt;span class="blue "&gt;&lt;i&gt;4. Type ISBN into the search box and click on Search&lt;/i&gt;&lt;/span&gt;&lt;/h5&gt;
+&lt;h5&gt;&lt;span class="blue "&gt;&lt;i&gt;5. Verify that user can is taken to the description page&lt;/i&gt;&lt;/span&gt;&lt;/h5&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="6"&gt;&lt;span class="fit_member"&gt;NavigateTo&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;url&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;KeywordContainedInTitle&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;NavigateToUrl&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;KeywordContainedInTitle?&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;NavigationSuccessful?&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;getpagetitle&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;http://bn.com&lt;/td&gt;
+		&lt;td&gt;Barnes&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; null&lt;/span&gt;&lt;/td&gt;
+		&lt;td class="pass"&gt;Barnes&lt;/td&gt;
+		&lt;td class="pass"&gt;Success&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; Online Bookstore: Books, NOOK ebooks, Music, Movies &amp; Toys | Barnes &amp;amp; Noble&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="4"&gt;&lt;span class="fit_member"&gt;Perform Search&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;SearchBoxExist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;searchbox?&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;searchQuery&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;Execute Search&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td class="error"&gt;YES&lt;hr /&gt;&lt;pre&gt;&lt;div class="fit_stacktrace"&gt;fitSharp.Machine.Exception.MemberMissingException: Member 'searchboxexist' with 1 parameter(s) not found for type 'QaTip.Fitnesse.Demo.DoFixture.UiFxitures.DomainObject.searchmap'.
+   at fitSharp.Machine.Model.TypedValue.ThrowExceptionIfNotValid()
+   at fitSharp.Fit.Service.InputBinding.Do(Tree`1 cell)
+   at fit.ColumnFixture.DoCell(Parse cell, Int32 column)&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; null&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;9781476738024&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; null&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="2"&gt;&lt;span class="fit_member"&gt;testhelper&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;WaitSeconds&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;wait&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;20&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; Slept 20 seconds&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="5"&gt;&lt;span class="fit_member"&gt;GetSearchResults&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;productDescription?&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;productTitle?&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;author?&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;producttype?&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;productPrice?&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; null&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; A Man Called Ove
+by Fredrik Backman
+94 Reviews
+  Read the New York Times bestseller that has taken the world by storm!
+Meet Ove. He’s a curmudgeon—the kind of man who points at people he dislikes as if they were burglars caught outside his bedroom window. He has staunch principles, strict routines, and a short fuse. People call him “the bitter neighbor from hell.” But must Ove be bitter just because he doesn’t walk around with a smile plastered to his face all the time?
+Behind the cranky exterior there is a story and a sadness. So when one November morning a chatty young couple with two chatty young daughters move in next door and accidentally flatten Ove’s mailbox, it is the lead-in to a comical and heartwarming tale of unkempt cats, unexpected...Read More
+Favorite Paperbacks - Buy 2, Get the 3rd Free
+Your Summer, Your Books&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; OpenQA.Selenium.NoSuchElementException: Unable to find element with id == contributors
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at QaTip.Fitnesse.Demo.DoFixture.UiFxitures.DomainObject.searchmap.get_author() in c:\Training\Fitnesse\Fixtures\QaTip.Fitnesse.Demo\QaTip.Fitnesse.Demo\DoFixture\UiFxitures\DomainObject\searchmap.cs:line 44&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; blank&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; OpenQA.Selenium.InvalidSelectorException: Compound class names not permitted
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at QaTip.Fitnesse.Demo.DoFixture.UiFxitures.DomainObject.searchmap.get_productPrice() in c:\Training\Fitnesse\Fixtures\QaTip.Fitnesse.Demo\QaTip.Fitnesse.Demo\DoFixture\UiFxitures\DomainObject\searchmap.cs:line 62&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;CleanUpAndCloseBrowser&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;CloseBrowser&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; null&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+ &lt;br/&gt;</content>
+    <relativePageName>PerformSearchByIsbn</relativePageName>
+          </result>
+  <executionLog>
+    <testSystem>fit:Fitsharp\Runner.exe</testSystem>
+    <command>Fitsharp\Runner.exe -r fitnesse.fitserver.FitServer,FitSharp\fit.dll,FitSharp\fitLibrary.dll -c FitSharp\suite.config.xml ..\Fitnesse\Fixtures\Fitnesse_Dlls\QaTip.Fitnesse.Demo.dll ACNU329C4BY 26047 3863</command>
+    <exitCode>1</exitCode>
+    <stdOut>6/9/2016 12:12:15 PM: Executing test using Internet Explorer browser.
+Started InternetExplorerDriver server (32-bit)
+2.53.0.0
+Listening on port 26049
+Only local connections are allowed
+6/9/2016 12:13:01 PM: Closing Browser...
+</stdOut>
+    <stdErr></stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>1</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>47921</totalRunTimeInMillis>
+</testResults>
+

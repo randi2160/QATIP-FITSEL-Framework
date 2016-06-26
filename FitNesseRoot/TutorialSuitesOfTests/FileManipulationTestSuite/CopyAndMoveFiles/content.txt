@@ -1,0 +1,10 @@
+<test page>
+!|QaTip.Fitnesse.Demo.DoTestFixture|
+
+!define filename {COPYFILESAMPLE.txt}
+!define sourcepath {C:\backupdata\Training\Training}
+!define destinationpath {C:\backupdata\Training\Training\utils}
+
+!|ManageFilesAndDirectories                                                                     |
+|filetocopy |SourcePath   |DestinationPath   |CopyFilefromOneLocationToNext|filetocopy?|Results?|
+|${filename}|${sourcepath}|${destinationpath}|                             |${filename}           |        |

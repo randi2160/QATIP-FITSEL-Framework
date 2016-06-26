@@ -1,0 +1,5 @@
+!1 Test suite X
+!contents -R2 -g -p -f -h
+
+manage Files AND Directories DO FIXTURE:
+

@@ -1,0 +1,36 @@
+!|QaTip.Fitnesse.Demo.DoTestFixture|
+
+!define searchquery {9781476738024}
+
+!1 !style_blue [Steps]
+!5 !style_blue [''1. Navigate to Barnes and Noble.com'']
+!5 !style_blue [''2. Validate that you are on the barnes and Noble.com Website'']
+!5 !style_blue [''3. Locate the Search Box and click on Search'']
+!5 !style_blue [''4. Type ISBN into the search box and click on Search'']
+!5 !style_blue [''5. Verify that user can is taken to the description page'']
+
+
+
+
+!|NavigateTo                                                                                                    |
+|url          |KeywordContainedInTitle|NavigateToUrl|KeywordContainedInTitle?|NavigationSuccessful?|getpagetitle|
+|http://bn.com|Barnes                 |             |Barnes                  |              |            |
+
+
+!|Perform Search                                         |
+|SearchBoxExist?|searchbox?|searchQuery   |Execute Search|
+|YES            |          |${searchquery}|              |
+
+
+!|testhelper     |
+|WaitSeconds|wait|
+|15         |    |
+
+!|GetSearchResults                                         |
+|productTitle?   |author?|productPrice?|
+|A Man Called Ove|       |             |
+
+!|CleanUpAndCloseBrowser|
+|CloseBrowser           |
+|                       |
+ 

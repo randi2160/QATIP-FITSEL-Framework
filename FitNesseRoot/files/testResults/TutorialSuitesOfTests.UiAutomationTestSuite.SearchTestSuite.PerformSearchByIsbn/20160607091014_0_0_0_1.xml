@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20160515</FitNesseVersion>
+  <rootPath>TutorialSuitesOfTests.UiAutomationTestSuite.SearchTestSuite.PerformSearchByIsbn</rootPath>
+    <result>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>1</exceptions>
+    </counts>
+    <date>2016-06-07T09:10:16-04:00</date>
+    <runTimeInMillis>17433</runTimeInMillis>
+    <content>&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_SUT"&gt;QaTip.Fitnesse.Demo.DoTestFixture&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;h1&gt;&lt;span class="blue "&gt;Steps&lt;/span&gt;&lt;/h1&gt;
+&lt;h5&gt;&lt;span class="blue "&gt;&lt;i&gt;1. Navigate to Barnes and Noble.com&lt;/i&gt;&lt;/span&gt;&lt;/h5&gt;
+&lt;h5&gt;&lt;span class="blue "&gt;&lt;i&gt;2. Validate that you are on the barnes and Noble.com Website&lt;/i&gt;&lt;/span&gt;&lt;/h5&gt;
+&lt;h5&gt;&lt;span class="blue "&gt;&lt;i&gt;3. Locate the Search Box and click on Search&lt;/i&gt;&lt;/span&gt;&lt;/h5&gt;
+&lt;h5&gt;&lt;span class="blue "&gt;&lt;i&gt;4. Type ISBN into the search box and click on Search&lt;/i&gt;&lt;/span&gt;&lt;/h5&gt;
+&lt;h5&gt;&lt;span class="blue "&gt;&lt;i&gt;5. Verify that user can is taken to the description page&lt;/i&gt;&lt;/span&gt;&lt;/h5&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="3"&gt;&lt;span class="fit_member"&gt;NavigateTo&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;url&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;NavigateToUrl&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;NavigationSuccessful?&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;http://bn.com&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; null&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; blank&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td class="error" colspan="5"&gt;Perform Search&lt;hr /&gt;&lt;pre&gt;&lt;div class="fit_stacktrace"&gt;fitSharp.Machine.Exception.TypeMissingException: Type 'PerformSearch' not found in assemblies:
+    file:///C:/Windows/Microsoft.NET/Framework64/v4.0.30319/mscorlib.dll
+    file:///C:/Training/Fitnesse/Fitsharp/Runner.exe
+    file:///C:/Training/Fitnesse/Fitsharp/fitSharp.DLL
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Configuration/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Configuration.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System/v4.0_4.0.0.0__b77a5c561934e089/System.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Xml/v4.0_4.0.0.0__b77a5c561934e089/System.Xml.dll
+    file:///C:/Training/Fitnesse/Fitsharp/fit.DLL
+    file:///C:/Training/Fitnesse/Fixtures/Fitnesse_Dlls/QaTip.Fitnesse.Demo.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.Data/v4.0_4.0.0.0__b77a5c561934e089/System.Data.dll
+    file:///C:/Training/Fitnesse/Fixtures/Fitnesse_Dlls/WebDriver.DLL
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Numerics/v4.0_4.0.0.0__b77a5c561934e089/System.Numerics.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.ComponentModel.DataAnnotations/v4.0_4.0.0.0__31bf3856ad364e35/System.ComponentModel.DataAnnotations.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Runtime.Serialization/v4.0_4.0.0.0__b77a5c561934e089/System.Runtime.Serialization.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Xml.Linq/v4.0_4.0.0.0__b77a5c561934e089/System.Xml.Linq.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Drawing/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Drawing.dll
+
+   at fitSharp.Machine.Engine.ReflectionMember.Invoke(Object[] parameters)
+   at fitSharp.Machine.Engine.ProcessorBase`2.Operate[O](Object[] parameters)
+   at fitSharp.Fit.Operators.ParseInterpreter.MakeInterpreter(Cell classCell)
+   at fitSharp.Fit.Operators.ParseInterpreter.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorBase`2.&lt;&gt;c__DisplayClass11.&lt;&gt;c__DisplayClass13.&lt;Parse&gt;b__10(ParseOperator`1 o)
+   at fitSharp.Machine.Engine.Operators`2.Do[O](CanDoOperation`1 canDoOperation, DoOperation`1 doOperation)
+   at fitSharp.Machine.Engine.ProcessorBase`2.&lt;&gt;c__DisplayClass11.&lt;Parse&gt;b__e(OperationLogging logging)
+   at fitSharp.Machine.Engine.ProcessorBase`2.DoLoggedOperation[R](String startMessage, Func`2 operation)
+   at fitSharp.Machine.Engine.ProcessorBase`2.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Fit.Service.CellProcessorBase.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorExtension.ParseTree[T](Processor`1 processor, Type type, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorExtension.ParseTree[T,V](Processor`1 processor, Tree`1 input)
+   at fitSharp.Fit.Engine.InterpretFlow.ProcessFlowRow(Tree`1 table, Int32 rowNumber)&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;validate Search Box Exists&lt;/td&gt;
+		&lt;td&gt;ISBN&lt;/td&gt;
+		&lt;td&gt;Execute Search&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;CleanUpAndCloseBrowser&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;CloseBrowser&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; null&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+ &lt;br/&gt;</content>
+    <relativePageName>PerformSearchByIsbn</relativePageName>
+          </result>
+  <executionLog>
+    <testSystem>fit:Fitsharp\Runner.exe</testSystem>
+    <command>Fitsharp\Runner.exe -r fitnesse.fitserver.FitServer,FitSharp\fit.dll,FitSharp\fitLibrary.dll -c FitSharp\suite.config.xml ..\Fitnesse\Fixtures\Fitnesse_Dlls\QaTip.Fitnesse.Demo.dll ACNU329C4BY 19178 3863</command>
+    <exitCode>1</exitCode>
+    <stdOut>6/7/2016 9:10:16 AM: Executing test using Internet Explorer browser.
+Started InternetExplorerDriver server (32-bit)
+2.53.0.0
+Listening on port 19180
+Only local connections are allowed
+6/7/2016 9:10:33 AM: Closing Browser...
+</stdOut>
+    <stdErr></stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>1</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>19405</totalRunTimeInMillis>
+</testResults>
+

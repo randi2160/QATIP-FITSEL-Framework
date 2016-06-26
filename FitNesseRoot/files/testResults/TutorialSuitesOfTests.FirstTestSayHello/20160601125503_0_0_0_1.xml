@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20160515</FitNesseVersion>
+  <rootPath>TutorialSuitesOfTests.FirstTestSayHello</rootPath>
+    <executionLog>
+    <testSystem>fit:Fitsharp\Runner.exe</testSystem>
+    <command>Fitsharp\Runner.exe -r Fitsharp\fit.dll,Fitsharp\fitLibrary.dll -c Fitsharp\suite.config.xml ..\fixtures\FitNesse_Dlls\QaTip.Fitnesse.Demo.dll ACNU329C4BY 9350 3863</command>
+    <exitCode>1</exitCode>
+    <stdOut>fitSharp.Machine.Exception.TypeMissingException: Type 'Fitsharp\fit.dll' not found in assemblies:
+    file:///C:/Windows/Microsoft.NET/Framework64/v4.0.30319/mscorlib.dll
+    file:///C:/Training/Fitnesse/Fitsharp/Runner.exe
+    file:///C:/Training/Fitnesse/Fitsharp/fitSharp.DLL
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Configuration/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Configuration.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System/v4.0_4.0.0.0__b77a5c561934e089/System.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Xml/v4.0_4.0.0.0__b77a5c561934e089/System.Xml.dll
+    file:///C:/Training/Fitnesse/Fitsharp/FitLibrary.DLL
+
+   at fitSharp.Machine.Engine.ReflectionMember.Invoke(Object[] parameters)
+   at fitSharp.Machine.Engine.ProcessorBase`2.Operate[O](Object[] parameters)
+   at fitSharp.Machine.Engine.ProcessorExtension.Create[T](Processor`1 processor, String memberName, Tree`1 parameters)
+   at fitSharp.Machine.Application.Shell.Execute()
+   at fitSharp.Machine.Application.Shell.Run(IList`1 commandLineArguments)
+</stdOut>
+    <stdErr></stdErr>
+    <exception>FitClient: external process terminated before a connection could be established.</exception>
+    <exception>FitClient: external process terminated before a connection could be established.</exception>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>1</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>1113</totalRunTimeInMillis>
+</testResults>
+

@@ -1,0 +1,7 @@
+!contents -R2 -g -p -f -h
+!|QaTip.Fitnesse.Demo.DoTestFixture|
+
+!define COMMAND_PATTERN {%m -r fitnesse.fitserver.FitServer,FitSharp\fit.dll,FitSharp\fitLibrary.dll -c FitSharp\suite.config.xml %p}
+!define TEST_RUNNER {Fitsharp\Runner.exe}
+!path ..\Fitnesse\Fixtures\Fitnesse_Dlls\QaTip.Fitnesse.Demo.dll
+!define TEST_RUNNER {Fitsharp\Runner.exe}

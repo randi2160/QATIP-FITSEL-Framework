@@ -1,0 +1,8 @@
+!contents -R2 -g -p -f -h
+
+!|QaTip.Fitnesse.Demo.DoTestFixture|
+
+!|UILogIn                           |
+|Url              |navigatetogoogle()|
+|http://google.com|                 |
+

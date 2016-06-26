@@ -1,0 +1,10 @@
+<suiteConfig>
+
+    <ApplicationUnderTest>
+        <addAssembly>build\sandbox\dbfit.dll</addAssembly>
+        <addAssembly>build\sandbox\dbfit.sqlserver.dll</addAssembly>
+        <addAssembly>build\sandbox\dbfit.mysql.dll</addAssembly>
+        <addNamespace>dbfit.fixture</addNamespace>
+    </ApplicationUnderTest>
+    
+</suiteConfig>
