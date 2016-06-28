@@ -1,0 +1,9 @@
+<test page>
+Unzipping files
+!|QaTip.Fitnesse.Demo.DoTestFixture|
+
+
+
+!|ManageFilesAndDirectories                                                               |
+|IsSourcePathRelative|SourceFile                              |NewDirectoryName?|UnzipFile|
+|NO                  |C:\backupdata\Training\Training\Fitnesse|C:\temp          |         |

@@ -1,0 +1,7 @@
+<test page>
+!|QaTip.Fitnesse.Demo.DoTestFixture|
+
+
+!|ManageFilesAndDirectories                                                          |
+|DirectoryPath                                                  |getlatestcreatedfile||
+|C:\backupdata\Training\Training\Fitnesse\Fixtures\Fitnesse_Dlls|                    |

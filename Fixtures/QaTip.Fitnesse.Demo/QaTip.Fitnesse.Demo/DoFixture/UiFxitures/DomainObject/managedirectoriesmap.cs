@@ -15,7 +15,9 @@ namespace QaTip.Fitnesse.Demo.DoFixture.UiFxitures.DomainObject
 
         private string _newfilename;
        public string targetfile{ get; set; }
-       public string DirectoryPath { get; set; }
+        public string cmdParameters
+        { get; set; }
+        public string DirectoryPath { get; set; }
        public string SourcePath { get; set; }
        public string DestinationPath { get; set; }
        public string results { get; set; }
@@ -100,7 +102,25 @@ namespace QaTip.Fitnesse.Demo.DoFixture.UiFxitures.DomainObject
         }
 
 
-       //Copy file from one location to next:
+        //Get latest file
+        public string getlatestcreatedfile()
+        {
+
+            FileInfo newestFile = GetNewestFile(new DirectoryInfo(DirectoryPath));
+            return newestFile.ToString();
+        }
+
+        private static FileInfo GetNewestFile(DirectoryInfo directory)
+        {
+            return directory.GetFiles()
+                .Union(directory.GetDirectories().Select(d => GetNewestFile(d)))
+                .OrderByDescending(f => (f == null ? DateTime.MinValue : f.LastWriteTime))
+                .FirstOrDefault();
+        }
+
+
+
+        //Copy file from one location to next:
         public void CopyFilefromOneLocationToNext()
         {
             string fileName = filetocopy;
@@ -150,8 +170,36 @@ namespace QaTip.Fitnesse.Demo.DoFixture.UiFxitures.DomainObject
             }
 
         }
-       
 
+        public void executebatch()
+        {
+            ExecuteCommand(targetfile);
+
+        }
+
+        private void ExecuteCommand(string command)
+        {
+            var processInfo = new ProcessStartInfo("cmd.exe", "/c " + command);
+            processInfo.CreateNoWindow = true;
+            processInfo.UseShellExecute = false;
+            processInfo.RedirectStandardError = true;
+            processInfo.RedirectStandardOutput = true;
+
+            var process = Process.Start(processInfo);
+
+            process.OutputDataReceived += (object sender, DataReceivedEventArgs e) =>
+                Console.WriteLine("output>>" + e.Data);
+            process.BeginOutputReadLine();
+
+            process.ErrorDataReceived += (object sender, DataReceivedEventArgs e) =>
+                Console.WriteLine("error>>" + e.Data);
+            process.BeginErrorReadLine();
+
+            process.WaitForExit();
+
+            Console.WriteLine("ExitCode: {0}", process.ExitCode);
+            process.Close();
+        }
 
 
 
@@ -356,54 +404,54 @@ namespace QaTip.Fitnesse.Demo.DoFixture.UiFxitures.DomainObject
             //compressionLib.Extract(SourceFile, NewDirectoryName);
         }
 
-       //Get latest files
-        public string getlatestcreatedfile()
+        public void creatingbatchfile()
         {
-
-            FileInfo newestFile = GetNewestFile(new DirectoryInfo(DirectoryPath));
-            return newestFile.ToString();
+            createbatchfile(WorkingDirectory, cmdParameters, outputfilename);
         }
 
-        private static FileInfo GetNewestFile(DirectoryInfo directory)
+        //create batch files
+        private void createbatchfile(string locationtorunbatchfile, string commandtorun, string outfilename)
         {
-            return directory.GetFiles()
-                .Union(directory.GetDirectories().Select(d => GetNewestFile(d)))
-                .OrderByDescending(f => (f == null ? DateTime.MinValue : f.LastWriteTime))
-                .FirstOrDefault();
+            try
+            {
+                string path = locationtorunbatchfile + outfilename;
+
+                if (!File.Exists(path))
+                {
+                    FileStream fs = new FileStream(path, FileMode.OpenOrCreate);
+                    fs.Close();
+                    //File.Create(path);
+                    using (StreamWriter writer =
+                    new StreamWriter(path))
+                    {
+                        writer.Write("cd" + " " + locationtorunbatchfile + " " + "\r\n" + " ");
+                        writer.WriteLine(commandtorun);
+                        writer.WriteLine("\r\n");
+                        writer.WriteLine("\n");
+                    }
+                }
+                else if (File.Exists(path))
+                {
+                    TextWriter tw = new StreamWriter(path, false);
+                    tw.WriteLine("cd" + " " + locationtorunbatchfile + " " + "\r\n");
+                    tw.WriteLine(commandtorun);
+                    tw.WriteLine("\n");
+                    tw.WriteLine("\n");
+                    tw.Close();
+                }
+            }
+            catch (Exception e)
+            {
+                CoreHelpers.LogMessage("Error:" + e);
+
+            }
         }
 
 
-       //Execute a command
-        private void ExecuteCommand(string command)
-        {
-            var processInfo = new ProcessStartInfo("cmd.exe", "/c " + command);
-            processInfo.CreateNoWindow = true;
-            processInfo.UseShellExecute = false;
-            processInfo.RedirectStandardError = true;
-            processInfo.RedirectStandardOutput = true;
 
-            var process = Process.Start(processInfo);
 
-            process.OutputDataReceived += (object sender, DataReceivedEventArgs e) =>
-                Console.WriteLine("output>>" + e.Data);
-            process.BeginOutputReadLine();
 
-            process.ErrorDataReceived += (object sender, DataReceivedEventArgs e) =>
-                Console.WriteLine("error>>" + e.Data);
-            process.BeginErrorReadLine();
+        //Execute a command
 
-            process.WaitForExit();
-
-            Console.WriteLine("ExitCode: {0}", process.ExitCode);
-            process.Close();
-        }
-
-       //execute batch
-
-        public void executebatch()
-        {
-            ExecuteCommand(targetfile);
-
-        }
     }
 }
