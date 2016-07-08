@@ -1,0 +1,153 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20160515</FitNesseVersion>
+  <rootPath>TutorialSuitesOfTests.GenericValidationFixture.HowToConcatinateManyStringTogether</rootPath>
+    <result>
+    <counts>
+      <right>4</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <date>2016-07-07T17:14:43-04:00</date>
+    <runTimeInMillis>61</runTimeInMillis>
+    <content>&lt;br/&gt;&lt;div class="contents"&gt;
+	&lt;b&gt;Contents:&lt;/b&gt;
+	&lt;ul class="toc1"/&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_SUT"&gt;QaTip.Fitnesse.Demo.DoTestFixture&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;variable defined: string1=this&lt;/span&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;variable defined: string2=is a test&lt;/span&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;variable defined: string3=Khemlall&lt;/span&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;This method needs you to supply the strings &lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="4"&gt;&lt;span class="fit_member"&gt;validate&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;stringstoconcatinate&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;joinstrings&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;stringoutput?&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;stringoutput?&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;select * from customer&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; null&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; select * from customer &lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; select * from customer &lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;where name =&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; null&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; select * from customer where name = &lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; select * from customer where name = &lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;"mangal"&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; null&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&amp;gt;&amp;gt;finalstring&lt;span class="fit_grey"&gt; select * from customer where name = "mangal" &lt;/span&gt;&lt;/td&gt;
+		&lt;td class="pass"&gt;&amp;lt;&amp;lt;finalstring&lt;span class="fit_grey"&gt; select * from customer where name = "mangal" &lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;span class="red"&gt;&lt;i&gt;Add / at the end of each word ... building a url link &lt;/i&gt;&lt;/span&gt;&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="4"&gt;&lt;span class="fit_member"&gt;validate&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;stringstoconcatinate&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;buildurlwithprovidedstrings&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;stringoutput?&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;stringoutput?&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;http://localhost&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; null&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; http://localhost/&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; http://localhost/&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;contentmanager&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; null&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; http://localhost/contentmanager/&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; http://localhost/contentmanager/&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;prod&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; null&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&amp;gt;&amp;gt;finalstring&lt;span class="fit_grey"&gt; http://localhost/contentmanager/prod/&lt;/span&gt;&lt;/td&gt;
+		&lt;td class="pass"&gt;&amp;lt;&amp;lt;finalstring&lt;span class="fit_grey"&gt; http://localhost/contentmanager/prod/&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;span class="red"&gt;&lt;i&gt;Add plain word without spaces etc... &lt;/i&gt;&lt;/span&gt;&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="4"&gt;&lt;span class="fit_member"&gt;validate&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;stringstoconcatinate&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;buildstringwithoutspace&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;stringoutput?&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;stringoutput?&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;qua&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; null&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; qua&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; qua&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;li&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; null&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; quali&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; quali&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;ty&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; null&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&amp;gt;&amp;gt;finalstring&lt;span class="fit_grey"&gt; quality&lt;/span&gt;&lt;/td&gt;
+		&lt;td class="pass"&gt;&amp;lt;&amp;lt;finalstring&lt;span class="fit_grey"&gt; quality&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;span class="blue"&gt;&lt;i&gt;Add paramaterize value example &lt;/i&gt;&lt;/span&gt;&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="4"&gt;&lt;span class="fit_member"&gt;validate&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;stringstoconcatinate&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;joinstrings&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;stringoutput?&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;stringoutput?&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;this&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; null&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; this &lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; this &lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;is a test&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; null&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; this is a test &lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; this is a test &lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Khemlall&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; null&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&amp;gt;&amp;gt;finalstring&lt;span class="fit_grey"&gt; this is a test Khemlall &lt;/span&gt;&lt;/td&gt;
+		&lt;td class="pass"&gt;&amp;lt;&amp;lt;finalstring&lt;span class="fit_grey"&gt; this is a test Khemlall &lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+</content>
+    <relativePageName>HowToConcatinateManyStringTogether</relativePageName>
+          </result>
+  <finalCounts>
+    <right>1</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>61</totalRunTimeInMillis>
+</testResults>
+

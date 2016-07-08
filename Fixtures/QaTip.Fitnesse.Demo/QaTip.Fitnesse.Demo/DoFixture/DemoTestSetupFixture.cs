@@ -6,13 +6,17 @@ using System.Threading.Tasks;
 using fit;
 using fitlibrary;
 using fitSharp;
-
+using QaTip.Fitnesse.Demo.DoFixture.UiFxitures.DomainObject;
+using QaTip.Fitnesse.Demo.DoFixture.DBFixtures;
 
 namespace QaTip.Fitnesse.Demo
 {
    public class DemoTestSetupFixture:ColumnFixture
     {
-       public string myname { get; set; }
+
+      
+
+        public string myname { get; set; }
 
        public string SayHello()
        {

@@ -1,0 +1,147 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20160515</FitNesseVersion>
+  <rootPath>TutorialSuitesOfTests.BackEndAutomationExample.ValidateGettingConnectionString</rootPath>
+    <result>
+    <counts>
+      <right>1</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <date>2016-07-06T09:45:08-04:00</date>
+    <runTimeInMillis>96</runTimeInMillis>
+    <content>&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_SUT"&gt;QaTip.Fitnesse.Demo.DoTestFixture&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;variable defined: SCHEMA_SERVER=SQLEXPRESS13&lt;/span&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;variable defined: SCHEMA_SERVER1=ORACLE&lt;/span&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;variable defined: SCHEMA=CMGR_SIRIUS_KHEM&lt;/span&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;test Helper&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;MapMachineConfiguration&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; null&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="2"&gt;&lt;span class="fit_member"&gt;Test Helper&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;environmentvariable&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;GetSystemEnvironmentVariable&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;FitNesseqatipDbConString&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; null&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;span class="blue"&gt;&lt;b&gt;Point to the targeted schema:&lt;/b&gt;&lt;/span&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="3"&gt;&lt;span class="fit_member"&gt;Test Helper&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;FitNesse Db ConnectionString?&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;FitNesse Db ConnectionString&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;FitNesse Db ConnectionString?&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; Data Source=SQLEXPRESS; Integrated Security=SSPI;AttachDBFilename=DataDirectoryaspnetdb.mdf;User Instance=true&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;Data Source=SQLEXPRESS13; Integrated Security=SSPI;AttachDBFilename=DataDirectoryaspnetdb.mdf;User Instance=true" providerName="System.Data.SqlClient&lt;/td&gt;
+		&lt;td&gt;&amp;gt;&amp;gt;savedbconnectionstring&lt;span class="fit_grey"&gt; Data Source=SQLEXPRESS13; Integrated Security=SSPI;AttachDBFilename=DataDirectoryaspnetdb.mdf;User Instance=true" providerName="System.Data.SqlClient&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;ConnectTodb&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;SetDbConnectionStrings&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="2"&gt;&lt;span class="fit_member"&gt;testhelper&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;GetFitNesseDbConnectionString&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;GetFitNesseDbConnectionString?&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&amp;lt;&amp;lt;savedbconnectionstring&lt;span class="fit_grey"&gt; Data Source=SQLEXPRESS13; Integrated Security=SSPI;AttachDBFilename=DataDirectoryaspnetdb.mdf;User Instance=true" providerName="System.Data.SqlClient&lt;/span&gt;&lt;/td&gt;
+		&lt;td class="pass"&gt;&amp;lt;&amp;lt;savedbconnectionstring&lt;span class="fit_grey"&gt; Data Source=SQLEXPRESS13; Integrated Security=SSPI;AttachDBFilename=DataDirectoryaspnetdb.mdf;User Instance=true" providerName="System.Data.SqlClient&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;SETTING ORACLE:&lt;br/&gt;&lt;br/&gt;&lt;span class="blue"&gt;&lt;b&gt;Point to the targeted schema:&lt;/b&gt;&lt;/span&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="2"&gt;&lt;span class="fit_member"&gt;Test Helper&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;FitNesse Db ConnectionString?&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;FitNesse Db ConnectionString&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; Data Source=SQLEXPRESS13; Integrated Security=SSPI;AttachDBFilename=DataDirectoryaspnetdb.mdf;User Instance=true" providerName="System.Data.SqlClient&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;Data Source=SQLEXPRESS13; Persist Security Info=True; User ID=CMGR_SIRIUS_KHEM; Password=iclaim&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+</content>
+    <relativePageName>ValidateGettingConnectionString</relativePageName>
+          </result>
+  <executionLog>
+    <testSystem>fit:Fitsharp\Runner.exe</testSystem>
+    <command>Fitsharp\Runner.exe -r fitnesse.fitserver.FitServer,FitSharp\fit.dll,FitSharp\fitLibrary.dll -c FitSharp\suite.config.xml ..\Fitnesse\Fixtures\Fitnesse_Dlls\QaTip.Fitnesse.Demo.dll A5Q55S72 59842 3863</command>
+    <exitCode>0</exitCode>
+    <stdOut>File path: C:\backupdata\Training\Training\Fitnesse\Fixtures\Fitnesse_Dlls\QaTip.Fitnesse.Demo.dll.config
+7/6/2016 9:45:08 AM: Found ConnectionString: FitNesseqatipDbConString
+7/6/2016 9:45:08 AM: DbConnectionString = Data Source=SQLEXPRESS; Integrated Security=SSPI;AttachDBFilename=DataDirectoryaspnetdb.mdf;User Instance=true
+
+Using OpenMappedMachineConfiguration.
+Sections in machine.config:
+Name: configProtectedData
+Name: satelliteassemblies
+Name: assemblyBinding
+Name: system.codedom
+Name: system.data.dataset
+Name: system.data.odbc
+Name: system.data
+Name: appSettings
+Name: system.data.oracleclient
+Name: system.data.oledb
+Name: uri
+Name: system.windows.forms
+Name: system.runtime.remoting
+Name: runtime
+Name: system.diagnostics
+Name: windows
+Name: connectionStrings
+Name: mscorlib
+Name: system.webServer
+Name: system.data.sqlclient
+Name: startup
+7/6/2016 9:45:08 AM: Getting the FitNesseqatipDbConString environment variable
+7/6/2016 9:45:08 AM: Changing FitNesse connection string to: Data Source=SQLEXPRESS13; Integrated Security=SSPI;AttachDBFilename=DataDirectoryaspnetdb.mdf;User Instance=true" providerName="System.Data.SqlClient
+7/6/2016 9:45:08 AM: Changing FitNesse connection string to: Data Source=SQLEXPRESS13; Integrated Security=SSPI;AttachDBFilename=DataDirectoryaspnetdb.mdf;User Instance=true" providerName="System.Data.SqlClient
+7/6/2016 9:45:08 AM: Changing FitNesse connection string to: Data Source=SQLEXPRESS13; Persist Security Info=True; User ID=CMGR_SIRIUS_KHEM; Password=iclaim
+</stdOut>
+    <stdErr></stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>1</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>713</totalRunTimeInMillis>
+</testResults>
+

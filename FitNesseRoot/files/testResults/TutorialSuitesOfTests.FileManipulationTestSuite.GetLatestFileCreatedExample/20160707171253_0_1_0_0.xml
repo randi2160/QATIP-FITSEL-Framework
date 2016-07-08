@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20160515</FitNesseVersion>
+  <rootPath>TutorialSuitesOfTests.FileManipulationTestSuite.GetLatestFileCreatedExample</rootPath>
+    <result>
+    <counts>
+      <right>0</right>
+      <wrong>1</wrong>
+      <ignores>0</ignores>
+      <exceptions>1</exceptions>
+    </counts>
+    <date>2016-07-07T17:12:54-04:00</date>
+    <runTimeInMillis>89</runTimeInMillis>
+    <content>&lt;br/&gt;&amp;lt;test page&amp;gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_SUT"&gt;QaTip.Fitnesse.Demo.DoTestFixture&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="3"&gt;&lt;span class="fit_member"&gt;ManageFilesAndDirectories&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;DirectoryPath&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;getlatestcreatedfile&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;getlatestcreatedfile?&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;C:\backupdata\Training\Training\Fitnesse\Fixtures\Fitnesse_Dlls&lt;/td&gt;
+		&lt;td class="error"&gt;&amp;gt;&amp;gt;latest&lt;hr /&gt;&lt;pre&gt;&lt;div class="fit_stacktrace"&gt;fitSharp.Machine.Exception.MemberMissingException: Member 'getlatestcreatedfile' with 1 parameter(s) not found for type 'QaTip.Fitnesse.Demo.DoFixture.UiFxitures.DomainObject.managedirectoriesmap'.
+   at fitSharp.Machine.Model.TypedValue.ThrowExceptionIfNotValid()
+   at fitSharp.Fit.Service.InputBinding.Do(Tree`1 cell)
+   at fit.ColumnFixture.DoCell(Parse cell, Int32 column)&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;
+		&lt;td class="fail"&gt;&amp;lt;&amp;lt;latest&lt;span class="fit_grey"&gt; null&lt;/span&gt; &lt;span class="fit_label"&gt;expected&lt;/span&gt;&lt;hr /&gt;QaTip.Fitnesse.Demo.dll &lt;span class="fit_label"&gt;actual&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+</content>
+    <relativePageName>GetLatestFileCreatedExample</relativePageName>
+          </result>
+  <executionLog>
+    <testSystem>fit:Fitsharp\Runner.exe</testSystem>
+    <command>Fitsharp\Runner.exe -r fitnesse.fitserver.FitServer,FitSharp\fit.dll,FitSharp\fitLibrary.dll -c FitSharp\suite.config.xml ..\Fitnesse\Fixtures\Fitnesse_Dlls\QaTip.Fitnesse.Demo.dll A5Q55S72 50002 3863</command>
+    <exitCode>2</exitCode>
+    <stdOut>File path: C:\backupdata\Training\Training\Fitnesse\Fixtures\Fitnesse_Dlls\QaTip.Fitnesse.Demo.dll.config
+7/7/2016 5:12:54 PM: Found ConnectionString: FitNesseqatipDbConString
+7/7/2016 5:12:54 PM: DbConnectionString = Data Source=SQLEXPRESS; Integrated Security=SSPI;AttachDBFilename=DataDirectoryaspnetdb.mdf;User Instance=true
+</stdOut>
+    <stdErr></stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>1</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>660</totalRunTimeInMillis>
+</testResults>
+

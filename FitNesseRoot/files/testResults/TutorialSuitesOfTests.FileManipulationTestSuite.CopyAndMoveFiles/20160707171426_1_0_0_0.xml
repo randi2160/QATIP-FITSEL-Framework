@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20160515</FitNesseVersion>
+  <rootPath>TutorialSuitesOfTests.FileManipulationTestSuite.CopyAndMoveFiles</rootPath>
+    <result>
+    <counts>
+      <right>1</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <date>2016-07-07T17:14:26-04:00</date>
+    <runTimeInMillis>40</runTimeInMillis>
+    <content>&lt;br/&gt;&amp;lt;test page&amp;gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_SUT"&gt;QaTip.Fitnesse.Demo.DoTestFixture&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;variable defined: filename=COPYFILESAMPLE.txt&lt;/span&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;variable defined: sourcepath=C:\backupdata\Training\Training&lt;/span&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;variable defined: destinationpath=C:\backupdata\Training\Training\utils&lt;/span&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="6"&gt;&lt;span class="fit_member"&gt;ManageFilesAndDirectories&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;filetocopy&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;SourcePath&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;DestinationPath&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;CopyFilefromOneLocationToNext&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;filetocopy?&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;Results?&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;COPYFILESAMPLE.txt&lt;/td&gt;
+		&lt;td&gt;C:\backupdata\Training\Training&lt;/td&gt;
+		&lt;td&gt;C:\backupdata\Training\Training\utils&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; null&lt;/span&gt;&lt;/td&gt;
+		&lt;td class="pass"&gt;COPYFILESAMPLE.txt&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; Copied COPYFILESAMPLE.txt  From: C:\backupdata\Training\Training To: C:\backupdata\Training\Training\utils\COPYFILESAMPLE.txt&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+</content>
+    <relativePageName>CopyAndMoveFiles</relativePageName>
+          </result>
+  <finalCounts>
+    <right>1</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>40</totalRunTimeInMillis>
+</testResults>
+

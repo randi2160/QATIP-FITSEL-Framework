@@ -1,0 +1,44 @@
+!contents -R2 -g -p -f -h
+!|QaTip.Fitnesse.Demo.DoTestFixture|
+
+!define string1 {this}
+!define string2 {is a test}
+!define string3 {Khemlall}
+
+
+This method needs you to supply the strings 
+
+
+!|validate                                                     |
+|stringstoconcatinate  |joinstrings|stringoutput?|stringoutput?|
+|select * from customer|           |             |             |
+|where name =          |           |             |             |
+|"mangal"              |           |>>finalstring|<<finalstring|
+
+
+!style_red[''Add / at the end of each word ... building a url link '']
+
+!|validate                                                                   |
+|stringstoconcatinate|buildurlwithprovidedstrings|stringoutput?|stringoutput?|
+|http://localhost    |                           |             |             |
+|contentmanager      |                           |             |             |
+|prod                |                           |>>finalstring|<<finalstring|
+
+
+!style_red[''Add plain word without spaces etc... '']
+
+!|validate                                                               |
+|stringstoconcatinate|buildstringwithoutspace|stringoutput?|stringoutput?|
+|qua                 |                       |             |             |
+|li                  |                       |             |             |
+|ty                  |                       |>>finalstring|<<finalstring|
+
+
+
+!style_blue[''Add paramaterize value example '']
+
+!|validate                                                               |
+|stringstoconcatinate|joinstrings|stringoutput?|stringoutput?|
+|${string1}                 |                       |             |             |
+|${string2}                   |                       |             |             |
+|${string3}                    |                       |>>finalstring|<<finalstring|

@@ -1,0 +1,179 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20160515</FitNesseVersion>
+  <rootPath>TutorialSuitesOfTests.BackEndAutomationExample.ValidateRowFixture</rootPath>
+    <result>
+    <counts>
+      <right>4</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <date>2016-07-07T17:13:46-04:00</date>
+    <runTimeInMillis>11</runTimeInMillis>
+    <content>&lt;br/&gt;&amp;lt;test page&amp;gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_SUT"&gt;QaTip.Fitnesse.Demo.DoTestFixture&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+Customize generic connection to DB test&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="3"&gt;&lt;span class="fit_member"&gt;ConnectTodb&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;connectToSQLclient?&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;status?&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;results?&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; void&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; Open&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; 35000.00&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_interpreter"&gt;QaTip.Fitnesse.Demo.DoFixture.DBFixtures.ValidateCustomerFixture&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;Customers&lt;/td&gt;
+		&lt;td&gt;30&lt;/td&gt;
+		&lt;td colspan="2"&gt;order by CustomerName desc&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;CustomerName&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;ContactName&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;Address&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;city&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;PostalCode&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td class="pass"&gt;Cardinal&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; Tom B. Erichsen&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; Skagen 21                &lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; Stavanger&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; 4006&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td class="pass"&gt;renita&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; mangal&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; 102 snow                 &lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; Stavanger&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; 4006&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td class="pass"&gt;geeta&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; mangal&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; 102 snow                 &lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; Stavanger&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; 4006&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td class="pass"&gt;khemlall&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; mangal&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; 102 snow                 &lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; Stavanger&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; 4006&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="3"&gt;&lt;span class="fit_member"&gt;ConnectTodb&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;connectToSQLclient?&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;status?&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;results?&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; void&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; Open&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; 35000.00&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;GetSingleFieldDataSql&lt;a title="create page" href="TutorialSuitesOfTests.BackEndAutomationExample.GetSingleFieldDataSql?edit&amp;amp;nonExistent=true"&gt;[?]&lt;/a&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;</content>
+    <relativePageName>ValidateRowFixture</relativePageName>
+          </result>
+  <executionLog>
+    <testSystem></testSystem>
+    <command></command>
+    <exitCode>0</exitCode>
+    <stdOut>1
+Cardinal
+Tom B. Erichsen
+Skagen 21                
+Stavanger
+4006
+Norway
+35000.00
+2
+geeta
+mangal
+102 snow                 
+Stavanger
+4006
+new jersey
+35000.00
+3
+khemlall
+mangal
+102 snow                 
+Stavanger
+4006
+new jersey
+35000.00
+4
+renita
+mangal
+102 snow                 
+Stavanger
+4006
+new jersey
+35000.00
+7/7/2016 5:13:46 PM: Customers Sql query: select * from Customers order by CustomerName desc
+7/7/2016 5:13:46 PM: 7/7/2016 5:13:46 PM Query returned results.
+7/7/2016 5:13:46 PM: 7/7/2016 5:13:46 PM Query returned results.
+7/7/2016 5:13:46 PM: 7/7/2016 5:13:46 PM Query returned results.
+7/7/2016 5:13:46 PM: 7/7/2016 5:13:46 PM Query returned results.
+1
+Cardinal
+Tom B. Erichsen
+Skagen 21                
+Stavanger
+4006
+Norway
+35000.00
+2
+geeta
+mangal
+102 snow                 
+Stavanger
+4006
+new jersey
+35000.00
+3
+khemlall
+mangal
+102 snow                 
+Stavanger
+4006
+new jersey
+35000.00
+4
+renita
+mangal
+102 snow                 
+Stavanger
+4006
+new jersey
+35000.00
+</stdOut>
+    <stdErr></stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>1</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>12</totalRunTimeInMillis>
+</testResults>
+

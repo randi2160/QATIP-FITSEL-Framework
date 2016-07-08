@@ -15,6 +15,7 @@ namespace QaTip.Fitnesse.Demo.DoFixture
    public class DataAccess
     {
         public static string DbConnectionString { get; set; }
+        public string connectionstringname { get; set; }
         protected static ArrayList ApplicationConnectionStrings;
         public static string username { get; set; }
         public static string password { get; set; }
@@ -35,9 +36,12 @@ namespace QaTip.Fitnesse.Demo.DoFixture
 
          protected static void SetDbConnectionStrings(string[] connStrings)
          {
-             Configuration config = ConfigurationManager.OpenExeConfiguration(new Uri(Assembly.GetExecutingAssembly().EscapedCodeBase).AbsolutePath);
+           
+            Configuration config = ConfigurationManager.OpenExeConfiguration(new Uri(Assembly.GetExecutingAssembly().EscapedCodeBase).AbsolutePath);
+            string filePath = config.FilePath;
+            Console.WriteLine("File path: {0}", filePath);
 
-             if (config == null)
+            if (config == null)
              {
                  throw new ApplicationException("config was null! There must be a problem finding Machine.config");
              }

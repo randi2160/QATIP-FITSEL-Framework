@@ -1,0 +1,6 @@
+!1 Test suite X
+
+!c !3 Manage Config File Fixture library Examples
+
+!contents -R2 -g -p -f -h
+

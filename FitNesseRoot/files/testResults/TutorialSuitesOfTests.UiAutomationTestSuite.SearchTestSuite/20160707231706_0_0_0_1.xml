@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<suiteResults>
+  <FitNesseVersion>v20160515</FitNesseVersion>
+  <rootPath>TutorialSuitesOfTests.UiAutomationTestSuite.SearchTestSuite</rootPath>
+  <pageHistoryReference>
+    <name>TutorialSuitesOfTests.UiAutomationTestSuite.SearchTestSuite.PerformSearchByIsbn</name>
+    <date>2016-07-07T23:17:07-04:00</date>
+    <pageHistoryLink>TutorialSuitesOfTests.UiAutomationTestSuite.SearchTestSuite.PerformSearchByIsbn?pageHistory&amp;resultDate=20160707231707</pageHistoryLink>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>3</exceptions>
+    </counts>
+    <runTimeInMillis>19958</runTimeInMillis>
+  </pageHistoryReference>
+  <executionLog>
+    <testSystem>fit:Fitsharp\Runner.exe</testSystem>
+    <command>Fitsharp\Runner.exe -r fitnesse.fitserver.FitServer,FitSharp\fit.dll,FitSharp\fitLibrary.dll -c FitSharp\suite.config.xml ..\Fitnesse\Fixtures\Fitnesse_Dlls\QaTip.Fitnesse.Demo.dll A5Q55S72 51444 3863</command>
+    <exitCode>3</exitCode>
+    <stdOut>File path: C:\backupdata\Training\Training\Fitnesse\Fixtures\Fitnesse_Dlls\QaTip.Fitnesse.Demo.dll.config
+7/7/2016 11:17:07 PM: Found ConnectionString: FitNesseqatipDbConString
+7/7/2016 11:17:07 PM: DbConnectionString = Data Source=SQLEXPRESS; Integrated Security=SSPI;AttachDBFilename=DataDirectoryaspnetdb.mdf;User Instance=true
+7/7/2016 11:17:07 PM: Executing test using Internet Explorer browser.
+Started InternetExplorerDriver server (32-bit)
+2.53.0.0
+Listening on port 51447
+Only local connections are allowed
+7/7/2016 11:17:27 PM: Closing Browser...
+</stdOut>
+    <stdErr></stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>1</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>20703</totalRunTimeInMillis>
+</suiteResults>
+

@@ -72,10 +72,14 @@
     <Compile Include="DoFixture\dbConnectionFixture.cs" />
     <Compile Include="DoFixture\DBFixtures\domainObject\customer.cs" />
     <Compile Include="DoFixture\DBFixtures\domainObject\customerobject.cs" />
+    <Compile Include="DoFixture\DBFixtures\qatipDataAccess.cs" />
     <Compile Include="DoFixture\DBFixtures\ValiateCustomerInfoTableFixture.cs" />
     <Compile Include="DoFixture\DBFixtures\ValidateCustomerFixture.cs" />
     <Compile Include="DoFixture\DemoTestSetupFixture.cs" />
+    <Compile Include="DoFixture\DomainObject\ManageConfigMap.cs" />
     <Compile Include="DoFixture\DoTestFixture.cs" />
+    <Compile Include="DoFixture\genericvalidationfixture.cs" />
+    <Compile Include="DoFixture\ManageConfigFixture.cs" />
     <Compile Include="DoFixture\ManageDirectoriesFixture.cs" />
     <Compile Include="DoFixture\QatipOracleCommand.cs" />
     <Compile Include="DoFixture\QAtipTestHelperFixture.cs" />

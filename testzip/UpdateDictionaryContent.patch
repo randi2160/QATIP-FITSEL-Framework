@@ -1,0 +1,877 @@
+Index: McKesson.FitNesse.ContentManager/app.config
+===================================================================
+--- McKesson.FitNesse.ContentManager/app.config	(revision 0)
++++ McKesson.FitNesse.ContentManager/app.config	(working copy)
+@@ -0,0 +1,24 @@
++﻿<?xml version="1.0" encoding="utf-8"?>
++<configuration>
++  <configSections>
++    <section name="entityFramework" type="System.Data.Entity.Internal.ConfigFile.EntityFrameworkSection, EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" requirePermission="false" />
++    <!-- For more information on Entity Framework configuration, visit http://go.microsoft.com/fwlink/?LinkID=237468 -->
++  </configSections>
++  <entityFramework>
++    <defaultConnectionFactory type="System.Data.Entity.Infrastructure.LocalDbConnectionFactory, EntityFramework">
++      <parameters>
++        <parameter value="v11.0" />
++      </parameters>
++    </defaultConnectionFactory>
++    <providers>
++      <provider invariantName="System.Data.SqlClient" type="System.Data.Entity.SqlServer.SqlProviderServices, EntityFramework.SqlServer" />
++      <provider invariantName="System.Data.SQLite.EF6" type="System.Data.SQLite.EF6.SQLiteProviderServices, System.Data.SQLite.EF6" />
++    </providers>
++  </entityFramework>
++  <system.data>
++    <DbProviderFactories>
++      <remove invariant="System.Data.SQLite.EF6" />
++      <add name="SQLite Data Provider (Entity Framework 6)" invariant="System.Data.SQLite.EF6" description=".NET Framework Data Provider for SQLite (Entity Framework 6)" type="System.Data.SQLite.EF6.SQLiteProviderFactory, System.Data.SQLite.EF6" />
++    </DbProviderFactories>
++  </system.data>
++</configuration>
+\ No newline at end of file
+Index: McKesson.FitNesse.ContentManager/DoFixture/DoTestFixture.cs
+===================================================================
+--- McKesson.FitNesse.ContentManager/DoFixture/DoTestFixture.cs	(revision 102803)
++++ McKesson.FitNesse.ContentManager/DoFixture/DoTestFixture.cs	(working copy)
+@@ -200,6 +200,8 @@
+             return new ManageDirectoryFixture();
+         }
+ 
++        
++
+         public ManageServicesFixture ManageServices()
+         {
+             return new ManageServicesFixture(String.Empty);
+@@ -230,6 +232,12 @@
+             return new ValidateCategoryMetadataFixture();
+         }
+ 
++        public ValidateDictionaryContentFixture validateDictionaryContents()
++        {
++           
++            return new ValidateDictionaryContentFixture();
++        }
++
+         public ValidateClientDataFixture ValidateClientData()
+         {
+             return new ValidateClientDataFixture();
+@@ -370,7 +378,7 @@
+ 
+         public ValidateDictionaryGeneratorDialogFixture ValidateDictionaryGeneratorDialog()
+         {
+-          
++            
+             return new ValidateDictionaryGeneratorDialogFixture(selDriver, "dictGenerator_dialogRoot_div");
+         }
+ 
+Index: McKesson.FitNesse.ContentManager/DoFixture/RulesMetadataFileFixture.cs
+===================================================================
+--- McKesson.FitNesse.ContentManager/DoFixture/RulesMetadataFileFixture.cs	(revision 102803)
++++ McKesson.FitNesse.ContentManager/DoFixture/RulesMetadataFileFixture.cs	(working copy)
+@@ -204,6 +204,7 @@
+         //Add policy Refs to  Category
+         public void AddPolicyRefstoCategory()
+         {
++            
+             CategoryElement createPolicyRef = new CategoryElement(CategoryName, null);
+             createPolicyRef.Addreferences(elementName, RmfContents, positionattr, Position, typeattr, parsevalue, GeneratedOutputxmlPathandFileName, Type);
+         }
+@@ -294,7 +295,7 @@
+             //  CreateRefBy.Addreferences(elementName, Output, positionattr, Position, typeattr, parsevalue, GeneratedOutputxmlPathandFileName, typeattr);
+         }
+ 
+-        private XmlDocument GetRuleMetadataFileAsXmlDocument()
++        public XmlDocument GetRuleMetadataFileAsXmlDocument()
+         {
+             XmlDocument doc = new XmlDocument();
+             doc.LoadXml(GetRdfContents());
+@@ -567,6 +568,7 @@
+ 
+         public void AddKnowledgePack()
+         {
++            
+             XmlDocument doc = GetRuleMetadataFileAsXmlDocument();
+             XmlNode targetNode = doc.SelectSingleNode("//KnowledgePack");
+             targetNode.Attributes["name"].Value = KnowledgePackName;
+@@ -777,11 +779,17 @@
+         }
+     }
+ 
+-    public class CategoryElement
++
++    public class CategoryElement : RulesMetadataFileFixture
+     {
+         private string Name { get; set; }
+         private string Value { get; set; }
++       // public string RmfContents { get; set; }
++        //public static string GeneratedOutputxmlPathandFileName { get; set; }
+ 
++        
++
++
+         public CategoryElement(string name, string value)
+         {
+             if (string.IsNullOrWhiteSpace(name))
+@@ -793,39 +801,42 @@
+         }
+ 
+ 
+-        //        //Select Node to Work with
+-        //        public void SelectNode(string categoryName, string xpath, string positionattr, string position, string typeattr, string type, string parsevalue, string path)
+-        //        {
+-        //            XmlDocument doc = new XmlDocument();
+-        //            doc.LoadXml(path);
+-        //            XmlNode menu_1 = doc.SelectSingleNode("//Rules/Rule/Category[@name=" + "'" + categoryName + "'" + "]");
+-        //            XmlNode menu = doc.SelectSingleNode(xpath);
+-        //            int MasterCategoryChildCount = menu_1.ChildNodes.Count;
+-        //            for (int i = 0; i < MasterCategoryChildCount; i++)
+-        //            {
+-        //                if (menu_1.ChildNodes[i].OuterXml.Contains("CategoryRef"))
+-        //                {
+-        //                    menu = menu_1.ChildNodes[i];
+-        //
+-        //                    XmlNode newSub = doc.CreateNode(XmlNodeType.Element, "CategoryRef", null);
+-        //                    XmlAttribute positionattribute = doc.CreateAttribute(positionattr);
+-        //                    positionattribute.Value = position;
+-        //                    XmlAttribute typeattribute = doc.CreateAttribute(typeattr);
+-        //                    typeattribute.Value = type;
+-        //                    XmlAttribute KeyFilterparseValue = doc.CreateAttribute("parseValue");
+-        //                    KeyFilterparseValue.Value = parsevalue;
+-        //                    if (parsevalue != null)
+-        //                    {
+-        //                        newSub.Attributes.Append(KeyFilterparseValue);
+-        //                    }
+-        //                    newSub.Attributes.Append(positionattribute);
+-        //                    newSub.Attributes.Append(typeattribute);
+-        //                    menu.AppendChild(newSub);
+-        //                    doc.Save(path);
+-        //                }
+-        //            }
+-        //        }
++                //Select Node to Work with
++                public void SelectNode(string categoryName, string xpath, string positionattr, string position, string typeattr, string type, string parsevalue, string path)
++                {
++                    XmlDocument doc = new XmlDocument();
++                    doc.LoadXml(path);
++                    XmlNode menu_1 = doc.SelectSingleNode("//Rules/Rule/Category[@name=" + "'" + categoryName + "'" + "]");
++                    XmlNode menu = doc.SelectSingleNode(xpath);
++                    int MasterCategoryChildCount = menu_1.ChildNodes.Count;
++                  for (int i = 0; i < MasterCategoryChildCount; i++)
++                  {
++                        if (menu_1.ChildNodes[i].OuterXml.Contains("CategoryRef"))
++                        {
++                            menu = menu_1.ChildNodes[i];
++        
++                            XmlNode newSub = doc.CreateNode(XmlNodeType.Element, "CategoryRef", null);
++                          XmlAttribute positionattribute = doc.CreateAttribute(positionattr);
++                            positionattribute.Value = position;
++                           XmlAttribute typeattribute = doc.CreateAttribute(typeattr);
++                           typeattribute.Value = type;
++                           XmlAttribute KeyFilterparseValue = doc.CreateAttribute("parseValue");
++                            KeyFilterparseValue.Value = parsevalue;
++                          if (parsevalue != null)
++                           {
++                               newSub.Attributes.Append(KeyFilterparseValue);
++                           }
++                           newSub.Attributes.Append(positionattribute);
++                          newSub.Attributes.Append(typeattribute);
++                           menu.AppendChild(newSub);
++                          doc.Save(path);
++                       }
++                   }
++                }
+ 
++                
++               
++
+         //Add policy Refs to  Category
+         public void Addreferences(string elementName, string output, string positionattr, string position, string typeattr, string parsevalue, string path, string type)
+         {
+@@ -833,8 +844,7 @@
+             {
+                 if (type != null && position != null)
+                 {
+-                    XmlDocument doc = new XmlDocument();
+-                    doc.LoadXml(output);
++                    XmlDocument doc = GetRuleMetadataFileAsXmlDocument();
+                     XmlNode menu = doc.SelectSingleNode("//Rules/Rule/Category[@name=" + "'" + Name + "'" + "]");
+                     XmlNode newSub = doc.CreateNode(XmlNodeType.Element, elementName, null);
+                     XmlAttribute positionattribute = doc.CreateAttribute(positionattr);
+Index: McKesson.FitNesse.ContentManager/DoFixture/ValidateDictionaryContentFixture.cs
+===================================================================
+--- McKesson.FitNesse.ContentManager/DoFixture/ValidateDictionaryContentFixture.cs	(revision 0)
++++ McKesson.FitNesse.ContentManager/DoFixture/ValidateDictionaryContentFixture.cs	(working copy)
+@@ -0,0 +1,28 @@
++﻿using System;
++using System.Collections.Generic;
++using System.Linq;
++using System.Text;
++using fit;
++using System.Data;
++using System.Data.SQLite;
++using McKesson.Fitnesse.Core;
++using McKesson.FitNesse.ContentManager.DomainObject;
++
++namespace McKesson.FitNesse.ContentManager.DoFixture
++{
++    public class ValidateDictionaryContentFixture:ColumnFixture
++    {
++        private DictionaryContent _ValidateDictionaryContent = new DictionaryContent();
++
++         public ValidateDictionaryContentFixture()
++        {
++           //Before we do anything we need to do some action here to extract the diction to sqllite db 
++        }        
++        
++        public override object GetTargetObject()
++        {
++            return _ValidateDictionaryContent;
++        }   
++
++    }
++}
+Index: McKesson.FitNesse.ContentManager/DomainObject/DictionaryContent.cs
+===================================================================
+--- McKesson.FitNesse.ContentManager/DomainObject/DictionaryContent.cs	(revision 0)
++++ McKesson.FitNesse.ContentManager/DomainObject/DictionaryContent.cs	(working copy)
+@@ -0,0 +1,308 @@
++﻿using System;
++using System.Linq;
++using fit;
++using System.Data.SQLite;
++using McKesson.Fitnesse.Core;
++using System.IO;
++
++using System.Diagnostics;
++namespace McKesson.FitNesse.ContentManager.DomainObject
++{
++    public class DictionaryContent: ColumnFixture
++    {
++        private readonly string _cmdToRun;
++        private string _output;
++        private string _error;  
++
++        public string Categorytovalidate { get; set; }
++        public string categoryname { get; set; }
++        public string status { get; set; }
++        public static string cmdtorun{get;set;}
++        public static string NewDirectoryName
++        { get; set; }
++        public  string DirectoryPath { get; set; }
++        public string SourcePath { get; set; }
++        public string DestinationPath { get; set; }
++        public string results { get; set; }
++        public string WorkingDirectory{ get;set;}
++        public string outputfilename { get; set; }
++        public string targetfile
++        { get; set; }
++        public int timeout
++        { get; set; }
++                       
++        /// <summary>
++        /// Supply Cmd Parameters
++        /// </summary>
++        public string cmdParameters 
++        { get; set; }
++
++        public string Output
++        {
++            get
++            {
++                return _output;
++            }
++            set { value = _output; }
++        }
++
++        public string Error
++        {
++            get
++            {
++                return _error;
++            }
++        }
++
++       
++        /*
++         * First stp is to store the tool in fitnesse *
++         * Access to tool and extract it to local drive on default temp location
++         * get the dictionary from what was generated and place in that location that tool exe is 
++         * Run exe command to convert dictionary (user will pass in the output name or name of new dictionary file
++         * the out put name will be our datasource name that we will pass into dictionary content to find if category exist or not
++         */
++
++
++
++        public string getdictionarycontent()
++        {
++            status = Constants.NOT_FOUND;
++            SQLiteConnection cn = new SQLiteConnection();
++            try
++            {
++                //Connect to SQLite database
++                cn.ConnectionString = @"Data Source=" + targetfile;
++                cn.Open();
++                //Create the SQL Command
++                SQLiteCommand cmd = new SQLiteCommand();
++                cmd.Connection = cn;
++                cmd.CommandText = Constants.SELECT_FROM_SQLITE_DB + " " + "'" + Categorytovalidate + "'";
++
++                //Retrieve the records using SQLiteDataReader
++                SQLiteDataReader dr = cmd.ExecuteReader();
++                while (dr.Read())
++                {
++                    if (Categorytovalidate == dr["name"].ToString())
++                    {
++                        status = Constants.FOUND;
++                        categoryname = dr["name"].ToString();
++                        return status;
++                    }
++
++                    else
++                    {
++                        status = "could not find category";
++                        return status;
++                    }
++
++                }
++
++                return status;
++
++            }
++
++
++            catch (Exception ex)
++            {
++
++                //display any exeptions
++                Console.WriteLine(ex.Message);
++                return status = ex.Message;
++
++            }
++            finally
++            {
++                cn.Close();
++            }
++
++        }
++
++
++       public void CopyLatestDictionarytoDictConverterExtractedLocation()
++       {
++           copydictionaryfile(SourcePath,DestinationPath,results);
++       }
++
++
++       
++
++       public string getlatestcreatedfile()
++       {
++           
++           FileInfo newestFile = GetNewestFile(new DirectoryInfo(DirectoryPath));
++           return newestFile.ToString();
++       }
++
++       private static FileInfo GetNewestFile(DirectoryInfo directory)
++       {
++           return directory.GetFiles()
++               .Union(directory.GetDirectories().Select(d => GetNewestFile(d)))
++               .OrderByDescending(f => (f == null ? DateTime.MinValue : f.LastWriteTime))
++               .FirstOrDefault();
++       }
++
++        public void ConvertCmgrDictionaryToSqliteformat()
++        {
++            createbatchfile(WorkingDirectory, cmdParameters, outputfilename);
++
++        }
++
++        private void ExecuteCommand(string command)
++        {
++            var processInfo = new ProcessStartInfo("cmd.exe", "/c " + command);
++            processInfo.CreateNoWindow = true;
++            processInfo.UseShellExecute = false;
++            processInfo.RedirectStandardError = true;
++            processInfo.RedirectStandardOutput = true;
++
++            var process = Process.Start(processInfo);
++
++            process.OutputDataReceived += (object sender, DataReceivedEventArgs e) =>
++                Console.WriteLine("output>>" + e.Data);
++            process.BeginOutputReadLine();
++
++            process.ErrorDataReceived += (object sender, DataReceivedEventArgs e) =>
++                Console.WriteLine("error>>" + e.Data);
++            process.BeginErrorReadLine();
++
++            process.WaitForExit();
++
++            Console.WriteLine("ExitCode: {0}", process.ExitCode);
++            process.Close();
++        }
++
++        public void executebatch()
++        {
++            ExecuteCommand(targetfile);
++            
++        }
++        private void copydictionaryfile(string SourcePath, string DestinationPath, string result)
++        {
++            string fileName = "dictionary.dat";
++            string sourcePath = SourcePath;
++            string targetPath = DestinationPath;
++            result = results;
++            try
++            {
++                // Use Path class to manipulate file and directory paths.
++                string sourceFile = System.IO.Path.Combine(sourcePath, fileName);
++                string destFile = System.IO.Path.Combine(targetPath, fileName);
++
++                // To copy a folder's contents to a new location:
++                // Create a new target folder, if necessary.
++                if (!System.IO.Directory.Exists(targetPath))
++                {
++                    System.IO.Directory.CreateDirectory(targetPath);
++
++                }
++
++                if (System.IO.Directory.Exists(sourcePath))
++                {
++                    string[] files = System.IO.Directory.GetFiles(sourcePath);
++
++                    // Copy the files and overwrite destination files if they already exist.
++                    foreach (string s in files)
++                    {
++                        // Use static Path methods to extract only the file name from the path.
++                        fileName = System.IO.Path.GetFileName(s);
++                        destFile = System.IO.Path.Combine(targetPath, fileName);
++                        if (fileName == "dictionary.dat")
++                        {
++                            System.IO.File.Copy(s, destFile, true);
++                            results = "Copied" + " " + fileName + "  " + "From:" + " " + sourcePath + " " + "To:" + " " + destFile;
++
++                        }
++                    }
++                }
++                else
++                {
++                    results = "Source path does not exist!";
++
++                }
++            }
++
++            catch (Exception e)
++            {
++                results = "An error occurred: '{0}'" + e;
++
++            }
++
++        }
++        private void createbatchfile(string locationtorunbatchfile, string commandtorun, string outfilename)
++        {
++            try
++            {
++                string path = locationtorunbatchfile + outfilename;
++
++                if (!File.Exists(path))
++                {
++                    FileStream fs = new FileStream(path, FileMode.OpenOrCreate);
++                    fs.Close();
++                    //File.Create(path);
++                    using (StreamWriter writer =
++                    new StreamWriter(path))
++                    {
++                        writer.Write("cd" + " " + locationtorunbatchfile + " " + "\r\n" + " ");
++                        writer.WriteLine(commandtorun);
++                        writer.WriteLine("\r\n");
++                        writer.WriteLine("\n");
++                    }
++                }
++                else if (File.Exists(path))
++                {
++                    TextWriter tw = new StreamWriter(path,false);
++                    tw.WriteLine("cd" + " " + locationtorunbatchfile + " " + "\r\n");
++                    tw.WriteLine(commandtorun);
++                    tw.WriteLine("\n");
++                    tw.WriteLine("\n");
++                    tw.Close();
++                }    
++            }
++            catch (Exception e)
++            {
++                CoreHelpers.LogMessage("Error:" + e);
++               
++            }
++        }
++
++        private bool connectdb(SQLiteConnection cn)
++        {
++            bool status = false;
++            try
++            {
++                //Connect to SQLite database
++                cn.ConnectionString = @"Data Source=" + targetfile;
++                cn.Open();
++                status = true;
++            }
++            catch(Exception e)
++            {
++                return status;
++                
++            }
++            return status;
++        }
++
++        public void GetRecordCountbyCategory()
++        {
++            
++            SQLiteConnection cn = new SQLiteConnection();
++            
++            if (connectdb(cn) != true)
++            {
++                Console.WriteLine( "cannot connect to db");
++                return;
++            }
++            SQLiteCommand cmd = new SQLiteCommand();
++            cmd.Connection = cn;
++            cmd.CommandText = "SELECT COUNT(*) FROM (SELECT '_rowid_',* FROM" + " " + Categorytovalidate + " " + "ORDER BY '_rowid_' ASC)";
++            SQLiteDataReader dr = cmd.ExecuteReader();
++        }
++
++        
++
++       
++    }
++}
++    
+Index: McKesson.FitNesse.ContentManager/DomainObject/UIDomainObject/DictionaryGenerator.cs
+===================================================================
+--- McKesson.FitNesse.ContentManager/DomainObject/UIDomainObject/DictionaryGenerator.cs	(revision 102803)
++++ McKesson.FitNesse.ContentManager/DomainObject/UIDomainObject/DictionaryGenerator.cs	(working copy)
+@@ -3,15 +3,24 @@
+ using fit;
+ using McKesson.Fitnesse.Core;
+ using OpenQA.Selenium;
++using System.Diagnostics;
+ 
+ namespace McKesson.FitNesse.ContentManager.DomainObject.UIDomainObject
+ {
+    public class DictionaryGenerator:ColumnFixture
+     {
++       
++     
+        private IWebElement dialog;
+        private IWebElement DictionaryIconElement;
+        private IWebDriver CancelRequestPopUpElement;
+        private string _summaryText;
++       public string DictGeneratorXrefNameText
++       {
++           get;
++           set;
++       }
++
+        public string UrlResponse
+        {
+            get;
+@@ -20,6 +29,7 @@
+ 
+        public DictionaryGenerator(IWebDriver selDriver, string dialogId)
+        {
++          
+            CancelRequestPopUpElement = selDriver;
+            DictionaryIconElement = selDriver.FindElement(By.Id("framework_dictionaryGenerator_button"));
+ 
+@@ -79,6 +89,24 @@
+                dialog.FindElement(By.Id("dictGenerator_closeModal_button")).Click();
+            }                      
+        }
++       
++       
++       public void ApproveDeltaEnterTextDesAndClickApproveButton()
++       {
++           dialog.FindElement(By.Id("dictGenerator_xrefName_textbox")).Click();
++           dialog.FindElement(By.Id("dictGenerator_xrefName_textbox")).SendKeys(DictGeneratorXrefNameText);
++           if (dialog.FindElement(By.Id("dictGenerator_approveDictionary_button")).Enabled == true)
++           {
++               dialog.FindElement(By.Id("dictGenerator_approveDictionary_button")).Click();
++           }
++           else
++           {
++               dialog.FindElement(By.Id("dictGenerator_approveDictionary_button")).Click();
++           }
++       }
++       
++        
++
+        public string Summary()
+        {
+            return dialog.FindElement(By.Id("dictGenerator_summary_textarea")).Text;
+@@ -179,6 +207,7 @@
+        }
+        public void ClickOnapprovalCheckBox()
+        {
++           
+            dialog.FindElement(By.Id("dictGenerator_approveDelta_checkbox")).Click();
+        }
+        public string cancelRequest(string YesOrNo)
+@@ -198,6 +227,8 @@
+        public void ClickOnApprovAndDeployButton()
+        {
+            dialog.FindElement(By.Id("dictGenerator_approveDictionary_button")).Click();
++           dialog.FindElement(By.Id("dictGenerator_approveDictionary_button")).Click();
++           dialog.FindElement(By.CssSelector("#dictGenerator_approveDictionary_button")).Click();
+        }
+            
+        private string dialogOpenStatus()
+Index: McKesson.FitNesse.ContentManager/DomainObject/UIDomainObject/ViewCategories.cs
+===================================================================
+--- McKesson.FitNesse.ContentManager/DomainObject/UIDomainObject/ViewCategories.cs	(revision 102803)
++++ McKesson.FitNesse.ContentManager/DomainObject/UIDomainObject/ViewCategories.cs	(working copy)
+@@ -171,11 +171,16 @@
+         //ClickNewData()
+         public string ClickNewData()
+         {
++          
+             IWebElement btnElement = SelDriver.FindElement(By.Id("categoryEdits_new_button"));
++            Thread.Sleep(5000);
+             if (btnElement.Enabled)
+             {
+-                btnElement.Click();
+-                return "New Data Clicked";
++             //   btnElement.Click();
++              //  SelDriver.FindElement(By.Id("categoryEdits_new_button")).Click();
++                SelDriver.FindElement(By.XPath("//*[@id='categoryEdits_new_button']")).Click();
++                Thread.Sleep(1000);
++              return "New Data Clicked";
+             }
+             else
+                 throw new ApplicationException("New Button NOT found");
+Index: McKesson.FitNesse.ContentManager/DomainObject/UIDomainObject/ViewCategoryEditCounts.cs
+===================================================================
+--- McKesson.FitNesse.ContentManager/DomainObject/UIDomainObject/ViewCategoryEditCounts.cs	(revision 102803)
++++ McKesson.FitNesse.ContentManager/DomainObject/UIDomainObject/ViewCategoryEditCounts.cs	(working copy)
+@@ -7,8 +7,9 @@
+     public class ViewCategoryEditCounts
+     {
+         public IWebDriver selDriver;
++      
+         private int _index;
+-
++        public string option { get; set; }
+         public virtual string Action
+         {
+             set
+@@ -91,6 +92,15 @@
+             return result;
+         }
+ 
++        public string propertiesOption()
++        {
++            option = option.ToLower();
++            IWebElement exportButton = selDriver.FindElement(By.Id("categoryDetails_" + option + "_link"));
++            string result = processButtonClick(exportButton, option);
++            System.Threading.Thread.Sleep(1000);
++            return result;
++        }
++
+         public string ClickOptions()
+         {
+             return processButtonClick(selDriver.FindElement(By.Id("categoryDetails_menu_link")), "Options");
+Index: McKesson.FitNesse.ContentManager/McKesson.FitNesse.ContentManager.csproj
+===================================================================
+--- McKesson.FitNesse.ContentManager/McKesson.FitNesse.ContentManager.csproj	(revision 102803)
++++ McKesson.FitNesse.ContentManager/McKesson.FitNesse.ContentManager.csproj	(working copy)
+@@ -52,6 +52,14 @@
+     <Reference Include="Antix.Mail.Smtp.Impostor">
+       <HintPath>..\packages\smtp-impostor.2.0.8\lib\.NetFramework 4.0\Antix.Mail.Smtp.Impostor.dll</HintPath>
+     </Reference>
++    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
++      <HintPath>..\packages\EntityFramework.6.0.0\lib\net40\EntityFramework.dll</HintPath>
++      <Private>True</Private>
++    </Reference>
++    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
++      <HintPath>..\packages\EntityFramework.6.0.0\lib\net40\EntityFramework.SqlServer.dll</HintPath>
++      <Private>True</Private>
++    </Reference>
+     <Reference Include="fit">
+       <HintPath>..\..\wiki\FitSharp\fit.dll</HintPath>
+     </Reference>
+@@ -71,8 +79,22 @@
+       <HintPath>..\McKesson.Fitnesse.Core\References\Selenium\Selenium.WebDriverBackedSelenium.dll</HintPath>
+     </Reference>
+     <Reference Include="System" />
++    <Reference Include="System.ComponentModel.DataAnnotations" />
+     <Reference Include="System.configuration" />
+     <Reference Include="System.Core" />
++    <Reference Include="System.Data.SQLite, Version=1.0.101.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
++      <HintPath>..\packages\System.Data.SQLite.Core.1.0.101.0\lib\net40\System.Data.SQLite.dll</HintPath>
++      <Private>True</Private>
++      <EmbedInteropTypes>False</EmbedInteropTypes>
++    </Reference>
++    <Reference Include="System.Data.SQLite.EF6, Version=1.0.101.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
++      <HintPath>..\packages\System.Data.SQLite.EF6.1.0.101.0\lib\net40\System.Data.SQLite.EF6.dll</HintPath>
++      <Private>True</Private>
++    </Reference>
++    <Reference Include="System.Data.SQLite.Linq, Version=1.0.101.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
++      <HintPath>..\packages\System.Data.SQLite.Linq.1.0.101.0\lib\net40\System.Data.SQLite.Linq.dll</HintPath>
++      <Private>True</Private>
++    </Reference>
+     <Reference Include="System.Net" />
+     <Reference Include="System.Windows.Forms" />
+     <Reference Include="System.Xml.Linq" />
+@@ -117,6 +139,7 @@
+     <Compile Include="DoFixture\ValidateCreateCrossReferenceFixture.cs" />
+     <Compile Include="DoFixture\ValidateCrossReferenceEditsRowFixture.cs" />
+     <Compile Include="DoFixture\ValidateCrossReferenceInformationFixture.cs" />
++    <Compile Include="DoFixture\ValidateDictionaryContentFixture.cs" />
+     <Compile Include="DoFixture\ValidateDictionaryHistoryFixture.cs" />
+     <Compile Include="DoFixture\ValidateEmailResultFixture.cs" />
+     <Compile Include="DoFixture\ValidateEventLogRowFixture.cs" />
+@@ -176,6 +199,7 @@
+     <Compile Include="DomainObject\CategoryValueType.cs" />
+     <Compile Include="DomainObject\CategoryEdit.cs" />
+     <Compile Include="DomainObject\CrossReference.cs" />
++    <Compile Include="DomainObject\DictionaryContent.cs" />
+     <Compile Include="DomainObject\EventLog.cs" />
+     <Compile Include="DomainObject\MckEditCount.cs" />
+     <Compile Include="DomainObject\EditCount.cs" />
+@@ -240,6 +264,7 @@
+     </Content>
+   </ItemGroup>
+   <ItemGroup>
++    <None Include="app.config" />
+     <None Include="packages.config" />
+   </ItemGroup>
+   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+@@ -247,6 +272,13 @@
+     <PostBuildEvent>
+     </PostBuildEvent>
+   </PropertyGroup>
++  <Import Project="..\packages\System.Data.SQLite.Core.1.0.101.0\build\net40\System.Data.SQLite.Core.targets" Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.101.0\build\net40\System.Data.SQLite.Core.targets')" />
++  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
++    <PropertyGroup>
++      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
++    </PropertyGroup>
++    <Error Condition="!Exists('..\packages\System.Data.SQLite.Core.1.0.101.0\build\net40\System.Data.SQLite.Core.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\System.Data.SQLite.Core.1.0.101.0\build\net40\System.Data.SQLite.Core.targets'))" />
++  </Target>
+   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+        Other similar extension points exist, see Microsoft.Common.targets.
+   <Target Name="BeforeBuild">
+Index: McKesson.FitNesse.ContentManager/packages.config
+===================================================================
+--- McKesson.FitNesse.ContentManager/packages.config	(revision 102803)
++++ McKesson.FitNesse.ContentManager/packages.config	(working copy)
+@@ -1,6 +1,11 @@
+ ﻿<?xml version="1.0" encoding="utf-8"?>
+ <packages>
++  <package id="EntityFramework" version="6.0.0" targetFramework="net40" />
+   <package id="FitSharp" version="2.2" targetFramework="net40" />
+   <package id="Selenium.Support" version="2.41.0" targetFramework="net40" />
+   <package id="Selenium.WebDriver" version="2.41.0" targetFramework="net40" />
++  <package id="System.Data.SQLite" version="1.0.101.0" targetFramework="net40" />
++  <package id="System.Data.SQLite.Core" version="1.0.101.0" targetFramework="net40" />
++  <package id="System.Data.SQLite.EF6" version="1.0.101.0" targetFramework="net40" />
++  <package id="System.Data.SQLite.Linq" version="1.0.101.0" targetFramework="net40" />
+ </packages>
+\ No newline at end of file
+Index: McKesson.Fitnesse.Core/Constants.cs
+===================================================================
+--- McKesson.Fitnesse.Core/Constants.cs	(revision 102803)
++++ McKesson.Fitnesse.Core/Constants.cs	(working copy)
+@@ -35,6 +35,9 @@
+         public const string NO_RULES_FIRED_XML = "NoRulesFiredClaim.xml";
+         public const string ModuleNotFound = "Module Not Found";
+ 
++        //SQLITE Query
++        public const string SELECT_FROM_SQLITE_DB = "SELECT type,name,sql,tbl_name FROM sqlite_master WHERE name =";
++
+         public const string CLAIM_VERSION_COUNT = "select count(*) from CLAIM_VERSION";
+ 
+         public const string CLAIM_IDS_FOR_MEMBER_ID =
+Index: McKesson.Fitnesse.Core/DoFixture/ManageDirectoryFixture.cs
+===================================================================
+--- McKesson.Fitnesse.Core/DoFixture/ManageDirectoryFixture.cs	(revision 102803)
++++ McKesson.Fitnesse.Core/DoFixture/ManageDirectoryFixture.cs	(working copy)
+@@ -57,6 +57,9 @@
+         public string DestinationFile
+         { get; set; }
+ 
++
++        public string results { get; set; }
++
+         /// <summary>
+         /// String1 used in ConcatenateString
+         /// </summary>
+@@ -167,6 +170,62 @@
+                 throw new ApplicationException(string.Format("Unable to copy file {0}!", SourceFile));
+             }
+         }
++
++
++        public void copydictionaryfile(string SourcePath, string DestinationPath, string result)
++        {
++            string fileName = "dictionary.dat";
++            string sourcePath = SourcePath;
++            string targetPath = DestinationPath;
++             result = results;
++            try
++            {
++                // Use Path class to manipulate file and directory paths.
++                string sourceFile = System.IO.Path.Combine(sourcePath, fileName);
++                string destFile = System.IO.Path.Combine(targetPath, fileName);
++
++                // To copy a folder's contents to a new location:
++                // Create a new target folder, if necessary.
++                if (!System.IO.Directory.Exists(targetPath))
++                {
++                    System.IO.Directory.CreateDirectory(targetPath);
++
++                }
++
++                if (System.IO.Directory.Exists(sourcePath))
++                {
++                    string[] files = System.IO.Directory.GetFiles(sourcePath);
++
++                    // Copy the files and overwrite destination files if they already exist.
++                    foreach (string s in files)
++                    {
++                        // Use static Path methods to extract only the file name from the path.
++                        fileName = System.IO.Path.GetFileName(s);
++                        destFile = System.IO.Path.Combine(targetPath, fileName);
++                        if (fileName == "dictionary.dat")
++                        {
++                            System.IO.File.Copy(s, destFile, true);
++                            results = "Copied" + " " + fileName + "  " + "From:" + " " + sourcePath + " " + "To:" + " " + destFile;
++                           
++                        }
++                    }
++                }
++                else
++                {
++                    results = "Source path does not exist!";
++                   
++                }
++
++            }
++
++            catch (Exception e)
++            {
++                results = "An error occurred: '{0}'" + e;
++              
++            }
++
++        }
++
+         
+         /// <summary>
+         /// Deletes a file        
+Index: McKesson.Fitnesse.Core/McKesson.Fitnesse.Core.csproj
+===================================================================
+--- McKesson.Fitnesse.Core/McKesson.Fitnesse.Core.csproj	(revision 102803)
++++ McKesson.Fitnesse.Core/McKesson.Fitnesse.Core.csproj	(working copy)
+@@ -223,7 +223,6 @@
+   <ItemGroup>
+     <WCFMetadata Include="Service References\" />
+   </ItemGroup>
+-  <ItemGroup />
+   <ItemGroup>
+     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+       <Visible>False</Visible>

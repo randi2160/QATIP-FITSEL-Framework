@@ -1,0 +1,104 @@
+<test page>
+
+!style_blue['''Set Processing Interval to Use Testing Scheduler''']
+!| Manage Config                                                                                       |
+|ConfigFileName     |ConfigValue                |Target Value   |SetConfigSetting()|GetConfigSetting()?|
+|${CMGR_SLPS_CONFIG}|ProcessingIntervalInSeconds|5              |                  |5                  |
+|${CMGR_SLPS_CONFIG}|LcdMode                    |TEST_PROCESSING|                  |TEST_PROCESSING    |
+
+!style_blue['''Start Service''']
+!|ManageServices                                                     |
+|ServiceName                          |Ensure Service Started?|Output|
+|CMGR Scheduled Load Processor Service|SUCCESS                |      |
+
+!style_blue['''Point to the targeted schema:''']
+!|Test Helper                 |
+|FitNesse Db ConnectionString?|
+|                             |
+
+
+!|Validate             |
+|Get Current DateTime()|
+|>>currentDateTime     |
+
+!style_blue['''Stop services:''']
+!|Manage Services                                          |
+|Service Name                         |Stop Service?|Output|
+|CMGR Scheduled Load Processor Service|SUCCESS      |      |
+
+!| Manage Config                                                                                 |
+|ConfigFileName  |ConfigValue                |Target Value|SetConfigSetting()|GetConfigSetting()?|
+|${CM_SQS_CONFIG}|ProcessingIntervalInSeconds|0           |                  |0                  |
+
+!style_blue['''Adjust Current Date Time''']
+
+!|Validate                                                                                                                                                  |
+|GetCurrentDateTime()|AdjustDateByDays|GetDateRelativeToToday()?|AdjustDateByDays|GetDateRelativeToToday()?|AdjustTimeBySeconds|AdjustSecondsRelativeToNow()|
+|                    |0               |>>currentProcessingDate  |1               |>>nextProcessingDate     |30                 |>>timeAdjustment            |
+
+
+!|ManageConfig                                                                                                      |
+|ConfigFileName     |ConfigValue        |GetConfigSetting()?|TargetValue     |SetConfigSetting()|GetConfigSetting()?|
+|${CMGR_SLPS_CONFIG}|ProcessingStartTime|                   |<<timeAdjustment|                  |                   |
+
+
+temporary
+!| Manage Config                                                                               |
+|ConfigFileName  |ConfigValue|Target Value              |SetConfigSetting()|GetConfigSetting()?|
+|${CM_SQS_CONFIG}|InputFolder|<<stagingFolderPathSetting|                  |                   |
+
+!|Validate             |
+|Get Current DateTime()|
+
+
+!|ManageConfig                                                                                                  |
+|ConfigFileName  |ConfigValue            |GetConfigSetting()?|TargetValue|SetConfigSetting()|GetConfigSetting()?|
+|${CM_SQS_CONFIG}|EnableEmailNotification|                   |true       |                  |                   |
+
+!|ManageConfig                                                                                                                                   |
+|ConfigFileName  |ConfigValue                                                    |TargetValue                 |SetXPATHConfigValueToTargetValue()|
+|${CM_SQS_CONFIG}|/configuration/emailNotifications/emailNotification/@mailServer|localhost        |                                  |
+|${CM_SQS_CONFIG}|/configuration/emailNotifications/emailNotification/@mailToRole|QA.Tester@McKesson.com|                                  |
+#|${CM_SQS_CONFIG}|/configuration/emailNotifications/emailNotification/@mailServer|localhost           |                                  |
+#|${CM_SQS_CONFIG}|/configuration/emailNotifications/emailNotification/@mailToRole|QA.Tester@McKesson.com|                                  |
+
+
+!|Fake Email|
+|Output?    |
+|STARTED    |
+
+!style_blue['''Delete Process Log Detail Table contents to clear out data from previous runs''']
+
+!|Delete From Process Log Detail Table|
+|ProcessLogDetailId                   |
+|ALL                                  |
+
+!style_blue['''Delete Process Log Table contents to clear out data from previous runs''']
+
+!|Delete From Process Log Table|
+|LogId                         |
+|ALL                           |
+
+!|TestHelper       |
+|WaitSeconds|Wait()|
+|5          |      |
+
+!style_blue['''Truncate Log File to clear out data from previous runs''']
+
+!|Manage File        |${CMGR_SLPS_LOGFILE}|
+|Log File Path?      |TruncateFile()?     |
+|${CMGR_SLPS_LOGFILE}|                    |
+
+
+!style_blue['''Point to the targeted schema:''']
+!|Test Helper                                                                                                              |
+|FitNesse Db ConnectionString?|FitNesse Db ConnectionString                                                                |
+|                             |Data Source=${SCHEMA_SERVER}; Persist Security Info=True; User ID=${SCHEMA}; Password=iclaim|
+
+!style_blue['''Make sure Service is running''']
+!|Manage Services                                                    |
+|ServiceName                          |Ensure Service Started?|Output|
+|CMGR Scheduled Load Processor Service|SUCCESS                |      |
+
+
+

@@ -2,6 +2,6 @@
 !|QaTip.Fitnesse.Demo.DoTestFixture|
 
 
-!|ManageFilesAndDirectories                                                          |
-|DirectoryPath                                                  |getlatestcreatedfile||
-|C:\backupdata\Training\Training\Fitnesse\Fixtures\Fitnesse_Dlls|                    |
+!|ManageFilesAndDirectories                                                                                |
+|DirectoryPath                                                  |getlatestcreatedfile?|getlatestcreatedfile?|
+|C:\backupdata\Training\Training\Fitnesse\Fixtures\Fitnesse_Dlls|>>latest              |<<latest                    |

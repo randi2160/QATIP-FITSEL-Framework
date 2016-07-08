@@ -17,19 +17,19 @@ namespace QaTip.Fitnesse.Demo.DoFixture
         {
             get
             {
-                XDocument webConfig = CoreHelpers.GetConfigFileAsXDoc(Path.Combine(QATIPInstallRoot, "Web.config"));
+                XDocument webConfig = CoreHelpers.GetConfigFileAsXDoc(Path.Combine(QATIPInstallRoot, "machine.config"));
                 return webConfig.Element("configuration").Element("connectionStrings").Element("add").Attribute("connectionString").Value;
             }
 
             set
             {
-                XDocument webConfig = CoreHelpers.GetConfigFileAsXDoc(Path.Combine(QATIPInstallRoot, "Web.config"));
+                XDocument webConfig = CoreHelpers.GetConfigFileAsXDoc(Path.Combine(QATIPInstallRoot, "machine.config"));
                 webConfig.Element("configuration").Element("connectionStrings").Element("add").Attribute("connectionString").Value = value;
                 webConfig.Save(Path.Combine(QATIPInstallRoot, "Web.config"));
             }
         }
 
-        
+        //machine Conifgi
 
 
     }

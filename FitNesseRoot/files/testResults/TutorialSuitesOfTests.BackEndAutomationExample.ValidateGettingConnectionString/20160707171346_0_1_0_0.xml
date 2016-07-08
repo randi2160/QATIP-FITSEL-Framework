@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20160515</FitNesseVersion>
+  <rootPath>TutorialSuitesOfTests.BackEndAutomationExample.ValidateGettingConnectionString</rootPath>
+    <result>
+    <counts>
+      <right>1</right>
+      <wrong>1</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <date>2016-07-07T17:13:46-04:00</date>
+    <runTimeInMillis>37</runTimeInMillis>
+    <content>&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_SUT"&gt;QaTip.Fitnesse.Demo.DoTestFixture&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;variable defined: SCHEMA_SERVER=SQLEXPRESS15&lt;/span&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;variable defined: SCHEMA_SERVER1=ORACLE&lt;/span&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;variable defined: SCHEMA=CMGR_SIRIUS_KHEM&lt;/span&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;center&gt;&lt;h3&gt;&lt;span class="green "&gt;&lt;i&gt;Hi All, Here is how you can get the current connection string. The way our Fixture library is designed, we will look into Machine Config file for a specific&lt;/i&gt;&lt;/span&gt;&lt;/h3&gt;
+&lt;/center&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;span class="blue"&gt;&lt;b&gt;Point to the targeted schema:&lt;/b&gt;&lt;/span&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="3"&gt;&lt;span class="fit_member"&gt;Test Helper&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;FitNesse Db ConnectionString?&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;FitNesse Db ConnectionString&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;FitNesse Db ConnectionString?&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&amp;gt;&amp;gt;CurrentConnection&lt;span class="fit_grey"&gt; Data Source=SQLEXPRESS; Integrated Security=SSPI;AttachDBFilename=DataDirectoryaspnetdb.mdf;User Instance=true&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&amp;lt;&amp;lt;CurrentConnection&lt;span class="fit_grey"&gt; Data Source=SQLEXPRESS; Integrated Security=SSPI;AttachDBFilename=DataDirectoryaspnetdb.mdf;User Instance=true&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&amp;gt;&amp;gt;savedbconnectionstring&lt;span class="fit_grey"&gt; Data Source=SQLEXPRESS; Integrated Security=SSPI;AttachDBFilename=DataDirectoryaspnetdb.mdf;User Instance=true&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;ConnectTodb&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;SetDbConnectionStrings&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="2"&gt;&lt;span class="fit_member"&gt;testhelper&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;GetFitNesseDbConnectionString&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;GetFitNesseDbConnectionString?&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&amp;lt;&amp;lt;savedbconnectionstring&lt;span class="fit_grey"&gt; Data Source=SQLEXPRESS; Integrated Security=SSPI;AttachDBFilename=DataDirectoryaspnetdb.mdf;User Instance=true&lt;/span&gt;&lt;/td&gt;
+		&lt;td class="pass"&gt;&amp;lt;&amp;lt;savedbconnectionstring&lt;span class="fit_grey"&gt; Data Source=SQLEXPRESS; Integrated Security=SSPI;AttachDBFilename=DataDirectoryaspnetdb.mdf;User Instance=true&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;SETTING ORACLE:&lt;br/&gt;&lt;br/&gt;&lt;span class="blue"&gt;&lt;b&gt;Point to the targeted schema:&lt;/b&gt;&lt;/span&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="2"&gt;&lt;span class="fit_member"&gt;Test Helper&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;FitNesse Db ConnectionString&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;FitNesse Db ConnectionString?&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; Data Source=SQLEXPRESS; Integrated Security=SSPI;AttachDBFilename=DataDirectoryaspnetdb.mdf;User Instance=true&lt;/span&gt;&lt;/td&gt;
+		&lt;td class="fail"&gt;Data Source=SQLEXPRESS15; Persist Security Info=True; User ID=CMGR_SIRIUS_KHEM; Password=iclaim &lt;span class="fit_label"&gt;expected&lt;/span&gt;&lt;hr /&gt;Data Source=SQLEXPRESS; Integrated Security=SSPI;AttachDBFilename=DataDirectoryaspnetdb.mdf;User Instance=true &lt;span class="fit_label"&gt;actual&lt;/span&gt;&lt;hr /&gt;Length expected 95 was 110&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+</content>
+    <relativePageName>ValidateGettingConnectionString</relativePageName>
+          </result>
+  <executionLog>
+    <testSystem></testSystem>
+    <command></command>
+    <exitCode>0</exitCode>
+    <stdOut>7/7/2016 5:13:46 PM: Changing FitNesse connection string to: Data Source=SQLEXPRESS; Integrated Security=SSPI;AttachDBFilename=DataDirectoryaspnetdb.mdf;User Instance=true
+7/7/2016 5:13:46 PM: Changing FitNesse connection string to: Data Source=SQLEXPRESS; Integrated Security=SSPI;AttachDBFilename=DataDirectoryaspnetdb.mdf;User Instance=true
+</stdOut>
+    <stdErr></stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>1</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>37</totalRunTimeInMillis>
+</testResults>
+

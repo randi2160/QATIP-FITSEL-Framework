@@ -1,0 +1,43 @@
+<test page>
+!|QaTip.Fitnesse.Demo.DoTestFixture|
+Customize generic connection to DB test
+
+#!|ConnectTodb                                               |
+#|data source     |password|username        |ConnectOracleDb?|
+#|CMGR_SIRIUS_KHEM|iclaim  |CMGR_SIRIUS_KHEM|                |
+
+#!|ConnectTodb                                                                 |
+#|sqlservername              |databasename|connectToSQLclient?|status?|results?|
+#|Server=A5Q55S72\\SQLEXPRESS|QATIP       |                   |       |        |
+
+!|ConnectTodb                        |
+|connectToSQLclient?|status?|results?|
+|                   |       |        |
+
+
+!|QaTip.Fitnesse.Demo.DoFixture.DBFixtures.ValidateCustomerFixture|Customers  |30     |order by CustomerName desc|
+|CustomerName                                                     |ContactName|Address|city      |PostalCode     |
+|Cardinal                                                         |           |       |          |               |
+|renita                                                           |           |       |          |               |
+|geeta                                                            |           |       |          |               |
+|khemlall                                                            |           |       |          |               |
+
+
+!|ConnectTodb                        |
+|connectToSQLclient?|status?|results?|
+|                   |       |        |
+
+GetSingleFieldDataSql
+
+
+#!|ConnectTodb                     |
+#|maxwaitms|GetSingleFieldDataSql  |
+#|10       |select * from Customers|
+#|         |                       |
+
+
+
+
+#!|RunSqlCommands                                                                                                     |
+#|DbConnection                                                       |DbConnection?|ListSql                |all items?|
+#|Server=A5Q55S72\\SQLEXPRESS;Database=QATIP;Trusted_Connection=True;|             |select * from Customers|          |

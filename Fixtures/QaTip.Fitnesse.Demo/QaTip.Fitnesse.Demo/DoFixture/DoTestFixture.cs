@@ -16,9 +16,10 @@ namespace QaTip.Fitnesse.Demo
 {
     public class DoTestFixture
     {
-        
-        private IWebDriver selDriver;
        
+        private IWebDriver selDriver;
+        public string connectionstringname { get; set; }
+
         public DemoTestSetupFixture helloworld()
         {
            
@@ -26,13 +27,35 @@ namespace QaTip.Fitnesse.Demo
         }
 
         public QAtipTestHelperFixture testhelper()
-        {
+        {  
             return new QAtipTestHelperFixture();
         }
 
+        public DoTestFixture()
+        {  
+            qatipDataAccess.SetQATIPDataAccessConnectionStrings();
+        }
+        #region manage config file
+        public ManageConfigFixture manageconfigs()
+        {
+            return new ManageConfigFixture();
+        }
+
+
+
+        #endregion
+
+        #region Generic validation fixture
+        public genericvalidationfixture validate()
+        {
+            return new genericvalidationfixture();
+        }
+        #endregion
+
+
         public ValidateCustomerFixture validatecustomer()
         {
-            System.Diagnostics.Debugger.Launch();
+           
             return new ValidateCustomerFixture();
         }
 
@@ -88,7 +111,7 @@ namespace QaTip.Fitnesse.Demo
 
         public ManageDirectoriesFixture ManageFilesAndDirectories()
         {
-           // System.Diagnostics.Debugger.Launch();
+           
             return new ManageDirectoriesFixture();
         }
 

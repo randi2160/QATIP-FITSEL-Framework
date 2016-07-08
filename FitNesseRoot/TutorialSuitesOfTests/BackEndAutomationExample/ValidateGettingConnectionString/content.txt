@@ -1,5 +1,34 @@
 !|QaTip.Fitnesse.Demo.DoTestFixture|
 
-!|testhelper|
-|FitNesseDbConnectionString?|
-||
+!define SCHEMA_SERVER {SQLEXPRESS15}
+!define SCHEMA_SERVER1 {ORACLE}
+!define SCHEMA {CMGR_SIRIUS_KHEM}
+
+
+
+!c !3 !style_green [''Hi All, Here is how you can get the current connection string. The way our Fixture library is designed, we will look into Machine Config file for a specific'']
+
+
+
+
+!style_blue['''Point to the targeted schema:''']
+!|Test Helper                                                                            |
+|FitNesse Db ConnectionString?|FitNesse Db ConnectionString|FitNesse Db ConnectionString?|
+|>>CurrentConnection          |<<CurrentConnection         |>>savedbconnectionstring     |
+
+!|ConnectTodb          |
+|SetDbConnectionStrings|
+|                      |
+
+
+!|testhelper                                                 |
+|GetFitNesseDbConnectionString|GetFitNesseDbConnectionString?|
+|<<savedbconnectionstring     |<<savedbconnectionstring      |
+
+
+SETTING ORACLE:
+
+!style_blue['''Point to the targeted schema:''']
+!|Test Helper                                                                                                             |
+|FitNesse Db ConnectionString|FitNesse Db ConnectionString?                                                               |
+|                            |Data Source=${SCHEMA_SERVER}; Persist Security Info=True; User ID=${SCHEMA}; Password=iclaim|
