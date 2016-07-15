@@ -80,7 +80,7 @@
     <Compile Include="DoFixture\DoTestFixture.cs" />
     <Compile Include="DoFixture\genericvalidationfixture.cs" />
     <Compile Include="DoFixture\ManageConfigFixture.cs" />
-    <Compile Include="DoFixture\ManageDirectoriesFixture.cs" />
+    <Compile Include="DoFixture\ManageFilesAndDirectoriesFixture.cs" />
     <Compile Include="DoFixture\QatipOracleCommand.cs" />
     <Compile Include="DoFixture\QAtipTestHelperFixture.cs" />
     <Compile Include="DoFixture\runsqlFixture.cs" />
@@ -95,12 +95,14 @@
     <Compile Include="DoFixture\UiFxitures\ManageNavigationFixture.cs" />
     <Compile Include="DoFixture\UiFxitures\ManageSearchFixture.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WEBSERVICES\webservicefixture.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="chromedriver.exe" />
     <Content Include="dependencies\chromedriver.exe">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

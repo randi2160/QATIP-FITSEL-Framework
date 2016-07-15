@@ -12,6 +12,8 @@ using System.Net;
 using System.Text.RegularExpressions;
 using QaTip.Fitnesse.Demo.DoFixture;
 using QaTip.Fitnesse.Demo.DoFixture.DBFixtures;
+using System.IO;
+
 namespace QaTip.Fitnesse.Demo
 {
     public class DoTestFixture
@@ -19,6 +21,7 @@ namespace QaTip.Fitnesse.Demo
        
         private IWebDriver selDriver;
         public string connectionstringname { get; set; }
+        public string filename { get; private set; }
 
         public DemoTestSetupFixture helloworld()
         {
@@ -41,7 +44,7 @@ namespace QaTip.Fitnesse.Demo
             return new ManageConfigFixture();
         }
 
-
+        
 
         #endregion
 
@@ -109,10 +112,10 @@ namespace QaTip.Fitnesse.Demo
             return new ManageSearchFixture(selDriver);
         }
 
-        public ManageDirectoriesFixture ManageFilesAndDirectories()
+        public ManageFilesAndDirectoriesFixture ManageFilesAndDirectories()
         {
            
-            return new ManageDirectoriesFixture();
+            return new ManageFilesAndDirectoriesFixture();
         }
 
         //Sample login fixture for UI

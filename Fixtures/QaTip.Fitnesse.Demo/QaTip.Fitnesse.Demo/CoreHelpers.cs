@@ -198,7 +198,7 @@ namespace QaTip.Fitnesse.Demo
         {
             IWebDriver selDriver;
            // string targetedBrowser = System.Configuration.ConfigurationManager.AppSettings.Get("TargetedBrowser");
-            string targetedBrowser = "IE";
+            string targetedBrowser = "ie";
             switch (targetedBrowser.ToLower())
             {
                 case "chrome":

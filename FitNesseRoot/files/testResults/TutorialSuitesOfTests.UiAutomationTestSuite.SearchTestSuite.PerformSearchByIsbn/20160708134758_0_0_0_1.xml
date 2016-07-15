@@ -1,0 +1,141 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20160515</FitNesseVersion>
+  <rootPath>TutorialSuitesOfTests.UiAutomationTestSuite.SearchTestSuite.PerformSearchByIsbn</rootPath>
+    <result>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>3</exceptions>
+    </counts>
+    <date>2016-07-08T13:47:58-04:00</date>
+    <runTimeInMillis>15063</runTimeInMillis>
+    <content>&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_SUT"&gt;QaTip.Fitnesse.Demo.DoTestFixture&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;variable defined: searchquery=9781476738024&lt;/span&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;h1&gt;&lt;span class="blue "&gt;Steps&lt;/span&gt;&lt;/h1&gt;
+&lt;h5&gt;&lt;span class="blue "&gt;&lt;i&gt;1. Navigate to Barnes and Noble.com&lt;/i&gt;&lt;/span&gt;&lt;/h5&gt;
+&lt;h5&gt;&lt;span class="blue "&gt;&lt;i&gt;2. Validate that you are on the barnes and Noble.com Website&lt;/i&gt;&lt;/span&gt;&lt;/h5&gt;
+&lt;h5&gt;&lt;span class="blue "&gt;&lt;i&gt;3. Locate the Search Box and click on Search&lt;/i&gt;&lt;/span&gt;&lt;/h5&gt;
+&lt;h5&gt;&lt;span class="blue "&gt;&lt;i&gt;4. Type ISBN into the search box and click on Search&lt;/i&gt;&lt;/span&gt;&lt;/h5&gt;
+&lt;h5&gt;&lt;span class="blue "&gt;&lt;i&gt;5. Verify that user can is taken to the description page&lt;/i&gt;&lt;/span&gt;&lt;/h5&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td class="error" colspan="6"&gt;&lt;span class="fit_member"&gt;NavigateTo&lt;/span&gt;&lt;hr /&gt;&lt;pre&gt;&lt;div class="fit_stacktrace"&gt;System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---&gt; OpenQA.Selenium.DriverServiceNotFoundException: The chromedriver.exe file does not exist in the current directory or in a directory on the PATH environment variable. The driver can be downloaded at http://chromedriver.storage.googleapis.com/index.html.
+   at OpenQA.Selenium.DriverService.FindDriverServiceExecutable(String executableName, Uri downloadUrl)
+   at OpenQA.Selenium.Chrome.ChromeDriverService.CreateDefaultService()
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(ChromeOptions options)
+   at QaTip.Fitnesse.Demo.CoreHelpers.InitializeSeleniumBrowser() in C:\backupdata\Training\Training\Fitnesse\Fixtures\QaTip.Fitnesse.Demo\QaTip.Fitnesse.Demo\CoreHelpers.cs:line 207
+   at QaTip.Fitnesse.Demo.DoTestFixture.NavigateTo() in C:\backupdata\Training\Training\Fitnesse\Fixtures\QaTip.Fitnesse.Demo\QaTip.Fitnesse.Demo\DoFixture\DoTestFixture.cs:line 76
+   --- End of inner exception stack trace ---
+   at fitSharp.Machine.Model.TypedValue.ThrowExceptionIfNotValid()
+   at fitSharp.Fit.Engine.InterpretFlow.ProcessFlowRow(Tree`1 table, Int32 rowNumber)&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;url&lt;/td&gt;
+		&lt;td&gt;KeywordContainedInTitle&lt;/td&gt;
+		&lt;td&gt;NavigateToUrl&lt;/td&gt;
+		&lt;td&gt;KeywordContainedInTitle?&lt;/td&gt;
+		&lt;td&gt;NavigationSuccessful?&lt;/td&gt;
+		&lt;td&gt;getpagetitle&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;http://bn.com&lt;/td&gt;
+		&lt;td&gt;Barnes&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;Barnes&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td class="error" colspan="4"&gt;&lt;span class="fit_member"&gt;Perform Search&lt;/span&gt;&lt;hr /&gt;&lt;pre&gt;&lt;div class="fit_stacktrace"&gt;System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---&gt; System.NullReferenceException: Object reference not set to an instance of an object.
+   at QaTip.Fitnesse.Demo.DoFixture.UiFxitures.ManageSearchFixture..ctor(IWebDriver selDriver) in C:\backupdata\Training\Training\Fitnesse\Fixtures\QaTip.Fitnesse.Demo\QaTip.Fitnesse.Demo\DoFixture\UiFxitures\ManageSearchFixture.cs:line 23
+   at QaTip.Fitnesse.Demo.DoTestFixture.PerformSearch() in C:\backupdata\Training\Training\Fitnesse\Fixtures\QaTip.Fitnesse.Demo\QaTip.Fitnesse.Demo\DoFixture\DoTestFixture.cs:line 104
+   --- End of inner exception stack trace ---
+   at fitSharp.Machine.Model.TypedValue.ThrowExceptionIfNotValid()
+   at fitSharp.Fit.Engine.InterpretFlow.ProcessFlowRow(Tree`1 table, Int32 rowNumber)&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;SearchBoxExist?&lt;/td&gt;
+		&lt;td&gt;searchbox?&lt;/td&gt;
+		&lt;td&gt;searchQuery&lt;/td&gt;
+		&lt;td&gt;Execute Search&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;YES&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;9781476738024&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="2"&gt;&lt;span class="fit_member"&gt;testhelper&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;WaitSeconds&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;wait&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;15&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; Slept 15 seconds&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td class="error" colspan="3"&gt;&lt;span class="fit_member"&gt;GetSearchResults&lt;/span&gt;&lt;hr /&gt;&lt;pre&gt;&lt;div class="fit_stacktrace"&gt;System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---&gt; System.NullReferenceException: Object reference not set to an instance of an object.
+   at QaTip.Fitnesse.Demo.DoFixture.UiFxitures.ManageSearchFixture..ctor(IWebDriver selDriver) in C:\backupdata\Training\Training\Fitnesse\Fixtures\QaTip.Fitnesse.Demo\QaTip.Fitnesse.Demo\DoFixture\UiFxitures\ManageSearchFixture.cs:line 23
+   at QaTip.Fitnesse.Demo.DoTestFixture.GetSearchResults() in C:\backupdata\Training\Training\Fitnesse\Fixtures\QaTip.Fitnesse.Demo\QaTip.Fitnesse.Demo\DoFixture\DoTestFixture.cs:line 109
+   --- End of inner exception stack trace ---
+   at fitSharp.Machine.Model.TypedValue.ThrowExceptionIfNotValid()
+   at fitSharp.Fit.Engine.InterpretFlow.ProcessFlowRow(Tree`1 table, Int32 rowNumber)&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;productTitle?&lt;/td&gt;
+		&lt;td&gt;author?&lt;/td&gt;
+		&lt;td&gt;productPrice?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;A Man Called Ove&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;CleanUpAndCloseBrowser&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;CloseBrowser&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+ &lt;br/&gt;</content>
+    <relativePageName>PerformSearchByIsbn</relativePageName>
+          </result>
+  <executionLog>
+    <testSystem></testSystem>
+    <command></command>
+    <exitCode>0</exitCode>
+    <stdOut>7/8/2016 1:47:58 PM: Executing test using Chrome browser.
+7/8/2016 1:48:13 PM: Closing Browser...
+</stdOut>
+    <stdErr></stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>1</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>15063</totalRunTimeInMillis>
+</testResults>
+

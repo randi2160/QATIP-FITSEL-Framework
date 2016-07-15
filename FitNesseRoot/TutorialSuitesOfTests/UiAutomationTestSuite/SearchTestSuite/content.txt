@@ -2,3 +2,4 @@
 !|QaTip.Fitnesse.Demo.DoTestFixture|
 
 
+!note  ie driver has some restriction, please ensure you set browser to 100%

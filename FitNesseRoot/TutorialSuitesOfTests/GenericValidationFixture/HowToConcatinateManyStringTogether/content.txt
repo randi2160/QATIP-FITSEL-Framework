@@ -6,7 +6,53 @@
 !define string3 {Khemlall}
 
 
+
+
 This method needs you to supply the strings 
+
+
+!|validate                                                                       |
+|stringstoconcatinate  |separator|concatinate_strings|stringoutput?|stringoutput?|
+|select * from customer|         |                   |             |             |
+|where name =          |         |                   |             |             |
+|"mangal"              |         |                   |>>finalstring|<<finalstring|
+
+!|validate                                                                      |
+|stringstoconcatinate|separators|concatinate_strings|stringoutput?|stringoutput?|
+|http://localhost    |          |                   |             |             |
+|contentmanager      |/         |                   |             |             |
+|prod                |/         |                   |>>finalstring|<<finalstring|
+
+
+
+
+!style_red[''Add plain word without spaces etc... '']
+
+!|validate                                                                      |
+|stringstoconcatinate|separators|concatinate_strings|stringoutput?|stringoutput?|
+|qua                 |          |                   |             |             |
+|li                  |          |                   |             |             |
+|ty                  |          |                   |>>finalstring|<<finalstring|
+
+
+
+
+!|validate                                                                      |
+|stringstoconcatinate|separators|concatinate_strings|stringoutput?|stringoutput?|
+|qua                 |          |                   |             |             |
+|li                  |          |                   |             |             |
+|ty                  |          |                   |>>finalstring|<<finalstring|
+
+
+
+
+!|validate                                                                      |
+|stringstoconcatinate|separators|concatinate_strings|stringoutput?|stringoutput?|
+|${string1}          |          |                   |             |             |
+|${string2}          |          |                   |             |             |
+|${string3}          |          |                   |>>finalstring|<<finalstring|
+
+
 
 
 !|validate                                                     |
@@ -14,6 +60,8 @@ This method needs you to supply the strings
 |select * from customer|           |             |             |
 |where name =          |           |             |             |
 |"mangal"              |           |>>finalstring|<<finalstring|
+
+
 
 
 !style_red[''Add / at the end of each word ... building a url link '']
@@ -37,8 +85,8 @@ This method needs you to supply the strings
 
 !style_blue[''Add paramaterize value example '']
 
-!|validate                                                               |
+!|validate                                                   |
 |stringstoconcatinate|joinstrings|stringoutput?|stringoutput?|
-|${string1}                 |                       |             |             |
-|${string2}                   |                       |             |             |
-|${string3}                    |                       |>>finalstring|<<finalstring|
+|${string1}          |           |             |             |
+|${string2}          |           |             |             |
+|${string3}          |           |>>finalstring|<<finalstring|

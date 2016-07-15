@@ -1,9 +1,11 @@
+|TutorialSuitesOfTests.GenericValidationFixture.HowToConcatinateManyStringTogether||12:42:13 Wed, Jul 13, 2016|
+|TutorialSuitesOfTests.FileManipulationTestSuite.BackUpAndRestoreExample||14:35:38 Fri, Jul 08, 2016|
+|TutorialSuitesOfTests.UiAutomationTestSuite.SearchTestSuite||14:18:58 Fri, Jul 08, 2016|
 |TutorialSuitesOfTests.BackEndAutomationExample||17:14:10 Thu, Jul 07, 2016|
 |TutorialSuitesOfTests.FileManipulationTestSuite.GetLatestFileCreatedExample||17:13:12 Thu, Jul 07, 2016|
 |TutorialSuitesOfTests.ManageConfigLibraryExamples||17:11:53 Thu, Jul 07, 2016|
 |TutorialSuitesOfTests.ManageConfigLibraryExamples.SampleTestGettingAndSettingValuesInConfigFiles||17:10:16 Thu, Jul 07, 2016|
 |TutorialSuitesOfTests.GenericValidationFixture.SampleTestUsingStringConcatination||17:07:05 Thu, Jul 07, 2016|
-|TutorialSuitesOfTests.GenericValidationFixture.HowToConcatinateManyStringTogether||16:14:16 Thu, Jul 07, 2016|
 |TutorialSuitesOfTests.GenericValidationFixture||13:13:29 Wed, Jul 06, 2016|
 |TutorialSuitesOfTests.BackEndAutomationExample.ValidateGettingConnectionString||11:13:40 Wed, Jul 06, 2016|
 |TutorialSuitesOfTests.BackEndAutomationExample.GetDbConnectionString||09:16:46 Wed, Jun 29, 2016|
@@ -16,7 +18,6 @@
 |TutorialSuitesOfTests.BackEndAutomationExample.CustomizeConnection||16:49:49 Tue, Jun 21, 2016|
 |TutorialSuitesOfTests.FileManipulationTestSuite||16:29:51 Mon, Jun 13, 2016|
 |TutorialSuitesOfTests.BackEndAutomationExample.StandardDbFitTest||09:34:33 Mon, Jun 13, 2016|
-|TutorialSuitesOfTests.UiAutomationTestSuite.SearchTestSuite||21:59:01 Sun, Jun 05, 2016|
 |TutorialSuitesOfTests.UiAutomationTestSuite||20:32:25 Sun, Jun 05, 2016|
 |TutorialSuitesOfTests.SeleniumFirstTest||14:17:00 Thu, Jun 02, 2016|
 |FrontPage||15:39:23 Wed, Jun 01, 2016|

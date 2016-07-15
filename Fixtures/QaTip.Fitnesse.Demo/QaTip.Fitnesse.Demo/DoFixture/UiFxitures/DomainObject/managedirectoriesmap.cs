@@ -9,7 +9,7 @@ using System.Diagnostics;
 
 namespace QaTip.Fitnesse.Demo.DoFixture.UiFxitures.DomainObject
 {
-    public class managedirectoriesmap:ColumnFixture
+    public class manageFilesandDirectoriesMap:ColumnFixture
     {
         StreamReader sr;
 
@@ -17,6 +17,7 @@ namespace QaTip.Fitnesse.Demo.DoFixture.UiFxitures.DomainObject
        public string targetfile{ get; set; }
         public string cmdParameters
         { get; set; }
+        public string content { get; set; }
         public string DirectoryPath { get; set; }
        public string SourcePath { get; set; }
        public string DestinationPath { get; set; }
@@ -28,6 +29,8 @@ namespace QaTip.Fitnesse.Demo.DoFixture.UiFxitures.DomainObject
         /// </summary>
         public string OriginalDirectoryName
         { get; set; }
+
+        public string filename { get; set; }
 
         /// <summary>
         /// Name of the New Directory. 
@@ -118,6 +121,14 @@ namespace QaTip.Fitnesse.Demo.DoFixture.UiFxitures.DomainObject
                 .FirstOrDefault();
         }
 
+        private void CreateOrReplaceExistingFileWithNewContents()
+        {
+            using (FileStream fs = new FileStream(filename, FileMode.Create, FileAccess.Write))
+            using (StreamWriter sw = new StreamWriter(fs))
+            {
+                sw.Write(content);
+            }
+        }
 
 
         //Copy file from one location to next:

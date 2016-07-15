@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20160515</FitNesseVersion>
+  <rootPath>TutorialSuitesOfTests.GenericValidationFixture.HowToConcatinateManyStringTogether</rootPath>
+    <executionLog>
+    <testSystem>fit:Fitsharp\Runner.exe</testSystem>
+    <command>Fitsharp\Runner.exe -r fitnesse.fitserver.FitServer,FitSharp\fit.dll,FitSharp\fitLibrary.dll -c FitSharp\suite.config.xml ..\Fitnesse\Fixtures\Fitnesse_Dlls\QaTip.Fitnesse.Demo.dll A5Q55S72 55270 3863</command>
+    <exitCode>-532462766</exitCode>
+    <stdOut></stdOut>
+    <stdErr>
+Unhandled Exception: System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 10.0.0.9:55270
+   at System.Net.Sockets.Socket.Connect(IPAddress[] addresses, Int32 port)
+   at System.Net.Sockets.Socket.Connect(String host, Int32 port)
+   at fitnesse.fitserver.FitServer.Run(IList`1 CommandLineArguments)
+   at fitnesse.fitserver.FitServer.Run(IList`1 commandLineArguments, Memory memory, ProgressReporter reporter)
+   at fitSharp.Machine.Application.Shell.Run()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.ThreadHelper.ThreadStart()
+</stdErr>
+    <exception>FitClient: external process terminated before a connection could be established.</exception>
+    <exception>FitClient: external process terminated before a connection could be established.</exception>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>1</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>42422</totalRunTimeInMillis>
+</testResults>
+

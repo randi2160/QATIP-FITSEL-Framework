@@ -15,12 +15,16 @@ namespace QaTip.Fitnesse.Demo.DoFixture
         /// <summary>
         /// String1
         /// </summary>
+        /// 
+
+
         public string String1
         { get; set; }
         public StringBuilder buildstring = new StringBuilder();
         public List<string> returnval { get; set;}
         public string stringoutput { get; set; }
         public List<string> listofstrings = new List<string>();
+        public string separators { get; set; }
 
         public string GenExp()
         {
@@ -179,7 +183,6 @@ namespace QaTip.Fitnesse.Demo.DoFixture
         { 
             foreach (string s in stringstoconcatinate)
             {
-                StringBuilder strg = new StringBuilder();
                 listofstrings.Add(s);
                 stringoutput += s + " ";
             }
@@ -191,12 +194,36 @@ namespace QaTip.Fitnesse.Demo.DoFixture
         {
             foreach (string s in stringstoconcatinate)
             {
-                StringBuilder strg = new StringBuilder();
                 listofstrings.Add(s);
                 stringoutput += s + "/";
             }
 
         }
+
+        public void concatinate_strings()
+        {
+            genericstringbuilder(separators);
+        }
+
+        
+      
+        // GENERIC STRING BUILDER 
+        private void genericstringbuilder(string separator)
+        {
+            // 1.this would add a new list to an already existing string list
+            listofstrings.AddRange(stringstoconcatinate.ToList());
+
+            // 2. or if you only want this as list:
+            listofstrings = stringstoconcatinate.ToList();
+
+            // this will create a string separated by the type that you want
+            stringoutput = String.Join(separator, stringoutput, String.Join(separator, stringstoconcatinate));
+
+        }
+
+
+
+
 
         // build string without
 
@@ -216,8 +243,11 @@ namespace QaTip.Fitnesse.Demo.DoFixture
             getListofStrings();
             
         }
-        
 
+        public void combinestringstobuilddirectorypath()
+        {
+            genericstringbuilder("\\");
+        }
 
         public string ConcatenateString()
         {
