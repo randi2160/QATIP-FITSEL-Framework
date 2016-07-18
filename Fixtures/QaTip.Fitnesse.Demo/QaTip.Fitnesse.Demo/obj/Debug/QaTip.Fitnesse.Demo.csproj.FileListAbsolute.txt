@@ -18,6 +18,5 @@ C:\backupdata\Training\Training\Fitnesse\Fixtures\Fitnesse_Dlls\IEDriverServer.e
 C:\backupdata\Training\Training\Fitnesse\Fixtures\Fitnesse_Dlls\QaTip.Fitnesse.Demo.dll.config
 C:\backupdata\Training\Training\Fitnesse\Fixtures\Fitnesse_Dlls\QaTip.Fitnesse.Demo.dll
 C:\backupdata\Training\Training\Fitnesse\Fixtures\Fitnesse_Dlls\QaTip.Fitnesse.Demo.pdb
-C:\backupdata\Training\Training\Fitnesse\Fixtures\QaTip.Fitnesse.Demo\QaTip.Fitnesse.Demo\obj\Debug\QaTip.Fitnesse.Demo.csprojResolveAssemblyReference.cache
 C:\backupdata\Training\Training\Fitnesse\Fixtures\QaTip.Fitnesse.Demo\QaTip.Fitnesse.Demo\obj\Debug\QaTip.Fitnesse.Demo.dll
 C:\backupdata\Training\Training\Fitnesse\Fixtures\QaTip.Fitnesse.Demo\QaTip.Fitnesse.Demo\obj\Debug\QaTip.Fitnesse.Demo.pdb
