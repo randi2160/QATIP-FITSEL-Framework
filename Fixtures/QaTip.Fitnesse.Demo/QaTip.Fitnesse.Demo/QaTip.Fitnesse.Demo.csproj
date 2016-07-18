@@ -99,6 +99,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="FitnesseDll\QaTip.Fitnesse.Demo.dll.config" />
     <None Include="Fitsharp\fitsharp-master.zip" />
     <None Include="packages.config" />
   </ItemGroup>
@@ -110,6 +111,21 @@
     <Content Include="dependencies\IEDriverServer.exe">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="FitnesseDll\fit.dll" />
+    <Content Include="FitnesseDll\FitLibrary.dll" />
+    <Content Include="FitnesseDll\fitSharp.dll" />
+    <Content Include="FitnesseDll\IEDriverServer - Copy.exe" />
+    <Content Include="FitnesseDll\IEDriverServer.exe" />
+    <Content Include="FitnesseDll\Oracle.DataAccess - Copy.dll" />
+    <Content Include="FitnesseDll\Oracle.DataAccess.dll" />
+    <Content Include="FitnesseDll\Oracle.ManagedDataAccess.dll" />
+    <Content Include="FitnesseDll\QaTip.Fitnesse.Demo - Copy.dll" />
+    <Content Include="FitnesseDll\QaTip.Fitnesse.Demo.dll" />
+    <Content Include="FitnesseDll\QaTip.Fitnesse.Demo.pdb" />
+    <Content Include="FitnesseDll\WebDriver.dll" />
+    <Content Include="FitnesseDll\WebDriver.Support.dll" />
+    <Content Include="FitnesseDll\WebDriver.Support.xml" />
+    <Content Include="FitnesseDll\WebDriver.xml" />
     <Content Include="Fitsharp\CPLicense.txt" />
     <Content Include="Fitsharp\dbfit.dll" />
     <Content Include="Fitsharp\dbfit.mysql.dll" />
@@ -127,7 +143,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="FitnesseDll\dependencies\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
