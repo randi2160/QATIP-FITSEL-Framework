@@ -99,6 +99,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Fitsharp\fitsharp-master.zip" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -109,6 +110,19 @@
     <Content Include="dependencies\IEDriverServer.exe">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Fitsharp\CPLicense.txt" />
+    <Content Include="Fitsharp\dbfit.dll" />
+    <Content Include="Fitsharp\dbfit.mysql.dll" />
+    <Content Include="Fitsharp\dbfit.oracle.dll" />
+    <Content Include="Fitsharp\dbfit.sqlserver.dll" />
+    <Content Include="Fitsharp\dbfit.sybase.dll" />
+    <Content Include="Fitsharp\fit.dll" />
+    <Content Include="Fitsharp\FitLibrary.dll" />
+    <Content Include="Fitsharp\fitSharp.dll" />
+    <Content Include="Fitsharp\GPLicense.txt" />
+    <Content Include="Fitsharp\Runner.exe" />
+    <Content Include="Fitsharp\RunnerW.exe" />
+    <Content Include="Fitsharp\suite.config.xml" />
     <Content Include="IEDriverServer.exe">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
