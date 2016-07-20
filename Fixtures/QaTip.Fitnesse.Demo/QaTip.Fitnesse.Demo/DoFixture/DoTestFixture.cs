@@ -34,6 +34,13 @@ namespace QaTip.Fitnesse.Demo
             return new QAtipTestHelperFixture();
         }
 
+
+        public WebServicesFixture CreateRestApiRequest()
+        {
+
+            return new WebServicesFixture();
+        }
+
         public DoTestFixture()
         {  
             qatipDataAccess.SetQATIPDataAccessConnectionStrings();
@@ -44,7 +51,11 @@ namespace QaTip.Fitnesse.Demo
             return new ManageConfigFixture();
         }
 
-        
+        public manageservices ManageServices()
+        {
+            return new manageservices(String.Empty);
+        }
+
 
         #endregion
 

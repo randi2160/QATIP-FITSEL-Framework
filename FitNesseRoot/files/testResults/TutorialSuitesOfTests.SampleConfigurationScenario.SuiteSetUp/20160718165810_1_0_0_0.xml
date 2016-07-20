@@ -1,0 +1,153 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20160515</FitNesseVersion>
+  <rootPath>TutorialSuitesOfTests.SampleConfigurationScenario.SuiteSetUp</rootPath>
+    <result>
+    <counts>
+      <right>4</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <date>2016-07-18T16:58:10-04:00</date>
+    <runTimeInMillis>894</runTimeInMillis>
+    <content>&lt;br/&gt;&lt;div class="contents"&gt;
+	&lt;b&gt;Contents:&lt;/b&gt;
+	&lt;ul class="toc1"/&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_SUT"&gt;QaTip.Fitnesse.Demo.DoTestFixture&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;p class="note"&gt;definition&lt;/p&gt;&lt;br/&gt;&lt;span class="meta"&gt;variable defined: DictionaryPath=C:\temp\Dictionaries&lt;/span&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;variable defined: RuleMetadataPath=C:\temp\RuleMetadataFiles&lt;/span&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;variable defined: EnableXsrfVerification=N&lt;/span&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;variable defined: DictionarySourcePath=C:\RFMDEFAULTDICTIONARY&lt;/span&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;h2&gt;&lt;span class="green "&gt;Scenario&lt;/span&gt;:&lt;/h2&gt;
+&lt;br/&gt;&lt;b&gt;1. Stop Service  (PROVIDE NAME OF SERVICE)&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="3"&gt;&lt;span class="fit_member"&gt;ManageServices&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;ServiceName&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;StopService?&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;Output&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Jenkins&lt;/td&gt;
+		&lt;td class="pass"&gt;SUCCESS&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; No Issues.  Stopped Jenkins. &lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;b&gt;2. Get current configuration  and save it to Variable so that you can reset back to orginal when test is ready to tear down&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="4"&gt;&lt;span class="fit_member"&gt;ManageConfigs&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;ConfigFileName&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;ConfigValue&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;GetConfigSetting()&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;ConfigValue?&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;C:\backupdata\Training\Training\Fitnesse\ConfigurationExample\configruationexample.config&lt;/td&gt;
+		&lt;td&gt;DictionaryPath&lt;/td&gt;
+		&lt;td&gt;&amp;gt;&amp;gt;DictionaryPath&lt;span class="fit_grey"&gt; C:\temp\Dictionaries&lt;/span&gt;&lt;/td&gt;
+		&lt;td class="pass"&gt;DictionaryPath&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;C:\backupdata\Training\Training\Fitnesse\ConfigurationExample\configruationexample.config&lt;/td&gt;
+		&lt;td&gt;RuleMetadataPath&lt;/td&gt;
+		&lt;td&gt;&amp;gt;&amp;gt;RuleMetadataPath&lt;span class="fit_grey"&gt; C:\temp\RuleMetadataFiles&lt;/span&gt;&lt;/td&gt;
+		&lt;td class="pass"&gt;RuleMetadataPath&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="4"&gt;&lt;span class="fit_member"&gt;ManageConfigs&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;ConfigFileName&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;ConfigValue&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;GetConfigSetting()&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;ConfigValue?&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;C:\backupdata\Training\Training\Fitnesse\ConfigurationExample\configruationexample.config&lt;/td&gt;
+		&lt;td&gt;PermissionOn&lt;/td&gt;
+		&lt;td&gt;&amp;gt;&amp;gt;Permission&lt;span class="fit_grey"&gt; false&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; PermissionOn&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;3. Set New Configuration&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="5"&gt;&lt;span class="fit_member"&gt;Manage Configs&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;ConfigFileName&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;ConfigValue&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;Target Value&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;SetConfigSetting()&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;GetConfigSetting()?&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;C:\backupdata\Training\Training\Fitnesse\ConfigurationExample\configruationexample.config&lt;/td&gt;
+		&lt;td&gt;DictionaryPath&lt;/td&gt;
+		&lt;td&gt;C:\temp\Dictionaries&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; void&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&amp;gt;&amp;gt;DictionaryPath&lt;span class="fit_grey"&gt; C:\temp\Dictionaries&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;C:\backupdata\Training\Training\Fitnesse\ConfigurationExample\configruationexample.config&lt;/td&gt;
+		&lt;td&gt;RuleMetadataPath&lt;/td&gt;
+		&lt;td&gt;C:\temp\RuleMetadataFiles&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; void&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&amp;gt;&amp;gt;RuleMetadataPath&lt;span class="fit_grey"&gt; C:\temp\RuleMetadataFiles&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;C:\backupdata\Training\Training\Fitnesse\ConfigurationExample\configruationexample.config&lt;/td&gt;
+		&lt;td&gt;PermissionOn&lt;/td&gt;
+		&lt;td&gt;false&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; void&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&amp;gt;&amp;gt;permission&lt;span class="fit_grey"&gt; false&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;b&gt;4. Restart Service&lt;/b&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="3"&gt;&lt;span class="fit_member"&gt;ManageServices&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;ServiceName&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;StartService?&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;Output&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Jenkins&lt;/td&gt;
+		&lt;td class="pass"&gt;SUCCESS&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; No Issues. Started Jenkins. &lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+</content>
+    <relativePageName>SuiteSetUp</relativePageName>
+          </result>
+  <executionLog>
+    <testSystem></testSystem>
+    <command></command>
+    <exitCode>0</exitCode>
+    <stdOut>7/18/2016 4:58:10 PM: Stopping Jenkins
+7/18/2016 4:58:11 PM: Current Service state: Stopped
+7/18/2016 4:58:11 PM: Starting Jenkins
+7/18/2016 4:58:11 PM: Started Jenkins
+</stdOut>
+    <stdErr></stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>1</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>894</totalRunTimeInMillis>
+</testResults>
+

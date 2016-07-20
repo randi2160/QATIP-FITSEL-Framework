@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<suiteResults>
+  <FitNesseVersion>v20160515</FitNesseVersion>
+  <rootPath>TutorialSuitesOfTests.SampleConfigurationScenario</rootPath>
+  <pageHistoryReference>
+    <name>TutorialSuitesOfTests.SampleConfigurationScenario.SuiteSetUp</name>
+    <date>2016-07-18T16:50:51-04:00</date>
+    <pageHistoryLink>TutorialSuitesOfTests.SampleConfigurationScenario.SuiteSetUp?pageHistory&amp;resultDate=20160718165051</pageHistoryLink>
+    <counts>
+      <right>3</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>93</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>TutorialSuitesOfTests.SampleConfigurationScenario.PostRequestToService</name>
+    <date>2016-07-18T16:50:51-04:00</date>
+    <pageHistoryLink>TutorialSuitesOfTests.SampleConfigurationScenario.PostRequestToService?pageHistory&amp;resultDate=20160718165051</pageHistoryLink>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>4</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>TutorialSuitesOfTests.SampleConfigurationScenario.SuiteTearDown</name>
+    <date>2016-07-18T16:50:51-04:00</date>
+    <pageHistoryLink>TutorialSuitesOfTests.SampleConfigurationScenario.SuiteTearDown?pageHistory&amp;resultDate=20160718165051</pageHistoryLink>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>3</runTimeInMillis>
+  </pageHistoryReference>
+  <executionLog>
+    <testSystem>fit:Fitsharp\Runner.exe</testSystem>
+    <command>Fitsharp\Runner.exe -r fitnesse.fitserver.FitServer,FitSharp\fit.dll,FitSharp\fitLibrary.dll -c FitSharp\suite.config.xml ..\Fitnesse\Fixtures\Fitnesse_Dlls\QaTip.Fitnesse.Demo.dll A5Q55S72 51458 3863</command>
+    <exitCode>0</exitCode>
+    <stdOut>File path: C:\backupdata\Training\Training\Fitnesse\Fixtures\Fitnesse_Dlls\QaTip.Fitnesse.Demo.dll.config
+7/18/2016 4:50:51 PM: Found ConnectionString: FitNesseqatipDbConString
+7/18/2016 4:50:51 PM: DbConnectionString = Data Source=SQLEXPRESS; Integrated Security=SSPI;AttachDBFilename=DataDirectoryaspnetdb.mdf;User Instance=true
+File path: C:\backupdata\Training\Training\Fitnesse\Fixtures\Fitnesse_Dlls\QaTip.Fitnesse.Demo.dll.config
+7/18/2016 4:50:51 PM: Found ConnectionString: FitNesseqatipDbConString
+7/18/2016 4:50:51 PM: DbConnectionString = Data Source=SQLEXPRESS; Integrated Security=SSPI;AttachDBFilename=DataDirectoryaspnetdb.mdf;User Instance=true
+File path: C:\backupdata\Training\Training\Fitnesse\Fixtures\Fitnesse_Dlls\QaTip.Fitnesse.Demo.dll.config
+7/18/2016 4:50:51 PM: Found ConnectionString: FitNesseqatipDbConString
+7/18/2016 4:50:51 PM: DbConnectionString = Data Source=SQLEXPRESS; Integrated Security=SSPI;AttachDBFilename=DataDirectoryaspnetdb.mdf;User Instance=true
+</stdOut>
+    <stdErr></stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>2</right>
+    <wrong>0</wrong>
+    <ignores>1</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>676</totalRunTimeInMillis>
+</suiteResults>
+

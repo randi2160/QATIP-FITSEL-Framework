@@ -27,7 +27,7 @@ namespace QaTip.Fitnesse.Demo.DoFixture
         public const string SUCCESS = "SUCCESS";
         public const string FAIL = "FAIL";
         public const string NOT_FOUND = "NOT FOUND";
-
+        public const int MAXSERVICEWAITTIME = 120;
         //database
         public const string SELECT_FROM_TABLE_WITH_WHERECLAUSE = "select * from {0} {1}";
     }

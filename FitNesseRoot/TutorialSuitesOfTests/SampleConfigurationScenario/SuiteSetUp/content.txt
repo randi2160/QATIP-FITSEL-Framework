@@ -1,0 +1,46 @@
+!contents -R2 -g -p -f -h
+!|QaTip.Fitnesse.Demo.DoTestFixture|
+!note definition
+
+!define DictionaryPath {C:\temp\Dictionaries}
+!define RuleMetadataPath {C:\temp\RuleMetadataFiles}
+!define EnableXsrfVerification {N}
+!define DictionarySourcePath {C:\RFMDEFAULTDICTIONARY}
+
+
+!2 !style_green [Scenario]:
+
+'''1. Stop Service  (PROVIDE NAME OF SERVICE)'''
+
+!|ManageServices                |
+|ServiceName|StopService?|Output|
+|Jenkins    |SUCCESS     |      |
+
+
+'''2. Get current configuration  and save it to Variable so that you can reset back to orginal when test is ready to tear down'''
+
+!|ManageConfigs                                                     |
+|ConfigFileName|ConfigValue     |GetConfigSetting()|ConfigValue?    |
+|${configpath} |DictionaryPath  |>>DictionaryPath  |DictionaryPath  |
+|${configpath} |RuleMetadataPath|>>RuleMetadataPath|RuleMetadataPath|
+
+!|ManageConfigs                                              |
+|ConfigFileName|ConfigValue |GetConfigSetting()|ConfigValue?|
+|${configpath} |PermissionOn|>>Permission      |            |
+
+
+
+
+'''3. Set New Configuration'''
+
+!| Manage Configs                                                                           |
+|ConfigFileName|ConfigValue     |Target Value       |SetConfigSetting()|GetConfigSetting()?|
+|${configpath} |DictionaryPath  |${DictionaryPath}  |                  |>>DictionaryPath   |
+|${configpath} |RuleMetadataPath|${RuleMetadataPath}|                  |>>RuleMetadataPath |
+|${configpath} |PermissionOn    |false              |                  |>>permission       |
+
+
+'''4. Restart Service'''
+!|ManageServices                |
+|ServiceName|StartService?|Output|
+|Jenkins    |SUCCESS     |      |

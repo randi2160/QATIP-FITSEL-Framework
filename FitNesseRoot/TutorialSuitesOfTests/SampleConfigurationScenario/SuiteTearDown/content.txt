@@ -1,0 +1,21 @@
+!contents -R2 -g -p -f -h
+!|QaTip.Fitnesse.Demo.DoTestFixture|
+
+Set back configuration to oringal configuration
+
+
+!|ManageServices                |
+|ServiceName|StopService?|Output|
+|Jenkins    |SUCCESS     |      |
+
+
+!| Manage Configs                                                                                                                  |
+|ConfigFileName|ConfigValue           |Target Value             |GetConfigSetting()?|SetConfigSetting()      ?|GetConfigSetting()?|
+|${configpath} |PermissionOn|<<Permission|                   |                         |                   |
+
+
+
+#!| CreateCrossRefXml                                            |
+#|GetDictionaryPathFromConfigFile|DeleteAllDictionaryFilesCreated|
+#|<<DictionaryPath               |                               |
+#|<<RuleMetadataPath             |                               |

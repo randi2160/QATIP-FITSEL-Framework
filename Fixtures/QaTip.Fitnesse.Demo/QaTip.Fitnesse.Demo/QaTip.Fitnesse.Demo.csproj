@@ -52,6 +52,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data.OracleClient" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceProcess" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -81,6 +82,8 @@
     <Compile Include="DoFixture\genericvalidationfixture.cs" />
     <Compile Include="DoFixture\ManageConfigFixture.cs" />
     <Compile Include="DoFixture\ManageFilesAndDirectoriesFixture.cs" />
+    <Compile Include="DoFixture\manageservices.cs" />
+    <Compile Include="DoFixture\QaTipWebRequest.cs" />
     <Compile Include="DoFixture\QatipOracleCommand.cs" />
     <Compile Include="DoFixture\QAtipTestHelperFixture.cs" />
     <Compile Include="DoFixture\runsqlFixture.cs" />
@@ -94,6 +97,7 @@
     <Compile Include="DoFixture\UiFxitures\LogInFixture.cs" />
     <Compile Include="DoFixture\UiFxitures\ManageNavigationFixture.cs" />
     <Compile Include="DoFixture\UiFxitures\ManageSearchFixture.cs" />
+    <Compile Include="DoFixture\WebServicesFixture.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WEBSERVICES\webservicefixture.cs" />
   </ItemGroup>

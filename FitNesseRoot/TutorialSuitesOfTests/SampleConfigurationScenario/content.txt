@@ -1,0 +1,8 @@
+!C !1   !style_red [User Story: Setup Configuration, Post Request to Server, Get Response, Tear down by configuring setting back to original settings]'''
+
+-- Remember this will be where your config is
+
+'''This is a sample Configuration Scenario. '''
+!|QaTip.Fitnesse.Demo.DoTestFixture|
+!define configpath {C:\backupdata\Training\Training\Fitnesse\ConfigurationExample\configruationexample.config} 
+!contents -R2 -g -p -f -h

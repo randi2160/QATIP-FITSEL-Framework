@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20160515</FitNesseVersion>
+  <rootPath>TutorialSuitesOfTests.SampleConfigurationScenario.PostRequestToService</rootPath>
+    <result>
+    <counts>
+      <right>0</right>
+      <wrong>1</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <date>2016-07-19T12:29:15-04:00</date>
+    <runTimeInMillis>23774</runTimeInMillis>
+    <content>&lt;br/&gt;&amp;lt;test page&amp;gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_SUT"&gt;QaTip.Fitnesse.Demo.DoTestFixture&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;span class="meta"&gt;variable defined: Resturl=http://www.thomas-bayer.com/sqlrest/CUSTOMER/18/&lt;/span&gt;
+&lt;br/&gt;&lt;br/&gt;1. Perform a Post Request to rest service&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="6"&gt;&lt;span class="fit_member"&gt;CreateRestApiRequest&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;Url&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;requestType&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;requestFormat&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;GetRequest&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;Requestresponse?&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;Requeststatus?&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;http://www.thomas-bayer.com/sqlrest/CUSTOMER/18/&lt;/td&gt;
+		&lt;td&gt;GET&lt;/td&gt;
+		&lt;td&gt;text&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; null&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; null&lt;/span&gt;&lt;/td&gt;
+		&lt;td class="fail"&gt;Accepted &lt;span class="fit_label"&gt;expected&lt;/span&gt;&lt;hr /&gt;null &lt;span class="fit_label"&gt;actual&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;2. Get Response back&lt;br/&gt;3. Validate Response&lt;br/&gt;</content>
+    <relativePageName>PostRequestToService</relativePageName>
+          </result>
+  <executionLog>
+    <testSystem></testSystem>
+    <command></command>
+    <exitCode>0</exitCode>
+    <stdOut>
+The Uri that was requested is http://www.thomas-bayer.com/sqlrest/CUSTOMER/18/
+
+The Uri that responded to the WebRequest is 'http://www.thomas-bayer.com/sqlrest/CUSTOMER/18/'
+
+The HTML Contents received:
+&lt;?xml version="1.0"?&gt;&lt;CUSTOMER xmlns:xlink="http://www.w3.org/1999/xlink"&gt;
+    &lt;ID&gt;18&lt;/ID&gt;
+    &lt;FIRSTNAME&gt;Sylvia&lt;/FIRSTNAME&gt;
+    &lt;LASTNAME&gt;Fuller&lt;/LASTNAME&gt;
+    &lt;STREET&gt;158 - 20th Ave.&lt;/STREET&gt;
+    &lt;CITY&gt;Paris&lt;/CITY&gt;
+&lt;/CUSTOMER&gt;
+</stdOut>
+    <stdErr></stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>1</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>23774</totalRunTimeInMillis>
+</testResults>
+

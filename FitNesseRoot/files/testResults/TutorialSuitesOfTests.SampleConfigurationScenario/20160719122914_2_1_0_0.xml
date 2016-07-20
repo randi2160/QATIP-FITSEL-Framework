@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<suiteResults>
+  <FitNesseVersion>v20160515</FitNesseVersion>
+  <rootPath>TutorialSuitesOfTests.SampleConfigurationScenario</rootPath>
+  <pageHistoryReference>
+    <name>TutorialSuitesOfTests.SampleConfigurationScenario.SuiteSetUp</name>
+    <date>2016-07-19T12:29:14-04:00</date>
+    <pageHistoryLink>TutorialSuitesOfTests.SampleConfigurationScenario.SuiteSetUp?pageHistory&amp;resultDate=20160719122914</pageHistoryLink>
+    <counts>
+      <right>4</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>404</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>TutorialSuitesOfTests.SampleConfigurationScenario.PostRequestToService</name>
+    <date>2016-07-19T12:29:15-04:00</date>
+    <pageHistoryLink>TutorialSuitesOfTests.SampleConfigurationScenario.PostRequestToService?pageHistory&amp;resultDate=20160719122915</pageHistoryLink>
+    <counts>
+      <right>0</right>
+      <wrong>1</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>23774</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>TutorialSuitesOfTests.SampleConfigurationScenario.SuiteTearDown</name>
+    <date>2016-07-19T12:29:45-04:00</date>
+    <pageHistoryLink>TutorialSuitesOfTests.SampleConfigurationScenario.SuiteTearDown?pageHistory&amp;resultDate=20160719122945</pageHistoryLink>
+    <counts>
+      <right>1</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>527</runTimeInMillis>
+  </pageHistoryReference>
+  <executionLog>
+    <testSystem>fit:Fitsharp\Runner.exe</testSystem>
+    <command>Fitsharp\Runner.exe -r fitnesse.fitserver.FitServer,FitSharp\fit.dll,FitSharp\fitLibrary.dll -c FitSharp\suite.config.xml ..\Fitnesse\Fixtures\Fitnesse_Dlls\QaTip.Fitnesse.Demo.dll A5Q55S72 59029 3863</command>
+    <exitCode>1</exitCode>
+    <stdOut>File path: C:\backupdata\Training\Training\Fitnesse\Fixtures\Fitnesse_Dlls\QaTip.Fitnesse.Demo.dll.config
+7/19/2016 12:29:14 PM: Found ConnectionString: FitNesseqatipDbConString
+7/19/2016 12:29:14 PM: DbConnectionString = Data Source=SQLEXPRESS; Integrated Security=SSPI;AttachDBFilename=DataDirectoryaspnetdb.mdf;User Instance=true
+7/19/2016 12:29:15 PM: Current Service state: Stopped
+7/19/2016 12:29:15 PM: Starting Jenkins
+7/19/2016 12:29:15 PM: Started Jenkins
+File path: C:\backupdata\Training\Training\Fitnesse\Fixtures\Fitnesse_Dlls\QaTip.Fitnesse.Demo.dll.config
+7/19/2016 12:29:15 PM: Found ConnectionString: FitNesseqatipDbConString
+7/19/2016 12:29:15 PM: DbConnectionString = Data Source=SQLEXPRESS; Integrated Security=SSPI;AttachDBFilename=DataDirectoryaspnetdb.mdf;User Instance=true
+
+The Uri that was requested is http://www.thomas-bayer.com/sqlrest/CUSTOMER/18/
+
+The Uri that responded to the WebRequest is 'http://www.thomas-bayer.com/sqlrest/CUSTOMER/18/'
+
+The HTML Contents received:
+&lt;?xml version="1.0"?&gt;&lt;CUSTOMER xmlns:xlink="http://www.w3.org/1999/xlink"&gt;
+    &lt;ID&gt;18&lt;/ID&gt;
+    &lt;FIRSTNAME&gt;Sylvia&lt;/FIRSTNAME&gt;
+    &lt;LASTNAME&gt;Fuller&lt;/LASTNAME&gt;
+    &lt;STREET&gt;158 - 20th Ave.&lt;/STREET&gt;
+    &lt;CITY&gt;Paris&lt;/CITY&gt;
+&lt;/CUSTOMER&gt;
+File path: C:\backupdata\Training\Training\Fitnesse\Fixtures\Fitnesse_Dlls\QaTip.Fitnesse.Demo.dll.config
+7/19/2016 12:29:42 PM: Found ConnectionString: FitNesseqatipDbConString
+7/19/2016 12:29:45 PM: DbConnectionString = Data Source=SQLEXPRESS; Integrated Security=SSPI;AttachDBFilename=DataDirectoryaspnetdb.mdf;User Instance=true
+7/19/2016 12:29:45 PM: Stopping Jenkins
+</stdOut>
+    <stdErr></stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>2</right>
+    <wrong>1</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>33369</totalRunTimeInMillis>
+</suiteResults>
+

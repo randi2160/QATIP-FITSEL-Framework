@@ -13,7 +13,8 @@ using System.Configuration;
 using System.IO;
 using System.Threading;
 using System.Xml.Linq;
-
+using System.ServiceProcess;
+using QaTip.Fitnesse.Demo.DoFixture;
 
 namespace QaTip.Fitnesse.Demo
 {
@@ -46,6 +47,7 @@ namespace QaTip.Fitnesse.Demo
 
             return element;
         }
+        public static string servicename { get; set; }
 
         public static string GetWebPageTitle(string url)
         {
@@ -193,6 +195,119 @@ namespace QaTip.Fitnesse.Demo
         {
             Console.WriteLine("{0}: {1}", DateTime.Now, message);
         }
+
+
+        //get service name
+        public static string GetServiceName(string serviceName)
+        {
+            if (serviceName == null)
+            {
+                throw new ApplicationException("Failed to supply a service name!");
+            }
+
+            return serviceName;
+        }
+
+        public static bool StartService(string serviceName, out string output)
+        {
+            output = "No Issues. ";
+            bool result = false;
+
+            if (serviceName == servicename)
+            {
+                // Make sure that the "IBM MQSeries" service has been started
+                result = StartService(serviceName, out output);
+
+                if (!result)
+                {
+                    return result;
+                }
+            }
+
+            ServiceController sc = new ServiceController(serviceName);
+            try
+            {
+                if (sc.Status != ServiceControllerStatus.Running)
+                {
+                    LogMessage(string.Format("Current Service state: {0}", sc.Status.ToString()));
+                    LogMessage(string.Format("Starting {0}", serviceName));
+                    sc.Start();
+                    sc.WaitForStatus(ServiceControllerStatus.Running, new TimeSpan(0, 0, 120));
+                    LogMessage(string.Format("Started {0}", serviceName));
+                    output += string.Format("Started {0}. ", serviceName);
+                }
+                else
+                {
+                    LogMessage(string.Format("{0} is already running.", serviceName));
+                    output += string.Format("{0} is already running. ", serviceName);
+                }
+
+                sc.Refresh();
+                if (sc.Status == ServiceControllerStatus.Running)
+                {
+                    result = true;
+                }
+                else
+                {
+                    output = string.Format("{0} status is not Running.  Max wait time for service start is {1}. ", serviceName, Constants.MAXSERVICEWAITTIME);
+                }
+
+                sc.Close();
+            }
+            catch (InvalidOperationException e)
+            {
+                output = e.Message;
+                output += e.InnerException.Message;
+                return false;
+            }
+
+            return result;
+        }
+
+
+        public static bool StopService(string serviceName, out string output)
+        {
+            output = "No Issues. ";
+            bool result = false;
+
+            ServiceController sc = new ServiceController(serviceName);
+
+            try
+            {
+                if (sc.Status != ServiceControllerStatus.Stopped)
+                {
+                    LogMessage(string.Format("Stopping {0}", serviceName));
+                    sc.Stop();
+                    sc.WaitForStatus(ServiceControllerStatus.Stopped, new TimeSpan(0, 0, Constants.MAXSERVICEWAITTIME));
+                    output += string.Format(" Stopped {0}. ", serviceName);
+                }
+                else
+                {
+                    output += string.Format(" {0} was already stopped. ", serviceName);
+                }
+
+                sc.Refresh();
+                if (sc.Status == ServiceControllerStatus.Stopped)
+                {
+                    result = true;
+                }
+                else
+                {
+                    output = string.Format("{0} status is not Stopped.  Max wait time for service stop is {1}. ", serviceName, Constants.MAXSERVICEWAITTIME);
+                }
+
+                sc.Close();
+            }
+            catch (InvalidOperationException e)
+            {
+                output = e.Message;
+                output += e.InnerException.Message;
+                return false;
+            }
+
+            return result;
+        }
+
 
         public static IWebDriver InitializeSeleniumBrowser()
         {

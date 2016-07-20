@@ -1,5 +1,9 @@
+|TutorialSuitesOfTests.SampleConfigurationScenario.PostRequestToService||16:04:31 Tue, Jul 19, 2016|
+|TutorialSuitesOfTests.GenericValidationFixture.HowToConcatinateManyStringTogether||15:38:55 Tue, Jul 19, 2016|
+|TutorialSuitesOfTests.SampleConfigurationScenario.SuiteTearDown||16:58:36 Mon, Jul 18, 2016|
+|TutorialSuitesOfTests.SampleConfigurationScenario||16:56:10 Mon, Jul 18, 2016|
+|TutorialSuitesOfTests.SampleConfigurationScenario.SuiteSetUp||16:55:17 Mon, Jul 18, 2016|
 |FrontPage||12:48:25 Mon, Jul 18, 2016|
-|TutorialSuitesOfTests.GenericValidationFixture.HowToConcatinateManyStringTogether||12:42:13 Wed, Jul 13, 2016|
 |TutorialSuitesOfTests.FileManipulationTestSuite.BackUpAndRestoreExample||14:35:38 Fri, Jul 08, 2016|
 |TutorialSuitesOfTests.UiAutomationTestSuite.SearchTestSuite||14:18:58 Fri, Jul 08, 2016|
 |TutorialSuitesOfTests.BackEndAutomationExample||17:14:10 Thu, Jul 07, 2016|

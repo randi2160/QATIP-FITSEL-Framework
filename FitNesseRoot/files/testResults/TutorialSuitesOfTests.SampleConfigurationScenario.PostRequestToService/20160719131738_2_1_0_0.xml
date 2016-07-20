@@ -1,0 +1,270 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20160515</FitNesseVersion>
+  <rootPath>TutorialSuitesOfTests.SampleConfigurationScenario.PostRequestToService</rootPath>
+    <result>
+    <counts>
+      <right>4</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <date>2016-07-19T13:17:38-04:00</date>
+    <runTimeInMillis>402</runTimeInMillis>
+    <content></content>
+    <relativePageName>SuiteSetUp</relativePageName>
+          </result>
+  <result>
+    <counts>
+      <right>1</right>
+      <wrong>1</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <date>2016-07-19T13:17:39-04:00</date>
+    <runTimeInMillis>619</runTimeInMillis>
+    <content></content>
+    <relativePageName>PostRequestToService</relativePageName>
+          </result>
+  <result>
+    <counts>
+      <right>1</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <date>2016-07-19T13:17:39-04:00</date>
+    <runTimeInMillis>271</runTimeInMillis>
+    <content>&lt;br/&gt;&lt;div class="contents"&gt;
+	&lt;b&gt;Contents:&lt;/b&gt;
+	&lt;ul class="toc1"/&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_SUT"&gt;QaTip.Fitnesse.Demo.DoTestFixture&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;p class="note"&gt;definition&lt;/p&gt;&lt;br/&gt;&lt;span class="meta"&gt;variable defined: DictionaryPath=C:\temp\Dictionaries&lt;/span&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;variable defined: RuleMetadataPath=C:\temp\RuleMetadataFiles&lt;/span&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;variable defined: EnableXsrfVerification=N&lt;/span&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;variable defined: DictionarySourcePath=C:\RFMDEFAULTDICTIONARY&lt;/span&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;h2&gt;&lt;span class="green "&gt;Scenario&lt;/span&gt;:&lt;/h2&gt;
+&lt;br/&gt;&lt;b&gt;1. Stop Service  (PROVIDE NAME OF SERVICE)&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="3"&gt;&lt;span class="fit_member"&gt;ManageServices&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;ServiceName&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;StopService?&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;Output&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Jenkins&lt;/td&gt;
+		&lt;td class="pass"&gt;SUCCESS&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; No Issues.  Jenkins was already stopped. &lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;b&gt;2. Get current configuration  and save it to Variable so that you can reset back to orginal when test is ready to tear down&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="4"&gt;&lt;span class="fit_member"&gt;ManageConfigs&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;ConfigFileName&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;ConfigValue&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;GetConfigSetting()&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;ConfigValue?&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;C:\backupdata\Training\Training\Fitnesse\ConfigurationExample\configruationexample.config&lt;/td&gt;
+		&lt;td&gt;DictionaryPath&lt;/td&gt;
+		&lt;td&gt;&amp;gt;&amp;gt;DictionaryPath&lt;span class="fit_grey"&gt; C:\temp\Dictionaries&lt;/span&gt;&lt;/td&gt;
+		&lt;td class="pass"&gt;DictionaryPath&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;C:\backupdata\Training\Training\Fitnesse\ConfigurationExample\configruationexample.config&lt;/td&gt;
+		&lt;td&gt;RuleMetadataPath&lt;/td&gt;
+		&lt;td&gt;&amp;gt;&amp;gt;RuleMetadataPath&lt;span class="fit_grey"&gt; C:\temp\RuleMetadataFiles&lt;/span&gt;&lt;/td&gt;
+		&lt;td class="pass"&gt;RuleMetadataPath&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="4"&gt;&lt;span class="fit_member"&gt;ManageConfigs&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;ConfigFileName&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;ConfigValue&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;GetConfigSetting()&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;ConfigValue?&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;C:\backupdata\Training\Training\Fitnesse\ConfigurationExample\configruationexample.config&lt;/td&gt;
+		&lt;td&gt;PermissionOn&lt;/td&gt;
+		&lt;td&gt;&amp;gt;&amp;gt;Permission&lt;span class="fit_grey"&gt; false&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; PermissionOn&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;3. Set New Configuration&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="5"&gt;&lt;span class="fit_member"&gt;Manage Configs&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;ConfigFileName&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;ConfigValue&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;Target Value&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;SetConfigSetting()&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;GetConfigSetting()?&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;C:\backupdata\Training\Training\Fitnesse\ConfigurationExample\configruationexample.config&lt;/td&gt;
+		&lt;td&gt;DictionaryPath&lt;/td&gt;
+		&lt;td&gt;C:\temp\Dictionaries&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; void&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&amp;gt;&amp;gt;DictionaryPath&lt;span class="fit_grey"&gt; C:\temp\Dictionaries&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;C:\backupdata\Training\Training\Fitnesse\ConfigurationExample\configruationexample.config&lt;/td&gt;
+		&lt;td&gt;RuleMetadataPath&lt;/td&gt;
+		&lt;td&gt;C:\temp\RuleMetadataFiles&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; void&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&amp;gt;&amp;gt;RuleMetadataPath&lt;span class="fit_grey"&gt; C:\temp\RuleMetadataFiles&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;C:\backupdata\Training\Training\Fitnesse\ConfigurationExample\configruationexample.config&lt;/td&gt;
+		&lt;td&gt;PermissionOn&lt;/td&gt;
+		&lt;td&gt;false&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; void&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&amp;gt;&amp;gt;permission&lt;span class="fit_grey"&gt; false&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;b&gt;4. Restart Service&lt;/b&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="3"&gt;&lt;span class="fit_member"&gt;ManageServices&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;ServiceName&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;StartService?&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;Output&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Jenkins&lt;/td&gt;
+		&lt;td class="pass"&gt;SUCCESS&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; No Issues. Started Jenkins. &lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&amp;lt;test page&amp;gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_SUT"&gt;QaTip.Fitnesse.Demo.DoTestFixture&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;span class="meta"&gt;variable defined: Resturl=http://www.thomas-bayer.com/sqlrest/CUSTOMER/18/&lt;/span&gt;
+&lt;br/&gt;&lt;br/&gt;1. Perform a Post Request to rest service&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="6"&gt;&lt;span class="fit_member"&gt;CreateRestApiRequest&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;Url&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;requestType&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;requestFormat&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;GetRequest&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;Requestresponse?&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;requestStatus?&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;http://www.thomas-bayer.com/sqlrest/CUSTOMER/18/&lt;/td&gt;
+		&lt;td&gt;GET&lt;/td&gt;
+		&lt;td&gt;text&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; &lt;?xml version="1.0"?&gt;&lt;CUSTOMER xmlns:xlink="http://www.w3.org/1999/xlink"&gt;
+    &lt;ID&gt;18&lt;/ID&gt;
+    &lt;FIRSTNAME&gt;Sylvia&lt;/FIRSTNAME&gt;
+    &lt;LASTNAME&gt;Fuller&lt;/LASTNAME&gt;
+    &lt;STREET&gt;158 - 20th Ave.&lt;/STREET&gt;
+    &lt;CITY&gt;Paris&lt;/CITY&gt;
+&lt;/CUSTOMER&gt;&lt;/span&gt;&lt;/td&gt;
+		&lt;td class="fail"&gt;18 Sylvia Fuller 158 - 20th Ave. Paris &lt;span class="fit_label"&gt;expected&lt;/span&gt;&lt;hr /&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot;?&amp;gt;&amp;lt;CUSTOMER xmlns:xlink=&amp;quot;http://www.w3.org/1999/xlink&amp;quot;&amp;gt;
+    &amp;lt;ID&amp;gt;18&amp;lt;/ID&amp;gt;
+    &amp;lt;FIRSTNAME&amp;gt;Sylvia&amp;lt;/FIRSTNAME&amp;gt;
+    &amp;lt;LASTNAME&amp;gt;Fuller&amp;lt;/LASTNAME&amp;gt;
+    &amp;lt;STREET&amp;gt;158 - 20th Ave.&amp;lt;/STREET&amp;gt;
+    &amp;lt;CITY&amp;gt;Paris&amp;lt;/CITY&amp;gt;
+&amp;lt;/CUSTOMER&amp;gt; &lt;span class="fit_label"&gt;actual&lt;/span&gt;&lt;hr /&gt;Length expected 38 was 228&lt;/td&gt;
+		&lt;td class="pass"&gt;OK&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;2. Get Response back&lt;br/&gt;3. Validate Response&lt;br/&gt;&lt;br/&gt;&lt;div class="contents"&gt;
+	&lt;b&gt;Contents:&lt;/b&gt;
+	&lt;ul class="toc1"/&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_SUT"&gt;QaTip.Fitnesse.Demo.DoTestFixture&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;Set back configuration to oringal configuration&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="3"&gt;&lt;span class="fit_member"&gt;ManageServices&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;ServiceName&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;StopService?&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;Output&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Jenkins&lt;/td&gt;
+		&lt;td class="pass"&gt;SUCCESS&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; No Issues.  Stopped Jenkins. &lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="6"&gt;&lt;span class="fit_member"&gt;Manage Configs&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;ConfigFileName&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;ConfigValue&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;Target Value&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;GetConfigSetting()?&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;SetConfigSetting()      ?&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;GetConfigSetting()?&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;C:\backupdata\Training\Training\Fitnesse\ConfigurationExample\configruationexample.config&lt;/td&gt;
+		&lt;td&gt;PermissionOn&lt;/td&gt;
+		&lt;td&gt;&amp;lt;&amp;lt;Permission&lt;span class="fit_grey"&gt; false&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; false&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; void&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; false&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;</content>
+    <relativePageName>SuiteTearDown</relativePageName>
+          </result>
+  <executionLog>
+    <testSystem>fit:Fitsharp\Runner.exe</testSystem>
+    <command>Fitsharp\Runner.exe -r fitnesse.fitserver.FitServer,FitSharp\fit.dll,FitSharp\fitLibrary.dll -c FitSharp\suite.config.xml ..\Fitnesse\Fixtures\Fitnesse_Dlls\QaTip.Fitnesse.Demo.dll A5Q55S72 60852 3863</command>
+    <exitCode>1</exitCode>
+    <stdOut>File path: C:\backupdata\Training\Training\Fitnesse\Fixtures\Fitnesse_Dlls\QaTip.Fitnesse.Demo.dll.config
+7/19/2016 1:17:38 PM: Found ConnectionString: FitNesseqatipDbConString
+7/19/2016 1:17:38 PM: DbConnectionString = Data Source=SQLEXPRESS; Integrated Security=SSPI;AttachDBFilename=DataDirectoryaspnetdb.mdf;User Instance=true
+7/19/2016 1:17:38 PM: Current Service state: Stopped
+7/19/2016 1:17:38 PM: Starting Jenkins
+7/19/2016 1:17:39 PM: Started Jenkins
+File path: C:\backupdata\Training\Training\Fitnesse\Fixtures\Fitnesse_Dlls\QaTip.Fitnesse.Demo.dll.config
+7/19/2016 1:17:39 PM: Found ConnectionString: FitNesseqatipDbConString
+7/19/2016 1:17:39 PM: DbConnectionString = Data Source=SQLEXPRESS; Integrated Security=SSPI;AttachDBFilename=DataDirectoryaspnetdb.mdf;User Instance=true
+File path: C:\backupdata\Training\Training\Fitnesse\Fixtures\Fitnesse_Dlls\QaTip.Fitnesse.Demo.dll.config
+7/19/2016 1:17:39 PM: Found ConnectionString: FitNesseqatipDbConString
+7/19/2016 1:17:39 PM: DbConnectionString = Data Source=SQLEXPRESS; Integrated Security=SSPI;AttachDBFilename=DataDirectoryaspnetdb.mdf;User Instance=true
+7/19/2016 1:17:39 PM: Stopping Jenkins
+</stdOut>
+    <stdErr></stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>2</right>
+    <wrong>1</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>1879</totalRunTimeInMillis>
+</testResults>
+

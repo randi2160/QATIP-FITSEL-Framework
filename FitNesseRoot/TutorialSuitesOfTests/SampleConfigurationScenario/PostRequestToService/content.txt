@@ -1,0 +1,14 @@
+<test page>
+!|QaTip.Fitnesse.Demo.DoTestFixture|
+!define Resturl {http://www.thomas-bayer.com/sqlrest/CUSTOMER/18/}
+
+1. Perform a Post Request to rest service
+
+
+!|CreateRestApiRequest                                                          |
+|Url       |requestType|requestFormat|GetRequest|Requestresponse?|requestStatus?|
+|${Resturl}|GET        |text         ||<<response      |OK            |
+
+
+2. Get Response back
+3. Validate Response
