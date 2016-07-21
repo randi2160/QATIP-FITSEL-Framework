@@ -1,0 +1,1 @@
+C:\backupdata\Training\Training\Fitnesse\Fixtures\QaTip.Fitnesse.Demo\SpecflowBDD\obj\Debug\SpecflowBDD.csprojResolveAssemblyReference.cache

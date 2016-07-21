@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<suiteResults>
+  <FitNesseVersion>v20160515</FitNesseVersion>
+  <rootPath>TutorialSuitesOfTests.GenericValidationFixture</rootPath>
+  <pageHistoryReference>
+    <name>TutorialSuitesOfTests.GenericValidationFixture.HowToConcatinateManyStringTogether</name>
+    <date>2016-07-20T09:38:29-04:00</date>
+    <pageHistoryLink>TutorialSuitesOfTests.GenericValidationFixture.HowToConcatinateManyStringTogether?pageHistory&amp;resultDate=20160720093829</pageHistoryLink>
+    <counts>
+      <right>9</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>83</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>TutorialSuitesOfTests.GenericValidationFixture.SampleTestUsingStringConcatination</name>
+    <date>2016-07-20T09:38:29-04:00</date>
+    <pageHistoryLink>TutorialSuitesOfTests.GenericValidationFixture.SampleTestUsingStringConcatination?pageHistory&amp;resultDate=20160720093829</pageHistoryLink>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>5</runTimeInMillis>
+  </pageHistoryReference>
+  <executionLog>
+    <testSystem>fit:Fitsharp\Runner.exe</testSystem>
+    <command>Fitsharp\Runner.exe -r fitnesse.fitserver.FitServer,FitSharp\fit.dll,FitSharp\fitLibrary.dll -c FitSharp\suite.config.xml ..\Fitnesse\Fixtures\Fitnesse_Dlls\QaTip.Fitnesse.Demo.dll A5Q55S72 56065 3863</command>
+    <exitCode>0</exitCode>
+    <stdOut>File path: C:\backupdata\Training\Training\Fitnesse\Fixtures\Fitnesse_Dlls\QaTip.Fitnesse.Demo.dll.config
+7/20/2016 9:38:29 AM: Found ConnectionString: FitNesseqatipDbConString
+7/20/2016 9:38:29 AM: DbConnectionString = Data Source=SQLEXPRESS; Integrated Security=SSPI;AttachDBFilename=DataDirectoryaspnetdb.mdf;User Instance=true
+File path: C:\backupdata\Training\Training\Fitnesse\Fixtures\Fitnesse_Dlls\QaTip.Fitnesse.Demo.dll.config
+7/20/2016 9:38:29 AM: Found ConnectionString: FitNesseqatipDbConString
+7/20/2016 9:38:29 AM: DbConnectionString = Data Source=SQLEXPRESS; Integrated Security=SSPI;AttachDBFilename=DataDirectoryaspnetdb.mdf;User Instance=true
+</stdOut>
+    <stdErr></stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>1</right>
+    <wrong>0</wrong>
+    <ignores>1</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>571</totalRunTimeInMillis>
+</suiteResults>
+

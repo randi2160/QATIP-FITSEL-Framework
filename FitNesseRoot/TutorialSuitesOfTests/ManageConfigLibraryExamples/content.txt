@@ -1,4 +1,5 @@
 !1 Test suite X
+!|QaTip.Fitnesse.Demo.DoTestFixture|
 
 !c !3 Manage Config File Fixture library Examples
 

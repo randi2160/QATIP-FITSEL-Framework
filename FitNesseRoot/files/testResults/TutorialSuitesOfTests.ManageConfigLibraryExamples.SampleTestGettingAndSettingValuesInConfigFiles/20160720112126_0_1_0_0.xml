@@ -1,0 +1,519 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20160515</FitNesseVersion>
+  <rootPath>TutorialSuitesOfTests.ManageConfigLibraryExamples.SampleTestGettingAndSettingValuesInConfigFiles</rootPath>
+    <result>
+    <counts>
+      <right>2</right>
+      <wrong>3</wrong>
+      <ignores>0</ignores>
+      <exceptions>5</exceptions>
+    </counts>
+    <date>2016-07-20T11:21:27-04:00</date>
+    <runTimeInMillis>6124</runTimeInMillis>
+    <content>&lt;br/&gt;&amp;lt;test page&amp;gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_SUT"&gt;QaTip.Fitnesse.Demo.DoTestFixture&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;variable defined: configpath=C:\backupdata\Training\Training\Fitnesse\ConfigurationExample\configruationexample.config&lt;/span&gt;
+ &lt;br/&gt;&lt;span class="meta"&gt;variable defined: servicename=Jenkins&lt;/span&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;variable defined: DictionaryPath=C:\temp\Dictionaries&lt;/span&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;variable defined: RuleMetadataPath=C:\temp\RuleMetadataFiles&lt;/span&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;variable defined: EnableXsrfVerification=N&lt;/span&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;variable defined: DictionarySourcePath=C:\RFMDEFAULTDICTIONARY&lt;/span&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;span class="blue"&gt;&lt;b&gt;Set Processing Interval to Use Testing Scheduler&lt;/b&gt;&lt;/span&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="5"&gt;&lt;span class="fit_member"&gt;manageconfigs&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;ConfigFileName&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;ConfigValue&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;Target Value&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;SetConfigSetting()&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;GetConfigSetting()?&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;C:\backupdata\Training\Training\Fitnesse\ConfigurationExample\configruationexample.config&lt;/td&gt;
+		&lt;td&gt;ProcessingIntervalInSeconds&lt;/td&gt;
+		&lt;td&gt;5&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; System.ApplicationException: Could not find the specified app setting of 'ProcessingIntervalInSeconds' in C:\backupdata\Training\Training\Fitnesse\ConfigurationExample\configruationexample.config
+   at QaTip.Fitnesse.Demo.DoFixture.DomainObject.ManageConfigMap._setConfigAppSetting(String configPath) in C:\backupdata\Training\Training\Fitnesse\Fixtures\QaTip.Fitnesse.Demo\QaTip.Fitnesse.Demo\DoFixture\DomainObject\ManageConfigMap.cs:line 247
+   at QaTip.Fitnesse.Demo.DoFixture.DomainObject.ManageConfigMap.SetConfigSetting() in C:\backupdata\Training\Training\Fitnesse\Fixtures\QaTip.Fitnesse.Demo\QaTip.Fitnesse.Demo\DoFixture\DomainObject\ManageConfigMap.cs:line 66&lt;/span&gt;&lt;/td&gt;
+		&lt;td class="fail"&gt;5 &lt;span class="fit_label"&gt;expected&lt;/span&gt;&lt;hr /&gt;Could not find &amp;#39;ProcessingIntervalInSeconds&amp;#39; AppSetting in C:\backupdata\Training\Training\Fitnesse\ConfigurationExample\configruationexample.config &lt;span class="fit_label"&gt;actual&lt;/span&gt;&lt;hr /&gt;Length expected 1 was 148&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;C:\backupdata\Training\Training\Fitnesse\ConfigurationExample\configruationexample.config&lt;/td&gt;
+		&lt;td&gt;LcdMode&lt;/td&gt;
+		&lt;td&gt;TEST_PROCESSING&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; System.ApplicationException: Could not find the specified app setting of 'LcdMode' in C:\backupdata\Training\Training\Fitnesse\ConfigurationExample\configruationexample.config
+   at QaTip.Fitnesse.Demo.DoFixture.DomainObject.ManageConfigMap._setConfigAppSetting(String configPath) in C:\backupdata\Training\Training\Fitnesse\Fixtures\QaTip.Fitnesse.Demo\QaTip.Fitnesse.Demo\DoFixture\DomainObject\ManageConfigMap.cs:line 247
+   at QaTip.Fitnesse.Demo.DoFixture.DomainObject.ManageConfigMap.SetConfigSetting() in C:\backupdata\Training\Training\Fitnesse\Fixtures\QaTip.Fitnesse.Demo\QaTip.Fitnesse.Demo\DoFixture\DomainObject\ManageConfigMap.cs:line 66&lt;/span&gt;&lt;/td&gt;
+		&lt;td class="fail"&gt;TEST_PROCESSING &lt;span class="fit_label"&gt;expected&lt;/span&gt;&lt;hr /&gt;Could not find &amp;#39;LcdMode&amp;#39; AppSetting in C:\backupdata\Training\Training\Fitnesse\ConfigurationExample\configruationexample.config &lt;span class="fit_label"&gt;actual&lt;/span&gt;&lt;hr /&gt;Length expected 15 was 128&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;span class="blue"&gt;&lt;b&gt;Start Service&lt;/b&gt;&lt;/span&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="3"&gt;&lt;span class="fit_member"&gt;ManageServices&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;ServiceName&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;Ensure Service Started?&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;Output&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Jenkins&lt;/td&gt;
+		&lt;td class="pass"&gt;SUCCESS&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; No Issues. Started Jenkins. &lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;span class="blue"&gt;&lt;b&gt;Point to the targeted schema:&lt;/b&gt;&lt;/span&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;Test Helper&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;FitNesse Db ConnectionString?&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; Data Source=SQLEXPRESS; Integrated Security=SSPI;AttachDBFilename=DataDirectoryaspnetdb.mdf;User Instance=true&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;Validate&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;Get Current DateTime()&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&amp;gt;&amp;gt;currentDateTime&lt;span class="fit_grey"&gt; 7/20/2016 11:21:27 AM&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;span class="blue"&gt;&lt;b&gt;Stop services:&lt;/b&gt;&lt;/span&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="3"&gt;&lt;span class="fit_member"&gt;Manage Services&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;Service Name&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;Stop Service?&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;Output&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Jenkins&lt;/td&gt;
+		&lt;td class="pass"&gt;SUCCESS&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; No Issues.  Stopped Jenkins. &lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="5"&gt;&lt;span class="fit_member"&gt;manageconfigs&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;ConfigFileName&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;ConfigValue&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;Target Value&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;SetConfigSetting()&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;GetConfigSetting()?&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="meta"&gt;undefined variable: CM_SQS_CONFIG&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;C:\temp\Dictionaries&lt;/td&gt;
+		&lt;td&gt;0&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; System.NotSupportedException: The given path's format is not supported.
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at QaTip.Fitnesse.Demo.DoFixture.DomainObject.ManageConfigMap._setConfigAppSetting(String configPath) in C:\backupdata\Training\Training\Fitnesse\Fixtures\QaTip.Fitnesse.Demo\QaTip.Fitnesse.Demo\DoFixture\DomainObject\ManageConfigMap.cs:line 218
+   at QaTip.Fitnesse.Demo.DoFixture.DomainObject.ManageConfigMap.SetConfigSetting() in C:\backupdata\Training\Training\Fitnesse\Fixtures\QaTip.Fitnesse.Demo\QaTip.Fitnesse.Demo\DoFixture\DomainObject\ManageConfigMap.cs:line 66&lt;/span&gt;&lt;/td&gt;
+		&lt;td class="error"&gt;0&lt;hr /&gt;&lt;pre&gt;&lt;div class="fit_stacktrace"&gt;System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---&gt; System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---&gt; System.NotSupportedException: The given path's format is not supported.
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at QaTip.Fitnesse.Demo.DoFixture.DomainObject.ManageConfigMap._getConfigAppSetting(String configPath) in C:\backupdata\Training\Training\Fitnesse\Fixtures\QaTip.Fitnesse.Demo\QaTip.Fitnesse.Demo\DoFixture\DomainObject\ManageConfigMap.cs:line 168
+   at QaTip.Fitnesse.Demo.DoFixture.DomainObject.ManageConfigMap.GetConfigSetting() in C:\backupdata\Training\Training\Fitnesse\Fixtures\QaTip.Fitnesse.Demo\QaTip.Fitnesse.Demo\DoFixture\DomainObject\ManageConfigMap.cs:line 55
+   --- End of inner exception stack trace ---
+   at fitSharp.Machine.Model.TypedValue.ThrowExceptionIfNotValid()
+   at fitSharp.Fit.Operators.CompareDefault.Compare(TypedValue actualValue, Tree`1 expected)
+   at fitSharp.Machine.Engine.ProcessorBase`2.&lt;&gt;c__DisplayClass3.&lt;&gt;c__DisplayClass5.&lt;Compare&gt;b__2(CompareOperator`1 o)
+   at fitSharp.Machine.Engine.Operators`2.Do[O](CanDoOperation`1 canDoOperation, DoOperation`1 doOperation)
+   at fitSharp.Machine.Engine.ProcessorBase`2.&lt;&gt;c__DisplayClass3.&lt;Compare&gt;b__0(OperationLogging logging)
+   at fitSharp.Machine.Engine.ProcessorBase`2.DoLoggedOperation[R](String startMessage, Func`2 operation)
+   at fitSharp.Fit.Operators.CheckDefault.Check(CellOperationValue actualValue, Tree`1 expectedCell)
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.RuntimeType.InvokeMember(String name, BindingFlags bindingFlags, Binder binder, Object target, Object[] providedArgs, ParameterModifier[] modifiers, CultureInfo culture, String[] namedParams)
+   at fitSharp.Machine.Engine.MethodMember.TryInvoke(Object[] parameters)
+   at fitSharp.Machine.Engine.ReflectionMember.Invoke(Object[] parameters)
+   at fitSharp.Machine.Engine.ProcessorBase`2.Operate[O](Object[] parameters)
+   at fitSharp.Fit.Engine.CellProcessorExtension.Check(CellProcessor processor, Object systemUnderTest, Tree`1 memberName, Tree`1 parameters, Tree`1 expectedCell)
+   at fitSharp.Fit.Service.CheckBinding.Do(Tree`1 cell)
+   at fit.ColumnFixture.DoCell(Parse cell, Int32 column)&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;span class="blue"&gt;&lt;b&gt;Adjust Current Date Time&lt;/b&gt;&lt;/span&gt;&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="7"&gt;&lt;span class="fit_member"&gt;Validate&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;GetCurrentDateTime()&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;AdjustDateByDays&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;GetDateRelativeToToday()?&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;AdjustDateByDays&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;GetDateRelativeToToday()?&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;AdjustTimeBySeconds&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;AdjustSecondsRelativeToNow()&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; 7/20/2016 11:21:27 AM&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;0&lt;/td&gt;
+		&lt;td&gt;&amp;gt;&amp;gt;currentProcessingDate&lt;span class="fit_grey"&gt; 7/20/2016&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;1&lt;/td&gt;
+		&lt;td&gt;&amp;gt;&amp;gt;nextProcessingDate&lt;span class="fit_grey"&gt; 7/21/2016&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;30&lt;/td&gt;
+		&lt;td&gt;&amp;gt;&amp;gt;timeAdjustment&lt;span class="fit_grey"&gt; 11:21:57&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="6"&gt;&lt;span class="fit_member"&gt;manageconfigs&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;ConfigFileName&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;ConfigValue&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;GetConfigSetting()?&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;TargetValue&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;SetConfigSetting()&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;GetConfigSetting()?&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;C:\backupdata\Training\Training\Fitnesse\ConfigurationExample\configruationexample.config&lt;/td&gt;
+		&lt;td&gt;ProcessingStartTime&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; Could not find 'ProcessingStartTime' AppSetting in C:\backupdata\Training\Training\Fitnesse\ConfigurationExample\configruationexample.config&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&amp;lt;&amp;lt;timeAdjustment&lt;span class="fit_grey"&gt; 11:21:57&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; System.ApplicationException: Could not find the specified app setting of 'ProcessingStartTime' in C:\backupdata\Training\Training\Fitnesse\ConfigurationExample\configruationexample.config
+   at QaTip.Fitnesse.Demo.DoFixture.DomainObject.ManageConfigMap._setConfigAppSetting(String configPath) in C:\backupdata\Training\Training\Fitnesse\Fixtures\QaTip.Fitnesse.Demo\QaTip.Fitnesse.Demo\DoFixture\DomainObject\ManageConfigMap.cs:line 247
+   at QaTip.Fitnesse.Demo.DoFixture.DomainObject.ManageConfigMap.SetConfigSetting() in C:\backupdata\Training\Training\Fitnesse\Fixtures\QaTip.Fitnesse.Demo\QaTip.Fitnesse.Demo\DoFixture\DomainObject\ManageConfigMap.cs:line 66&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; Could not find 'ProcessingStartTime' AppSetting in C:\backupdata\Training\Training\Fitnesse\ConfigurationExample\configruationexample.config&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;temporary&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="5"&gt;&lt;span class="fit_member"&gt;manageconfigs&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;ConfigFileName&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;ConfigValue&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;Target Value&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;SetConfigSetting()&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;GetConfigSetting()?&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;C:\backupdata\Training\Training\Fitnesse\ConfigurationExample\configruationexample.config&lt;/td&gt;
+		&lt;td&gt;InputFolder&lt;/td&gt;
+		&lt;td&gt;&amp;lt;&amp;lt;stagingFolderPathSetting&lt;span class="fit_grey"&gt; null&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; System.ApplicationException: Could not find the specified app setting of 'InputFolder' in C:\backupdata\Training\Training\Fitnesse\ConfigurationExample\configruationexample.config
+   at QaTip.Fitnesse.Demo.DoFixture.DomainObject.ManageConfigMap._setConfigAppSetting(String configPath) in C:\backupdata\Training\Training\Fitnesse\Fixtures\QaTip.Fitnesse.Demo\QaTip.Fitnesse.Demo\DoFixture\DomainObject\ManageConfigMap.cs:line 247
+   at QaTip.Fitnesse.Demo.DoFixture.DomainObject.ManageConfigMap.SetConfigSetting() in C:\backupdata\Training\Training\Fitnesse\Fixtures\QaTip.Fitnesse.Demo\QaTip.Fitnesse.Demo\DoFixture\DomainObject\ManageConfigMap.cs:line 66&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; Could not find 'InputFolder' AppSetting in C:\backupdata\Training\Training\Fitnesse\ConfigurationExample\configruationexample.config&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;Validate&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Get Current DateTime()&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="6"&gt;&lt;span class="fit_member"&gt;manageconfigs&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;ConfigFileName&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;ConfigValue&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;GetConfigSetting()?&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;TargetValue&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;SetConfigSetting()&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;GetConfigSetting()?&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;C:\backupdata\Training\Training\Fitnesse\ConfigurationExample\configruationexample.config&lt;/td&gt;
+		&lt;td&gt;EnableEmailNotification&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; Could not find 'EnableEmailNotification' AppSetting in C:\backupdata\Training\Training\Fitnesse\ConfigurationExample\configruationexample.config&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;true&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; System.ApplicationException: Could not find the specified app setting of 'EnableEmailNotification' in C:\backupdata\Training\Training\Fitnesse\ConfigurationExample\configruationexample.config
+   at QaTip.Fitnesse.Demo.DoFixture.DomainObject.ManageConfigMap._setConfigAppSetting(String configPath) in C:\backupdata\Training\Training\Fitnesse\Fixtures\QaTip.Fitnesse.Demo\QaTip.Fitnesse.Demo\DoFixture\DomainObject\ManageConfigMap.cs:line 247
+   at QaTip.Fitnesse.Demo.DoFixture.DomainObject.ManageConfigMap.SetConfigSetting() in C:\backupdata\Training\Training\Fitnesse\Fixtures\QaTip.Fitnesse.Demo\QaTip.Fitnesse.Demo\DoFixture\DomainObject\ManageConfigMap.cs:line 66&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; Could not find 'EnableEmailNotification' AppSetting in C:\backupdata\Training\Training\Fitnesse\ConfigurationExample\configruationexample.config&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="4"&gt;&lt;span class="fit_member"&gt;manageconfigs&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;ConfigFileName&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;ConfigValue&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;TargetValue&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;SetXPATHConfigValueToTargetValue()&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;C:\backupdata\Training\Training\Fitnesse\ConfigurationExample\configruationexample.config&lt;/td&gt;
+		&lt;td&gt;/configuration/emailNotifications/emailNotification/@mailServer&lt;/td&gt;
+		&lt;td&gt;localhost&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; System.NullReferenceException: Object reference not set to an instance of an object.
+   at QaTip.Fitnesse.Demo.DoFixture.DomainObject.ManageConfigMap.SetXPATHConfigValueToTargetValue() in C:\backupdata\Training\Training\Fitnesse\Fixtures\QaTip.Fitnesse.Demo\QaTip.Fitnesse.Demo\DoFixture\DomainObject\ManageConfigMap.cs:line 85&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;C:\backupdata\Training\Training\Fitnesse\ConfigurationExample\configruationexample.config&lt;/td&gt;
+		&lt;td&gt;/configuration/emailNotifications/emailNotification/@mailToRole&lt;/td&gt;
+		&lt;td&gt;QA.Tester@McKesson.com&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; System.NullReferenceException: Object reference not set to an instance of an object.
+   at QaTip.Fitnesse.Demo.DoFixture.DomainObject.ManageConfigMap.SetXPATHConfigValueToTargetValue() in C:\backupdata\Training\Training\Fitnesse\Fixtures\QaTip.Fitnesse.Demo\QaTip.Fitnesse.Demo\DoFixture\DomainObject\ManageConfigMap.cs:line 85&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td class="error"&gt;Fake Email&lt;hr /&gt;&lt;pre&gt;&lt;div class="fit_stacktrace"&gt;fitSharp.Machine.Exception.TypeMissingException: Type 'FakeEmail' not found in assemblies:
+    file:///C:/Windows/Microsoft.NET/Framework64/v4.0.30319/mscorlib.dll
+    file:///C:/backupdata/Training/Training/Fitnesse/Fitsharp/Runner.exe
+    file:///C:/backupdata/Training/Training/Fitnesse/Fitsharp/fitSharp.DLL
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Configuration/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Configuration.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System/v4.0_4.0.0.0__b77a5c561934e089/System.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Xml/v4.0_4.0.0.0__b77a5c561934e089/System.Xml.dll
+    file:///C:/backupdata/Training/Training/Fitnesse/Fitsharp/fit.DLL
+    file:///C:/backupdata/Training/Training/Fitnesse/Fixtures/Fitnesse_Dlls/QaTip.Fitnesse.Demo.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.Data/v4.0_4.0.0.0__b77a5c561934e089/System.Data.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.Web/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Web.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.ServiceProcess/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.ServiceProcess.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Drawing/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Drawing.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.ComponentModel.DataAnnotations/v4.0_4.0.0.0__31bf3856ad364e35/System.ComponentModel.DataAnnotations.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Web.ApplicationServices/v4.0_4.0.0.0__31bf3856ad364e35/System.Web.ApplicationServices.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Configuration.Install/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Configuration.Install.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Windows.Forms/v4.0_4.0.0.0__b77a5c561934e089/System.Windows.Forms.dll
+
+   at fitSharp.Machine.Engine.ReflectionMember.Invoke(Object[] parameters)
+   at fitSharp.Machine.Engine.ProcessorBase`2.Operate[O](Object[] parameters)
+   at fitSharp.Fit.Operators.ParseInterpreter.MakeInterpreter(Cell classCell)
+   at fitSharp.Fit.Operators.ParseInterpreter.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorBase`2.&lt;&gt;c__DisplayClass11.&lt;&gt;c__DisplayClass13.&lt;Parse&gt;b__10(ParseOperator`1 o)
+   at fitSharp.Machine.Engine.Operators`2.Do[O](CanDoOperation`1 canDoOperation, DoOperation`1 doOperation)
+   at fitSharp.Machine.Engine.ProcessorBase`2.&lt;&gt;c__DisplayClass11.&lt;Parse&gt;b__e(OperationLogging logging)
+   at fitSharp.Machine.Engine.ProcessorBase`2.DoLoggedOperation[R](String startMessage, Func`2 operation)
+   at fitSharp.Machine.Engine.ProcessorBase`2.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Fit.Service.CellProcessorBase.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorExtension.ParseTree[T](Processor`1 processor, Type type, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorExtension.ParseTree[T,V](Processor`1 processor, Tree`1 input)
+   at fitSharp.Fit.Engine.InterpretFlow.ProcessFlowRow(Tree`1 table, Int32 rowNumber)&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Output?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;STARTED&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;span class="blue"&gt;&lt;b&gt;Delete Process Log Detail Table contents to clear out data from previous runs&lt;/b&gt;&lt;/span&gt;&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td class="error"&gt;Delete From Process Log Detail Table&lt;hr /&gt;&lt;pre&gt;&lt;div class="fit_stacktrace"&gt;fitSharp.Machine.Exception.TypeMissingException: Type 'DeleteFromProcessLogDetailTable' not found in assemblies:
+    file:///C:/Windows/Microsoft.NET/Framework64/v4.0.30319/mscorlib.dll
+    file:///C:/backupdata/Training/Training/Fitnesse/Fitsharp/Runner.exe
+    file:///C:/backupdata/Training/Training/Fitnesse/Fitsharp/fitSharp.DLL
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Configuration/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Configuration.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System/v4.0_4.0.0.0__b77a5c561934e089/System.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Xml/v4.0_4.0.0.0__b77a5c561934e089/System.Xml.dll
+    file:///C:/backupdata/Training/Training/Fitnesse/Fitsharp/fit.DLL
+    file:///C:/backupdata/Training/Training/Fitnesse/Fixtures/Fitnesse_Dlls/QaTip.Fitnesse.Demo.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.Data/v4.0_4.0.0.0__b77a5c561934e089/System.Data.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.Web/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Web.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.ServiceProcess/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.ServiceProcess.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Drawing/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Drawing.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.ComponentModel.DataAnnotations/v4.0_4.0.0.0__31bf3856ad364e35/System.ComponentModel.DataAnnotations.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Web.ApplicationServices/v4.0_4.0.0.0__31bf3856ad364e35/System.Web.ApplicationServices.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Configuration.Install/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Configuration.Install.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Windows.Forms/v4.0_4.0.0.0__b77a5c561934e089/System.Windows.Forms.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/Accessibility/v4.0_4.0.0.0__b03f5f7f11d50a3a/Accessibility.dll
+
+   at fitSharp.Machine.Engine.ReflectionMember.Invoke(Object[] parameters)
+   at fitSharp.Machine.Engine.ProcessorBase`2.Operate[O](Object[] parameters)
+   at fitSharp.Fit.Operators.ParseInterpreter.MakeInterpreter(Cell classCell)
+   at fitSharp.Fit.Operators.ParseInterpreter.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorBase`2.&lt;&gt;c__DisplayClass11.&lt;&gt;c__DisplayClass13.&lt;Parse&gt;b__10(ParseOperator`1 o)
+   at fitSharp.Machine.Engine.Operators`2.Do[O](CanDoOperation`1 canDoOperation, DoOperation`1 doOperation)
+   at fitSharp.Machine.Engine.ProcessorBase`2.&lt;&gt;c__DisplayClass11.&lt;Parse&gt;b__e(OperationLogging logging)
+   at fitSharp.Machine.Engine.ProcessorBase`2.DoLoggedOperation[R](String startMessage, Func`2 operation)
+   at fitSharp.Machine.Engine.ProcessorBase`2.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Fit.Service.CellProcessorBase.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorExtension.ParseTree[T](Processor`1 processor, Type type, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorExtension.ParseTree[T,V](Processor`1 processor, Tree`1 input)
+   at fitSharp.Fit.Engine.InterpretFlow.ProcessFlowRow(Tree`1 table, Int32 rowNumber)&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;ProcessLogDetailId&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;ALL&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;span class="blue"&gt;&lt;b&gt;Delete Process Log Table contents to clear out data from previous runs&lt;/b&gt;&lt;/span&gt;&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td class="error"&gt;Delete From Process Log Table&lt;hr /&gt;&lt;pre&gt;&lt;div class="fit_stacktrace"&gt;fitSharp.Machine.Exception.TypeMissingException: Type 'DeleteFromProcessLogTable' not found in assemblies:
+    file:///C:/Windows/Microsoft.NET/Framework64/v4.0.30319/mscorlib.dll
+    file:///C:/backupdata/Training/Training/Fitnesse/Fitsharp/Runner.exe
+    file:///C:/backupdata/Training/Training/Fitnesse/Fitsharp/fitSharp.DLL
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Configuration/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Configuration.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System/v4.0_4.0.0.0__b77a5c561934e089/System.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Xml/v4.0_4.0.0.0__b77a5c561934e089/System.Xml.dll
+    file:///C:/backupdata/Training/Training/Fitnesse/Fitsharp/fit.DLL
+    file:///C:/backupdata/Training/Training/Fitnesse/Fixtures/Fitnesse_Dlls/QaTip.Fitnesse.Demo.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.Data/v4.0_4.0.0.0__b77a5c561934e089/System.Data.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.Web/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Web.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.ServiceProcess/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.ServiceProcess.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Drawing/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Drawing.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.ComponentModel.DataAnnotations/v4.0_4.0.0.0__31bf3856ad364e35/System.ComponentModel.DataAnnotations.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Web.ApplicationServices/v4.0_4.0.0.0__31bf3856ad364e35/System.Web.ApplicationServices.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Configuration.Install/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Configuration.Install.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Windows.Forms/v4.0_4.0.0.0__b77a5c561934e089/System.Windows.Forms.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/Accessibility/v4.0_4.0.0.0__b03f5f7f11d50a3a/Accessibility.dll
+
+   at fitSharp.Machine.Engine.ReflectionMember.Invoke(Object[] parameters)
+   at fitSharp.Machine.Engine.ProcessorBase`2.Operate[O](Object[] parameters)
+   at fitSharp.Fit.Operators.ParseInterpreter.MakeInterpreter(Cell classCell)
+   at fitSharp.Fit.Operators.ParseInterpreter.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorBase`2.&lt;&gt;c__DisplayClass11.&lt;&gt;c__DisplayClass13.&lt;Parse&gt;b__10(ParseOperator`1 o)
+   at fitSharp.Machine.Engine.Operators`2.Do[O](CanDoOperation`1 canDoOperation, DoOperation`1 doOperation)
+   at fitSharp.Machine.Engine.ProcessorBase`2.&lt;&gt;c__DisplayClass11.&lt;Parse&gt;b__e(OperationLogging logging)
+   at fitSharp.Machine.Engine.ProcessorBase`2.DoLoggedOperation[R](String startMessage, Func`2 operation)
+   at fitSharp.Machine.Engine.ProcessorBase`2.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Fit.Service.CellProcessorBase.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorExtension.ParseTree[T](Processor`1 processor, Type type, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorExtension.ParseTree[T,V](Processor`1 processor, Tree`1 input)
+   at fitSharp.Fit.Engine.InterpretFlow.ProcessFlowRow(Tree`1 table, Int32 rowNumber)&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;LogId&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;ALL&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="2"&gt;&lt;span class="fit_member"&gt;TestHelper&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;WaitSeconds&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;Wait()&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;5&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; Slept 5 seconds&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;span class="blue"&gt;&lt;b&gt;Truncate Log File to clear out data from previous runs&lt;/b&gt;&lt;/span&gt;&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td class="error"&gt;Manage File&lt;hr /&gt;&lt;pre&gt;&lt;div class="fit_stacktrace"&gt;fitSharp.Machine.Exception.TypeMissingException: Type 'ManageFile' not found in assemblies:
+    file:///C:/Windows/Microsoft.NET/Framework64/v4.0.30319/mscorlib.dll
+    file:///C:/backupdata/Training/Training/Fitnesse/Fitsharp/Runner.exe
+    file:///C:/backupdata/Training/Training/Fitnesse/Fitsharp/fitSharp.DLL
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Configuration/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Configuration.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System/v4.0_4.0.0.0__b77a5c561934e089/System.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Xml/v4.0_4.0.0.0__b77a5c561934e089/System.Xml.dll
+    file:///C:/backupdata/Training/Training/Fitnesse/Fitsharp/fit.DLL
+    file:///C:/backupdata/Training/Training/Fitnesse/Fixtures/Fitnesse_Dlls/QaTip.Fitnesse.Demo.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.Data/v4.0_4.0.0.0__b77a5c561934e089/System.Data.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.Web/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Web.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.ServiceProcess/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.ServiceProcess.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Drawing/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Drawing.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.ComponentModel.DataAnnotations/v4.0_4.0.0.0__31bf3856ad364e35/System.ComponentModel.DataAnnotations.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Web.ApplicationServices/v4.0_4.0.0.0__31bf3856ad364e35/System.Web.ApplicationServices.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Configuration.Install/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Configuration.Install.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Windows.Forms/v4.0_4.0.0.0__b77a5c561934e089/System.Windows.Forms.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/Accessibility/v4.0_4.0.0.0__b03f5f7f11d50a3a/Accessibility.dll
+
+   at fitSharp.Machine.Engine.ReflectionMember.Invoke(Object[] parameters)
+   at fitSharp.Machine.Engine.ProcessorBase`2.Operate[O](Object[] parameters)
+   at fitSharp.Fit.Operators.ParseInterpreter.MakeInterpreter(Cell classCell)
+   at fitSharp.Fit.Operators.ParseInterpreter.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorBase`2.&lt;&gt;c__DisplayClass11.&lt;&gt;c__DisplayClass13.&lt;Parse&gt;b__10(ParseOperator`1 o)
+   at fitSharp.Machine.Engine.Operators`2.Do[O](CanDoOperation`1 canDoOperation, DoOperation`1 doOperation)
+   at fitSharp.Machine.Engine.ProcessorBase`2.&lt;&gt;c__DisplayClass11.&lt;Parse&gt;b__e(OperationLogging logging)
+   at fitSharp.Machine.Engine.ProcessorBase`2.DoLoggedOperation[R](String startMessage, Func`2 operation)
+   at fitSharp.Machine.Engine.ProcessorBase`2.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Fit.Service.CellProcessorBase.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorExtension.ParseTree[T](Processor`1 processor, Type type, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorExtension.ParseTree[T,V](Processor`1 processor, Tree`1 input)
+   at fitSharp.Fit.Engine.InterpretFlow.ProcessFlowRow(Tree`1 table, Int32 rowNumber)&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="meta"&gt;undefined variable: CMGR_SLPS_LOGFILE&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Log File Path?&lt;/td&gt;
+		&lt;td&gt;TruncateFile()?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="meta"&gt;undefined variable: CMGR_SLPS_LOGFILE&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;span class="blue"&gt;&lt;b&gt;Point to the targeted schema:&lt;/b&gt;&lt;/span&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="2"&gt;&lt;span class="fit_member"&gt;Test Helper&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;FitNesse Db ConnectionString?&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;FitNesse Db ConnectionString&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; Data Source=SQLEXPRESS; Integrated Security=SSPI;AttachDBFilename=DataDirectoryaspnetdb.mdf;User Instance=true&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;Data Source=&lt;span class="meta"&gt;undefined variable: SCHEMA_SERVER&lt;/span&gt;; Persist Security Info=True; User ID=&lt;span class="meta"&gt;undefined variable: SCHEMA&lt;/span&gt;; Password=iclaim&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;span class="blue"&gt;&lt;b&gt;Make sure Service is running&lt;/b&gt;&lt;/span&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="3"&gt;&lt;span class="fit_member"&gt;Manage Services&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;ServiceName&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;Ensure Service Started?&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_member"&gt;Output&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;CMGR Scheduled Load Processor Service&lt;/td&gt;
+		&lt;td class="fail"&gt;SUCCESS &lt;span class="fit_label"&gt;expected&lt;/span&gt;&lt;hr /&gt;FAIL &lt;span class="fit_label"&gt;actual&lt;/span&gt;&lt;hr /&gt;Length expected 7 was 4&lt;/td&gt;
+		&lt;td&gt;&lt;span class="fit_grey"&gt; Service CMGR Scheduled Load Processor Service was not found on computer '.'.The specified service does not exist as an installed service&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;</content>
+    <relativePageName>SampleTestGettingAndSettingValuesInConfigFiles</relativePageName>
+          </result>
+  <executionLog>
+    <testSystem>fit:Fitsharp\Runner.exe</testSystem>
+    <command>Fitsharp\Runner.exe -r fitnesse.fitserver.FitServer,FitSharp\fit.dll,FitSharp\fitLibrary.dll -c FitSharp\suite.config.xml ..\Fitnesse\Fixtures\Fitnesse_Dlls\QaTip.Fitnesse.Demo.dll A5Q55S72 64408 3863</command>
+    <exitCode>8</exitCode>
+    <stdOut>File path: C:\backupdata\Training\Training\Fitnesse\Fixtures\Fitnesse_Dlls\QaTip.Fitnesse.Demo.dll.config
+7/20/2016 11:21:27 AM: Found ConnectionString: FitNesseqatipDbConString
+7/20/2016 11:21:27 AM: DbConnectionString = Data Source=SQLEXPRESS; Integrated Security=SSPI;AttachDBFilename=DataDirectoryaspnetdb.mdf;User Instance=true
+7/20/2016 11:21:27 AM: Current Service state: Stopped
+7/20/2016 11:21:27 AM: Starting Jenkins
+7/20/2016 11:21:27 AM: Started Jenkins
+7/20/2016 11:21:27 AM: Stopping Jenkins
+7/20/2016 11:21:33 AM: Changing FitNesse connection string to: Data Source=undefined variable: SCHEMA_SERVER; Persist Security Info=True; User ID=undefined variable: SCHEMA; Password=iclaim
+</stdOut>
+    <stdErr></stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>1</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>6664</totalRunTimeInMillis>
+</testResults>
+

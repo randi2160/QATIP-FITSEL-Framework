@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20160515</FitNesseVersion>
+  <rootPath>TutorialSuitesOfTests.BackEndAutomationExample.GetDbConnectionString</rootPath>
+    <result>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>1</exceptions>
+    </counts>
+    <date>2016-07-20T11:11:49-04:00</date>
+    <runTimeInMillis>2</runTimeInMillis>
+    <content>&lt;div class="error"&gt;Unable to parse input. Input ignored.&lt;hr /&gt;&lt;pre&gt;&lt;div class="fit_stacktrace"&gt;System.NullReferenceException: Object reference not set to an instance of an object.
+   at fit.ParseList.get_Item(Int32 index)
+   at fitSharp.Machine.Model.TreeExtension.ValueAt[T](Tree`1 tree, Int32 index)
+   at fitSharp.Fit.Fixtures.StoryTest.get_Leader()
+   at fit.Runner.SocketServer.ProcessTestDocument(String document, StoryTestWriter writer)&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;</content>
+    <relativePageName>GetDbConnectionString</relativePageName>
+          </result>
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>1</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>3</totalRunTimeInMillis>
+</testResults>
+

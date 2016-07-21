@@ -1,0 +1,895 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20160515</FitNesseVersion>
+  <rootPath>TutorialSuitesOfTests.ManageConfigLibraryExamples.SampleTestGettingAndSettingValuesInConfigFiles</rootPath>
+    <result>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>19</exceptions>
+    </counts>
+    <date>2016-07-20T11:11:49-04:00</date>
+    <runTimeInMillis>392</runTimeInMillis>
+    <content>&lt;br/&gt;&amp;lt;test page&amp;gt;&lt;br/&gt;&lt;br/&gt;&lt;span class="blue"&gt;&lt;b&gt;Set Processing Interval to Use Testing Scheduler&lt;/b&gt;&lt;/span&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td class="error" colspan="5"&gt;Manage Config&lt;hr /&gt;&lt;pre&gt;&lt;div class="fit_stacktrace"&gt;fitSharp.Machine.Exception.TypeMissingException: Type 'ManageConfig' not found in assemblies:
+    file:///C:/Windows/Microsoft.NET/Framework64/v4.0.30319/mscorlib.dll
+    file:///C:/backupdata/Training/Training/Fitnesse/Fitsharp/Runner.exe
+    file:///C:/backupdata/Training/Training/Fitnesse/Fitsharp/fitSharp.DLL
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Configuration/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Configuration.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System/v4.0_4.0.0.0__b77a5c561934e089/System.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Xml/v4.0_4.0.0.0__b77a5c561934e089/System.Xml.dll
+    file:///C:/backupdata/Training/Training/Fitnesse/Fitsharp/fit.DLL
+    file:///C:/backupdata/Training/Training/Fitnesse/Fixtures/Fitnesse_Dlls/QaTip.Fitnesse.Demo.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.Data/v4.0_4.0.0.0__b77a5c561934e089/System.Data.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.Transactions/v4.0_4.0.0.0__b77a5c561934e089/System.Transactions.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.EnterpriseServices/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.EnterpriseServices.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.Web/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Web.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Drawing/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Drawing.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.ComponentModel.DataAnnotations/v4.0_4.0.0.0__31bf3856ad364e35/System.ComponentModel.DataAnnotations.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Web.ApplicationServices/v4.0_4.0.0.0__31bf3856ad364e35/System.Web.ApplicationServices.dll
+
+   at fitSharp.Machine.Engine.ReflectionMember.Invoke(Object[] parameters)
+   at fitSharp.Machine.Engine.ProcessorBase`2.Operate[O](Object[] parameters)
+   at fitSharp.Fit.Operators.ParseInterpreter.MakeInterpreter(Cell classCell)
+   at fitSharp.Fit.Operators.ParseInterpreter.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorBase`2.&lt;&gt;c__DisplayClass11.&lt;&gt;c__DisplayClass13.&lt;Parse&gt;b__10(ParseOperator`1 o)
+   at fitSharp.Machine.Engine.Operators`2.Do[O](CanDoOperation`1 canDoOperation, DoOperation`1 doOperation)
+   at fitSharp.Machine.Engine.ProcessorBase`2.&lt;&gt;c__DisplayClass11.&lt;Parse&gt;b__e(OperationLogging logging)
+   at fitSharp.Machine.Engine.ProcessorBase`2.DoLoggedOperation[R](String startMessage, Func`2 operation)
+   at fitSharp.Machine.Engine.ProcessorBase`2.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Fit.Service.CellProcessorBase.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorExtension.ParseTree[T](Processor`1 processor, Type type, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorExtension.ParseTree[T,V](Processor`1 processor, Tree`1 input)
+   at fitSharp.Fit.Engine.InterpretFlow.ProcessFlowRow(Tree`1 table, Int32 rowNumber)&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;ConfigFileName&lt;/td&gt;
+		&lt;td&gt;ConfigValue&lt;/td&gt;
+		&lt;td&gt;Target Value&lt;/td&gt;
+		&lt;td&gt;SetConfigSetting()&lt;/td&gt;
+		&lt;td&gt;GetConfigSetting()?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="meta"&gt;undefined variable: CMGR_SLPS_CONFIG&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;ProcessingIntervalInSeconds&lt;/td&gt;
+		&lt;td&gt;5&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;5&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="meta"&gt;undefined variable: CMGR_SLPS_CONFIG&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;LcdMode&lt;/td&gt;
+		&lt;td&gt;TEST_PROCESSING&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;TEST_PROCESSING&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;span class="blue"&gt;&lt;b&gt;Start Service&lt;/b&gt;&lt;/span&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td class="error" colspan="3"&gt;ManageServices&lt;hr /&gt;&lt;pre&gt;&lt;div class="fit_stacktrace"&gt;fitSharp.Machine.Exception.TypeMissingException: Type 'ManageServices' not found in assemblies:
+    file:///C:/Windows/Microsoft.NET/Framework64/v4.0.30319/mscorlib.dll
+    file:///C:/backupdata/Training/Training/Fitnesse/Fitsharp/Runner.exe
+    file:///C:/backupdata/Training/Training/Fitnesse/Fitsharp/fitSharp.DLL
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Configuration/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Configuration.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System/v4.0_4.0.0.0__b77a5c561934e089/System.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Xml/v4.0_4.0.0.0__b77a5c561934e089/System.Xml.dll
+    file:///C:/backupdata/Training/Training/Fitnesse/Fitsharp/fit.DLL
+    file:///C:/backupdata/Training/Training/Fitnesse/Fixtures/Fitnesse_Dlls/QaTip.Fitnesse.Demo.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.Data/v4.0_4.0.0.0__b77a5c561934e089/System.Data.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.Transactions/v4.0_4.0.0.0__b77a5c561934e089/System.Transactions.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.EnterpriseServices/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.EnterpriseServices.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.Web/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Web.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Drawing/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Drawing.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.ComponentModel.DataAnnotations/v4.0_4.0.0.0__31bf3856ad364e35/System.ComponentModel.DataAnnotations.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Web.ApplicationServices/v4.0_4.0.0.0__31bf3856ad364e35/System.Web.ApplicationServices.dll
+
+   at fitSharp.Machine.Engine.ReflectionMember.Invoke(Object[] parameters)
+   at fitSharp.Machine.Engine.ProcessorBase`2.Operate[O](Object[] parameters)
+   at fitSharp.Fit.Operators.ParseInterpreter.MakeInterpreter(Cell classCell)
+   at fitSharp.Fit.Operators.ParseInterpreter.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorBase`2.&lt;&gt;c__DisplayClass11.&lt;&gt;c__DisplayClass13.&lt;Parse&gt;b__10(ParseOperator`1 o)
+   at fitSharp.Machine.Engine.Operators`2.Do[O](CanDoOperation`1 canDoOperation, DoOperation`1 doOperation)
+   at fitSharp.Machine.Engine.ProcessorBase`2.&lt;&gt;c__DisplayClass11.&lt;Parse&gt;b__e(OperationLogging logging)
+   at fitSharp.Machine.Engine.ProcessorBase`2.DoLoggedOperation[R](String startMessage, Func`2 operation)
+   at fitSharp.Machine.Engine.ProcessorBase`2.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Fit.Service.CellProcessorBase.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorExtension.ParseTree[T](Processor`1 processor, Type type, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorExtension.ParseTree[T,V](Processor`1 processor, Tree`1 input)
+   at fitSharp.Fit.Engine.InterpretFlow.ProcessFlowRow(Tree`1 table, Int32 rowNumber)&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;ServiceName&lt;/td&gt;
+		&lt;td&gt;Ensure Service Started?&lt;/td&gt;
+		&lt;td&gt;Output&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;CMGR Scheduled Load Processor Service&lt;/td&gt;
+		&lt;td&gt;SUCCESS&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;span class="blue"&gt;&lt;b&gt;Point to the targeted schema:&lt;/b&gt;&lt;/span&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td class="error"&gt;Test Helper&lt;hr /&gt;&lt;pre&gt;&lt;div class="fit_stacktrace"&gt;fitSharp.Machine.Exception.TypeMissingException: Type 'TestHelper' not found in assemblies:
+    file:///C:/Windows/Microsoft.NET/Framework64/v4.0.30319/mscorlib.dll
+    file:///C:/backupdata/Training/Training/Fitnesse/Fitsharp/Runner.exe
+    file:///C:/backupdata/Training/Training/Fitnesse/Fitsharp/fitSharp.DLL
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Configuration/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Configuration.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System/v4.0_4.0.0.0__b77a5c561934e089/System.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Xml/v4.0_4.0.0.0__b77a5c561934e089/System.Xml.dll
+    file:///C:/backupdata/Training/Training/Fitnesse/Fitsharp/fit.DLL
+    file:///C:/backupdata/Training/Training/Fitnesse/Fixtures/Fitnesse_Dlls/QaTip.Fitnesse.Demo.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.Data/v4.0_4.0.0.0__b77a5c561934e089/System.Data.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.Transactions/v4.0_4.0.0.0__b77a5c561934e089/System.Transactions.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.EnterpriseServices/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.EnterpriseServices.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.Web/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Web.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Drawing/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Drawing.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.ComponentModel.DataAnnotations/v4.0_4.0.0.0__31bf3856ad364e35/System.ComponentModel.DataAnnotations.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Web.ApplicationServices/v4.0_4.0.0.0__31bf3856ad364e35/System.Web.ApplicationServices.dll
+
+   at fitSharp.Machine.Engine.ReflectionMember.Invoke(Object[] parameters)
+   at fitSharp.Machine.Engine.ProcessorBase`2.Operate[O](Object[] parameters)
+   at fitSharp.Fit.Operators.ParseInterpreter.MakeInterpreter(Cell classCell)
+   at fitSharp.Fit.Operators.ParseInterpreter.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorBase`2.&lt;&gt;c__DisplayClass11.&lt;&gt;c__DisplayClass13.&lt;Parse&gt;b__10(ParseOperator`1 o)
+   at fitSharp.Machine.Engine.Operators`2.Do[O](CanDoOperation`1 canDoOperation, DoOperation`1 doOperation)
+   at fitSharp.Machine.Engine.ProcessorBase`2.&lt;&gt;c__DisplayClass11.&lt;Parse&gt;b__e(OperationLogging logging)
+   at fitSharp.Machine.Engine.ProcessorBase`2.DoLoggedOperation[R](String startMessage, Func`2 operation)
+   at fitSharp.Machine.Engine.ProcessorBase`2.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Fit.Service.CellProcessorBase.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorExtension.ParseTree[T](Processor`1 processor, Type type, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorExtension.ParseTree[T,V](Processor`1 processor, Tree`1 input)
+   at fitSharp.Fit.Engine.InterpretFlow.ProcessFlowRow(Tree`1 table, Int32 rowNumber)&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;FitNesse Db ConnectionString?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td class="error"&gt;Validate&lt;hr /&gt;&lt;pre&gt;&lt;div class="fit_stacktrace"&gt;fitSharp.Machine.Exception.TypeMissingException: Type 'Validate' not found in assemblies:
+    file:///C:/Windows/Microsoft.NET/Framework64/v4.0.30319/mscorlib.dll
+    file:///C:/backupdata/Training/Training/Fitnesse/Fitsharp/Runner.exe
+    file:///C:/backupdata/Training/Training/Fitnesse/Fitsharp/fitSharp.DLL
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Configuration/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Configuration.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System/v4.0_4.0.0.0__b77a5c561934e089/System.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Xml/v4.0_4.0.0.0__b77a5c561934e089/System.Xml.dll
+    file:///C:/backupdata/Training/Training/Fitnesse/Fitsharp/fit.DLL
+    file:///C:/backupdata/Training/Training/Fitnesse/Fixtures/Fitnesse_Dlls/QaTip.Fitnesse.Demo.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.Data/v4.0_4.0.0.0__b77a5c561934e089/System.Data.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.Transactions/v4.0_4.0.0.0__b77a5c561934e089/System.Transactions.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.EnterpriseServices/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.EnterpriseServices.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.Web/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Web.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Drawing/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Drawing.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.ComponentModel.DataAnnotations/v4.0_4.0.0.0__31bf3856ad364e35/System.ComponentModel.DataAnnotations.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Web.ApplicationServices/v4.0_4.0.0.0__31bf3856ad364e35/System.Web.ApplicationServices.dll
+
+   at fitSharp.Machine.Engine.ReflectionMember.Invoke(Object[] parameters)
+   at fitSharp.Machine.Engine.ProcessorBase`2.Operate[O](Object[] parameters)
+   at fitSharp.Fit.Operators.ParseInterpreter.MakeInterpreter(Cell classCell)
+   at fitSharp.Fit.Operators.ParseInterpreter.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorBase`2.&lt;&gt;c__DisplayClass11.&lt;&gt;c__DisplayClass13.&lt;Parse&gt;b__10(ParseOperator`1 o)
+   at fitSharp.Machine.Engine.Operators`2.Do[O](CanDoOperation`1 canDoOperation, DoOperation`1 doOperation)
+   at fitSharp.Machine.Engine.ProcessorBase`2.&lt;&gt;c__DisplayClass11.&lt;Parse&gt;b__e(OperationLogging logging)
+   at fitSharp.Machine.Engine.ProcessorBase`2.DoLoggedOperation[R](String startMessage, Func`2 operation)
+   at fitSharp.Machine.Engine.ProcessorBase`2.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Fit.Service.CellProcessorBase.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorExtension.ParseTree[T](Processor`1 processor, Type type, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorExtension.ParseTree[T,V](Processor`1 processor, Tree`1 input)
+   at fitSharp.Fit.Engine.InterpretFlow.ProcessFlowRow(Tree`1 table, Int32 rowNumber)&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Get Current DateTime()&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&amp;gt;&amp;gt;currentDateTime&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;span class="blue"&gt;&lt;b&gt;Stop services:&lt;/b&gt;&lt;/span&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td class="error" colspan="3"&gt;Manage Services&lt;hr /&gt;&lt;pre&gt;&lt;div class="fit_stacktrace"&gt;fitSharp.Machine.Exception.TypeMissingException: Type 'ManageServices' not found in assemblies:
+    file:///C:/Windows/Microsoft.NET/Framework64/v4.0.30319/mscorlib.dll
+    file:///C:/backupdata/Training/Training/Fitnesse/Fitsharp/Runner.exe
+    file:///C:/backupdata/Training/Training/Fitnesse/Fitsharp/fitSharp.DLL
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Configuration/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Configuration.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System/v4.0_4.0.0.0__b77a5c561934e089/System.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Xml/v4.0_4.0.0.0__b77a5c561934e089/System.Xml.dll
+    file:///C:/backupdata/Training/Training/Fitnesse/Fitsharp/fit.DLL
+    file:///C:/backupdata/Training/Training/Fitnesse/Fixtures/Fitnesse_Dlls/QaTip.Fitnesse.Demo.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.Data/v4.0_4.0.0.0__b77a5c561934e089/System.Data.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.Transactions/v4.0_4.0.0.0__b77a5c561934e089/System.Transactions.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.EnterpriseServices/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.EnterpriseServices.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.Web/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Web.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Drawing/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Drawing.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.ComponentModel.DataAnnotations/v4.0_4.0.0.0__31bf3856ad364e35/System.ComponentModel.DataAnnotations.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Web.ApplicationServices/v4.0_4.0.0.0__31bf3856ad364e35/System.Web.ApplicationServices.dll
+
+   at fitSharp.Machine.Engine.ReflectionMember.Invoke(Object[] parameters)
+   at fitSharp.Machine.Engine.ProcessorBase`2.Operate[O](Object[] parameters)
+   at fitSharp.Fit.Operators.ParseInterpreter.MakeInterpreter(Cell classCell)
+   at fitSharp.Fit.Operators.ParseInterpreter.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorBase`2.&lt;&gt;c__DisplayClass11.&lt;&gt;c__DisplayClass13.&lt;Parse&gt;b__10(ParseOperator`1 o)
+   at fitSharp.Machine.Engine.Operators`2.Do[O](CanDoOperation`1 canDoOperation, DoOperation`1 doOperation)
+   at fitSharp.Machine.Engine.ProcessorBase`2.&lt;&gt;c__DisplayClass11.&lt;Parse&gt;b__e(OperationLogging logging)
+   at fitSharp.Machine.Engine.ProcessorBase`2.DoLoggedOperation[R](String startMessage, Func`2 operation)
+   at fitSharp.Machine.Engine.ProcessorBase`2.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Fit.Service.CellProcessorBase.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorExtension.ParseTree[T](Processor`1 processor, Type type, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorExtension.ParseTree[T,V](Processor`1 processor, Tree`1 input)
+   at fitSharp.Fit.Engine.InterpretFlow.ProcessFlowRow(Tree`1 table, Int32 rowNumber)&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Service Name&lt;/td&gt;
+		&lt;td&gt;Stop Service?&lt;/td&gt;
+		&lt;td&gt;Output&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;CMGR Scheduled Load Processor Service&lt;/td&gt;
+		&lt;td&gt;SUCCESS&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td class="error" colspan="5"&gt;Manage Config&lt;hr /&gt;&lt;pre&gt;&lt;div class="fit_stacktrace"&gt;fitSharp.Machine.Exception.TypeMissingException: Type 'ManageConfig' not found in assemblies:
+    file:///C:/Windows/Microsoft.NET/Framework64/v4.0.30319/mscorlib.dll
+    file:///C:/backupdata/Training/Training/Fitnesse/Fitsharp/Runner.exe
+    file:///C:/backupdata/Training/Training/Fitnesse/Fitsharp/fitSharp.DLL
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Configuration/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Configuration.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System/v4.0_4.0.0.0__b77a5c561934e089/System.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Xml/v4.0_4.0.0.0__b77a5c561934e089/System.Xml.dll
+    file:///C:/backupdata/Training/Training/Fitnesse/Fitsharp/fit.DLL
+    file:///C:/backupdata/Training/Training/Fitnesse/Fixtures/Fitnesse_Dlls/QaTip.Fitnesse.Demo.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.Data/v4.0_4.0.0.0__b77a5c561934e089/System.Data.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.Transactions/v4.0_4.0.0.0__b77a5c561934e089/System.Transactions.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.EnterpriseServices/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.EnterpriseServices.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.Web/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Web.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Drawing/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Drawing.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.ComponentModel.DataAnnotations/v4.0_4.0.0.0__31bf3856ad364e35/System.ComponentModel.DataAnnotations.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Web.ApplicationServices/v4.0_4.0.0.0__31bf3856ad364e35/System.Web.ApplicationServices.dll
+
+   at fitSharp.Machine.Engine.ReflectionMember.Invoke(Object[] parameters)
+   at fitSharp.Machine.Engine.ProcessorBase`2.Operate[O](Object[] parameters)
+   at fitSharp.Fit.Operators.ParseInterpreter.MakeInterpreter(Cell classCell)
+   at fitSharp.Fit.Operators.ParseInterpreter.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorBase`2.&lt;&gt;c__DisplayClass11.&lt;&gt;c__DisplayClass13.&lt;Parse&gt;b__10(ParseOperator`1 o)
+   at fitSharp.Machine.Engine.Operators`2.Do[O](CanDoOperation`1 canDoOperation, DoOperation`1 doOperation)
+   at fitSharp.Machine.Engine.ProcessorBase`2.&lt;&gt;c__DisplayClass11.&lt;Parse&gt;b__e(OperationLogging logging)
+   at fitSharp.Machine.Engine.ProcessorBase`2.DoLoggedOperation[R](String startMessage, Func`2 operation)
+   at fitSharp.Machine.Engine.ProcessorBase`2.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Fit.Service.CellProcessorBase.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorExtension.ParseTree[T](Processor`1 processor, Type type, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorExtension.ParseTree[T,V](Processor`1 processor, Tree`1 input)
+   at fitSharp.Fit.Engine.InterpretFlow.ProcessFlowRow(Tree`1 table, Int32 rowNumber)&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;ConfigFileName&lt;/td&gt;
+		&lt;td&gt;ConfigValue&lt;/td&gt;
+		&lt;td&gt;Target Value&lt;/td&gt;
+		&lt;td&gt;SetConfigSetting()&lt;/td&gt;
+		&lt;td&gt;GetConfigSetting()?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="meta"&gt;undefined variable: CM_SQS_CONFIG&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;ProcessingIntervalInSeconds&lt;/td&gt;
+		&lt;td&gt;0&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;0&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;span class="blue"&gt;&lt;b&gt;Adjust Current Date Time&lt;/b&gt;&lt;/span&gt;&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td class="error" colspan="7"&gt;Validate&lt;hr /&gt;&lt;pre&gt;&lt;div class="fit_stacktrace"&gt;fitSharp.Machine.Exception.TypeMissingException: Type 'Validate' not found in assemblies:
+    file:///C:/Windows/Microsoft.NET/Framework64/v4.0.30319/mscorlib.dll
+    file:///C:/backupdata/Training/Training/Fitnesse/Fitsharp/Runner.exe
+    file:///C:/backupdata/Training/Training/Fitnesse/Fitsharp/fitSharp.DLL
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Configuration/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Configuration.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System/v4.0_4.0.0.0__b77a5c561934e089/System.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Xml/v4.0_4.0.0.0__b77a5c561934e089/System.Xml.dll
+    file:///C:/backupdata/Training/Training/Fitnesse/Fitsharp/fit.DLL
+    file:///C:/backupdata/Training/Training/Fitnesse/Fixtures/Fitnesse_Dlls/QaTip.Fitnesse.Demo.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.Data/v4.0_4.0.0.0__b77a5c561934e089/System.Data.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.Transactions/v4.0_4.0.0.0__b77a5c561934e089/System.Transactions.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.EnterpriseServices/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.EnterpriseServices.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.Web/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Web.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Drawing/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Drawing.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.ComponentModel.DataAnnotations/v4.0_4.0.0.0__31bf3856ad364e35/System.ComponentModel.DataAnnotations.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Web.ApplicationServices/v4.0_4.0.0.0__31bf3856ad364e35/System.Web.ApplicationServices.dll
+
+   at fitSharp.Machine.Engine.ReflectionMember.Invoke(Object[] parameters)
+   at fitSharp.Machine.Engine.ProcessorBase`2.Operate[O](Object[] parameters)
+   at fitSharp.Fit.Operators.ParseInterpreter.MakeInterpreter(Cell classCell)
+   at fitSharp.Fit.Operators.ParseInterpreter.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorBase`2.&lt;&gt;c__DisplayClass11.&lt;&gt;c__DisplayClass13.&lt;Parse&gt;b__10(ParseOperator`1 o)
+   at fitSharp.Machine.Engine.Operators`2.Do[O](CanDoOperation`1 canDoOperation, DoOperation`1 doOperation)
+   at fitSharp.Machine.Engine.ProcessorBase`2.&lt;&gt;c__DisplayClass11.&lt;Parse&gt;b__e(OperationLogging logging)
+   at fitSharp.Machine.Engine.ProcessorBase`2.DoLoggedOperation[R](String startMessage, Func`2 operation)
+   at fitSharp.Machine.Engine.ProcessorBase`2.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Fit.Service.CellProcessorBase.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorExtension.ParseTree[T](Processor`1 processor, Type type, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorExtension.ParseTree[T,V](Processor`1 processor, Tree`1 input)
+   at fitSharp.Fit.Engine.InterpretFlow.ProcessFlowRow(Tree`1 table, Int32 rowNumber)&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;GetCurrentDateTime()&lt;/td&gt;
+		&lt;td&gt;AdjustDateByDays&lt;/td&gt;
+		&lt;td&gt;GetDateRelativeToToday()?&lt;/td&gt;
+		&lt;td&gt;AdjustDateByDays&lt;/td&gt;
+		&lt;td&gt;GetDateRelativeToToday()?&lt;/td&gt;
+		&lt;td&gt;AdjustTimeBySeconds&lt;/td&gt;
+		&lt;td&gt;AdjustSecondsRelativeToNow()&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;0&lt;/td&gt;
+		&lt;td&gt;&amp;gt;&amp;gt;currentProcessingDate&lt;/td&gt;
+		&lt;td&gt;1&lt;/td&gt;
+		&lt;td&gt;&amp;gt;&amp;gt;nextProcessingDate&lt;/td&gt;
+		&lt;td&gt;30&lt;/td&gt;
+		&lt;td&gt;&amp;gt;&amp;gt;timeAdjustment&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td class="error" colspan="6"&gt;ManageConfig&lt;hr /&gt;&lt;pre&gt;&lt;div class="fit_stacktrace"&gt;fitSharp.Machine.Exception.TypeMissingException: Type 'ManageConfig' not found in assemblies:
+    file:///C:/Windows/Microsoft.NET/Framework64/v4.0.30319/mscorlib.dll
+    file:///C:/backupdata/Training/Training/Fitnesse/Fitsharp/Runner.exe
+    file:///C:/backupdata/Training/Training/Fitnesse/Fitsharp/fitSharp.DLL
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Configuration/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Configuration.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System/v4.0_4.0.0.0__b77a5c561934e089/System.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Xml/v4.0_4.0.0.0__b77a5c561934e089/System.Xml.dll
+    file:///C:/backupdata/Training/Training/Fitnesse/Fitsharp/fit.DLL
+    file:///C:/backupdata/Training/Training/Fitnesse/Fixtures/Fitnesse_Dlls/QaTip.Fitnesse.Demo.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.Data/v4.0_4.0.0.0__b77a5c561934e089/System.Data.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.Transactions/v4.0_4.0.0.0__b77a5c561934e089/System.Transactions.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.EnterpriseServices/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.EnterpriseServices.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.Web/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Web.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Drawing/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Drawing.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.ComponentModel.DataAnnotations/v4.0_4.0.0.0__31bf3856ad364e35/System.ComponentModel.DataAnnotations.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Web.ApplicationServices/v4.0_4.0.0.0__31bf3856ad364e35/System.Web.ApplicationServices.dll
+
+   at fitSharp.Machine.Engine.ReflectionMember.Invoke(Object[] parameters)
+   at fitSharp.Machine.Engine.ProcessorBase`2.Operate[O](Object[] parameters)
+   at fitSharp.Fit.Operators.ParseInterpreter.MakeInterpreter(Cell classCell)
+   at fitSharp.Fit.Operators.ParseInterpreter.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorBase`2.&lt;&gt;c__DisplayClass11.&lt;&gt;c__DisplayClass13.&lt;Parse&gt;b__10(ParseOperator`1 o)
+   at fitSharp.Machine.Engine.Operators`2.Do[O](CanDoOperation`1 canDoOperation, DoOperation`1 doOperation)
+   at fitSharp.Machine.Engine.ProcessorBase`2.&lt;&gt;c__DisplayClass11.&lt;Parse&gt;b__e(OperationLogging logging)
+   at fitSharp.Machine.Engine.ProcessorBase`2.DoLoggedOperation[R](String startMessage, Func`2 operation)
+   at fitSharp.Machine.Engine.ProcessorBase`2.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Fit.Service.CellProcessorBase.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorExtension.ParseTree[T](Processor`1 processor, Type type, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorExtension.ParseTree[T,V](Processor`1 processor, Tree`1 input)
+   at fitSharp.Fit.Engine.InterpretFlow.ProcessFlowRow(Tree`1 table, Int32 rowNumber)&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;ConfigFileName&lt;/td&gt;
+		&lt;td&gt;ConfigValue&lt;/td&gt;
+		&lt;td&gt;GetConfigSetting()?&lt;/td&gt;
+		&lt;td&gt;TargetValue&lt;/td&gt;
+		&lt;td&gt;SetConfigSetting()&lt;/td&gt;
+		&lt;td&gt;GetConfigSetting()?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="meta"&gt;undefined variable: CMGR_SLPS_CONFIG&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;ProcessingStartTime&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;&amp;lt;&amp;lt;timeAdjustment&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;temporary&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td class="error" colspan="5"&gt;Manage Config&lt;hr /&gt;&lt;pre&gt;&lt;div class="fit_stacktrace"&gt;fitSharp.Machine.Exception.TypeMissingException: Type 'ManageConfig' not found in assemblies:
+    file:///C:/Windows/Microsoft.NET/Framework64/v4.0.30319/mscorlib.dll
+    file:///C:/backupdata/Training/Training/Fitnesse/Fitsharp/Runner.exe
+    file:///C:/backupdata/Training/Training/Fitnesse/Fitsharp/fitSharp.DLL
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Configuration/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Configuration.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System/v4.0_4.0.0.0__b77a5c561934e089/System.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Xml/v4.0_4.0.0.0__b77a5c561934e089/System.Xml.dll
+    file:///C:/backupdata/Training/Training/Fitnesse/Fitsharp/fit.DLL
+    file:///C:/backupdata/Training/Training/Fitnesse/Fixtures/Fitnesse_Dlls/QaTip.Fitnesse.Demo.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.Data/v4.0_4.0.0.0__b77a5c561934e089/System.Data.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.Transactions/v4.0_4.0.0.0__b77a5c561934e089/System.Transactions.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.EnterpriseServices/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.EnterpriseServices.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.Web/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Web.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Drawing/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Drawing.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.ComponentModel.DataAnnotations/v4.0_4.0.0.0__31bf3856ad364e35/System.ComponentModel.DataAnnotations.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Web.ApplicationServices/v4.0_4.0.0.0__31bf3856ad364e35/System.Web.ApplicationServices.dll
+
+   at fitSharp.Machine.Engine.ReflectionMember.Invoke(Object[] parameters)
+   at fitSharp.Machine.Engine.ProcessorBase`2.Operate[O](Object[] parameters)
+   at fitSharp.Fit.Operators.ParseInterpreter.MakeInterpreter(Cell classCell)
+   at fitSharp.Fit.Operators.ParseInterpreter.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorBase`2.&lt;&gt;c__DisplayClass11.&lt;&gt;c__DisplayClass13.&lt;Parse&gt;b__10(ParseOperator`1 o)
+   at fitSharp.Machine.Engine.Operators`2.Do[O](CanDoOperation`1 canDoOperation, DoOperation`1 doOperation)
+   at fitSharp.Machine.Engine.ProcessorBase`2.&lt;&gt;c__DisplayClass11.&lt;Parse&gt;b__e(OperationLogging logging)
+   at fitSharp.Machine.Engine.ProcessorBase`2.DoLoggedOperation[R](String startMessage, Func`2 operation)
+   at fitSharp.Machine.Engine.ProcessorBase`2.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Fit.Service.CellProcessorBase.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorExtension.ParseTree[T](Processor`1 processor, Type type, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorExtension.ParseTree[T,V](Processor`1 processor, Tree`1 input)
+   at fitSharp.Fit.Engine.InterpretFlow.ProcessFlowRow(Tree`1 table, Int32 rowNumber)&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;ConfigFileName&lt;/td&gt;
+		&lt;td&gt;ConfigValue&lt;/td&gt;
+		&lt;td&gt;Target Value&lt;/td&gt;
+		&lt;td&gt;SetConfigSetting()&lt;/td&gt;
+		&lt;td&gt;GetConfigSetting()?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="meta"&gt;undefined variable: CM_SQS_CONFIG&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;InputFolder&lt;/td&gt;
+		&lt;td&gt;&amp;lt;&amp;lt;stagingFolderPathSetting&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td class="error"&gt;Validate&lt;hr /&gt;&lt;pre&gt;&lt;div class="fit_stacktrace"&gt;fitSharp.Machine.Exception.TypeMissingException: Type 'Validate' not found in assemblies:
+    file:///C:/Windows/Microsoft.NET/Framework64/v4.0.30319/mscorlib.dll
+    file:///C:/backupdata/Training/Training/Fitnesse/Fitsharp/Runner.exe
+    file:///C:/backupdata/Training/Training/Fitnesse/Fitsharp/fitSharp.DLL
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Configuration/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Configuration.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System/v4.0_4.0.0.0__b77a5c561934e089/System.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Xml/v4.0_4.0.0.0__b77a5c561934e089/System.Xml.dll
+    file:///C:/backupdata/Training/Training/Fitnesse/Fitsharp/fit.DLL
+    file:///C:/backupdata/Training/Training/Fitnesse/Fixtures/Fitnesse_Dlls/QaTip.Fitnesse.Demo.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.Data/v4.0_4.0.0.0__b77a5c561934e089/System.Data.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.Transactions/v4.0_4.0.0.0__b77a5c561934e089/System.Transactions.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.EnterpriseServices/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.EnterpriseServices.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.Web/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Web.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Drawing/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Drawing.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.ComponentModel.DataAnnotations/v4.0_4.0.0.0__31bf3856ad364e35/System.ComponentModel.DataAnnotations.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Web.ApplicationServices/v4.0_4.0.0.0__31bf3856ad364e35/System.Web.ApplicationServices.dll
+
+   at fitSharp.Machine.Engine.ReflectionMember.Invoke(Object[] parameters)
+   at fitSharp.Machine.Engine.ProcessorBase`2.Operate[O](Object[] parameters)
+   at fitSharp.Fit.Operators.ParseInterpreter.MakeInterpreter(Cell classCell)
+   at fitSharp.Fit.Operators.ParseInterpreter.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorBase`2.&lt;&gt;c__DisplayClass11.&lt;&gt;c__DisplayClass13.&lt;Parse&gt;b__10(ParseOperator`1 o)
+   at fitSharp.Machine.Engine.Operators`2.Do[O](CanDoOperation`1 canDoOperation, DoOperation`1 doOperation)
+   at fitSharp.Machine.Engine.ProcessorBase`2.&lt;&gt;c__DisplayClass11.&lt;Parse&gt;b__e(OperationLogging logging)
+   at fitSharp.Machine.Engine.ProcessorBase`2.DoLoggedOperation[R](String startMessage, Func`2 operation)
+   at fitSharp.Machine.Engine.ProcessorBase`2.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Fit.Service.CellProcessorBase.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorExtension.ParseTree[T](Processor`1 processor, Type type, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorExtension.ParseTree[T,V](Processor`1 processor, Tree`1 input)
+   at fitSharp.Fit.Engine.InterpretFlow.ProcessFlowRow(Tree`1 table, Int32 rowNumber)&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Get Current DateTime()&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td class="error" colspan="6"&gt;ManageConfig&lt;hr /&gt;&lt;pre&gt;&lt;div class="fit_stacktrace"&gt;fitSharp.Machine.Exception.TypeMissingException: Type 'ManageConfig' not found in assemblies:
+    file:///C:/Windows/Microsoft.NET/Framework64/v4.0.30319/mscorlib.dll
+    file:///C:/backupdata/Training/Training/Fitnesse/Fitsharp/Runner.exe
+    file:///C:/backupdata/Training/Training/Fitnesse/Fitsharp/fitSharp.DLL
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Configuration/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Configuration.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System/v4.0_4.0.0.0__b77a5c561934e089/System.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Xml/v4.0_4.0.0.0__b77a5c561934e089/System.Xml.dll
+    file:///C:/backupdata/Training/Training/Fitnesse/Fitsharp/fit.DLL
+    file:///C:/backupdata/Training/Training/Fitnesse/Fixtures/Fitnesse_Dlls/QaTip.Fitnesse.Demo.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.Data/v4.0_4.0.0.0__b77a5c561934e089/System.Data.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.Transactions/v4.0_4.0.0.0__b77a5c561934e089/System.Transactions.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.EnterpriseServices/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.EnterpriseServices.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.Web/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Web.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Drawing/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Drawing.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.ComponentModel.DataAnnotations/v4.0_4.0.0.0__31bf3856ad364e35/System.ComponentModel.DataAnnotations.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Web.ApplicationServices/v4.0_4.0.0.0__31bf3856ad364e35/System.Web.ApplicationServices.dll
+
+   at fitSharp.Machine.Engine.ReflectionMember.Invoke(Object[] parameters)
+   at fitSharp.Machine.Engine.ProcessorBase`2.Operate[O](Object[] parameters)
+   at fitSharp.Fit.Operators.ParseInterpreter.MakeInterpreter(Cell classCell)
+   at fitSharp.Fit.Operators.ParseInterpreter.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorBase`2.&lt;&gt;c__DisplayClass11.&lt;&gt;c__DisplayClass13.&lt;Parse&gt;b__10(ParseOperator`1 o)
+   at fitSharp.Machine.Engine.Operators`2.Do[O](CanDoOperation`1 canDoOperation, DoOperation`1 doOperation)
+   at fitSharp.Machine.Engine.ProcessorBase`2.&lt;&gt;c__DisplayClass11.&lt;Parse&gt;b__e(OperationLogging logging)
+   at fitSharp.Machine.Engine.ProcessorBase`2.DoLoggedOperation[R](String startMessage, Func`2 operation)
+   at fitSharp.Machine.Engine.ProcessorBase`2.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Fit.Service.CellProcessorBase.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorExtension.ParseTree[T](Processor`1 processor, Type type, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorExtension.ParseTree[T,V](Processor`1 processor, Tree`1 input)
+   at fitSharp.Fit.Engine.InterpretFlow.ProcessFlowRow(Tree`1 table, Int32 rowNumber)&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;ConfigFileName&lt;/td&gt;
+		&lt;td&gt;ConfigValue&lt;/td&gt;
+		&lt;td&gt;GetConfigSetting()?&lt;/td&gt;
+		&lt;td&gt;TargetValue&lt;/td&gt;
+		&lt;td&gt;SetConfigSetting()&lt;/td&gt;
+		&lt;td&gt;GetConfigSetting()?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="meta"&gt;undefined variable: CM_SQS_CONFIG&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;EnableEmailNotification&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;true&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td class="error" colspan="4"&gt;ManageConfig&lt;hr /&gt;&lt;pre&gt;&lt;div class="fit_stacktrace"&gt;fitSharp.Machine.Exception.TypeMissingException: Type 'ManageConfig' not found in assemblies:
+    file:///C:/Windows/Microsoft.NET/Framework64/v4.0.30319/mscorlib.dll
+    file:///C:/backupdata/Training/Training/Fitnesse/Fitsharp/Runner.exe
+    file:///C:/backupdata/Training/Training/Fitnesse/Fitsharp/fitSharp.DLL
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Configuration/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Configuration.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System/v4.0_4.0.0.0__b77a5c561934e089/System.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Xml/v4.0_4.0.0.0__b77a5c561934e089/System.Xml.dll
+    file:///C:/backupdata/Training/Training/Fitnesse/Fitsharp/fit.DLL
+    file:///C:/backupdata/Training/Training/Fitnesse/Fixtures/Fitnesse_Dlls/QaTip.Fitnesse.Demo.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.Data/v4.0_4.0.0.0__b77a5c561934e089/System.Data.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.Transactions/v4.0_4.0.0.0__b77a5c561934e089/System.Transactions.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.EnterpriseServices/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.EnterpriseServices.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.Web/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Web.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Drawing/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Drawing.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.ComponentModel.DataAnnotations/v4.0_4.0.0.0__31bf3856ad364e35/System.ComponentModel.DataAnnotations.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Web.ApplicationServices/v4.0_4.0.0.0__31bf3856ad364e35/System.Web.ApplicationServices.dll
+
+   at fitSharp.Machine.Engine.ReflectionMember.Invoke(Object[] parameters)
+   at fitSharp.Machine.Engine.ProcessorBase`2.Operate[O](Object[] parameters)
+   at fitSharp.Fit.Operators.ParseInterpreter.MakeInterpreter(Cell classCell)
+   at fitSharp.Fit.Operators.ParseInterpreter.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorBase`2.&lt;&gt;c__DisplayClass11.&lt;&gt;c__DisplayClass13.&lt;Parse&gt;b__10(ParseOperator`1 o)
+   at fitSharp.Machine.Engine.Operators`2.Do[O](CanDoOperation`1 canDoOperation, DoOperation`1 doOperation)
+   at fitSharp.Machine.Engine.ProcessorBase`2.&lt;&gt;c__DisplayClass11.&lt;Parse&gt;b__e(OperationLogging logging)
+   at fitSharp.Machine.Engine.ProcessorBase`2.DoLoggedOperation[R](String startMessage, Func`2 operation)
+   at fitSharp.Machine.Engine.ProcessorBase`2.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Fit.Service.CellProcessorBase.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorExtension.ParseTree[T](Processor`1 processor, Type type, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorExtension.ParseTree[T,V](Processor`1 processor, Tree`1 input)
+   at fitSharp.Fit.Engine.InterpretFlow.ProcessFlowRow(Tree`1 table, Int32 rowNumber)&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;ConfigFileName&lt;/td&gt;
+		&lt;td&gt;ConfigValue&lt;/td&gt;
+		&lt;td&gt;TargetValue&lt;/td&gt;
+		&lt;td&gt;SetXPATHConfigValueToTargetValue()&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="meta"&gt;undefined variable: CM_SQS_CONFIG&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;/configuration/emailNotifications/emailNotification/@mailServer&lt;/td&gt;
+		&lt;td&gt;localhost&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="meta"&gt;undefined variable: CM_SQS_CONFIG&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;/configuration/emailNotifications/emailNotification/@mailToRole&lt;/td&gt;
+		&lt;td&gt;QA.Tester@McKesson.com&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td class="error"&gt;Fake Email&lt;hr /&gt;&lt;pre&gt;&lt;div class="fit_stacktrace"&gt;fitSharp.Machine.Exception.TypeMissingException: Type 'FakeEmail' not found in assemblies:
+    file:///C:/Windows/Microsoft.NET/Framework64/v4.0.30319/mscorlib.dll
+    file:///C:/backupdata/Training/Training/Fitnesse/Fitsharp/Runner.exe
+    file:///C:/backupdata/Training/Training/Fitnesse/Fitsharp/fitSharp.DLL
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Configuration/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Configuration.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System/v4.0_4.0.0.0__b77a5c561934e089/System.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Xml/v4.0_4.0.0.0__b77a5c561934e089/System.Xml.dll
+    file:///C:/backupdata/Training/Training/Fitnesse/Fitsharp/fit.DLL
+    file:///C:/backupdata/Training/Training/Fitnesse/Fixtures/Fitnesse_Dlls/QaTip.Fitnesse.Demo.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.Data/v4.0_4.0.0.0__b77a5c561934e089/System.Data.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.Transactions/v4.0_4.0.0.0__b77a5c561934e089/System.Transactions.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.EnterpriseServices/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.EnterpriseServices.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.Web/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Web.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Drawing/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Drawing.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.ComponentModel.DataAnnotations/v4.0_4.0.0.0__31bf3856ad364e35/System.ComponentModel.DataAnnotations.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Web.ApplicationServices/v4.0_4.0.0.0__31bf3856ad364e35/System.Web.ApplicationServices.dll
+
+   at fitSharp.Machine.Engine.ReflectionMember.Invoke(Object[] parameters)
+   at fitSharp.Machine.Engine.ProcessorBase`2.Operate[O](Object[] parameters)
+   at fitSharp.Fit.Operators.ParseInterpreter.MakeInterpreter(Cell classCell)
+   at fitSharp.Fit.Operators.ParseInterpreter.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorBase`2.&lt;&gt;c__DisplayClass11.&lt;&gt;c__DisplayClass13.&lt;Parse&gt;b__10(ParseOperator`1 o)
+   at fitSharp.Machine.Engine.Operators`2.Do[O](CanDoOperation`1 canDoOperation, DoOperation`1 doOperation)
+   at fitSharp.Machine.Engine.ProcessorBase`2.&lt;&gt;c__DisplayClass11.&lt;Parse&gt;b__e(OperationLogging logging)
+   at fitSharp.Machine.Engine.ProcessorBase`2.DoLoggedOperation[R](String startMessage, Func`2 operation)
+   at fitSharp.Machine.Engine.ProcessorBase`2.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Fit.Service.CellProcessorBase.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorExtension.ParseTree[T](Processor`1 processor, Type type, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorExtension.ParseTree[T,V](Processor`1 processor, Tree`1 input)
+   at fitSharp.Fit.Engine.InterpretFlow.ProcessFlowRow(Tree`1 table, Int32 rowNumber)&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Output?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;STARTED&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;span class="blue"&gt;&lt;b&gt;Delete Process Log Detail Table contents to clear out data from previous runs&lt;/b&gt;&lt;/span&gt;&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td class="error"&gt;Delete From Process Log Detail Table&lt;hr /&gt;&lt;pre&gt;&lt;div class="fit_stacktrace"&gt;fitSharp.Machine.Exception.TypeMissingException: Type 'DeleteFromProcessLogDetailTable' not found in assemblies:
+    file:///C:/Windows/Microsoft.NET/Framework64/v4.0.30319/mscorlib.dll
+    file:///C:/backupdata/Training/Training/Fitnesse/Fitsharp/Runner.exe
+    file:///C:/backupdata/Training/Training/Fitnesse/Fitsharp/fitSharp.DLL
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Configuration/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Configuration.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System/v4.0_4.0.0.0__b77a5c561934e089/System.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Xml/v4.0_4.0.0.0__b77a5c561934e089/System.Xml.dll
+    file:///C:/backupdata/Training/Training/Fitnesse/Fitsharp/fit.DLL
+    file:///C:/backupdata/Training/Training/Fitnesse/Fixtures/Fitnesse_Dlls/QaTip.Fitnesse.Demo.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.Data/v4.0_4.0.0.0__b77a5c561934e089/System.Data.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.Transactions/v4.0_4.0.0.0__b77a5c561934e089/System.Transactions.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.EnterpriseServices/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.EnterpriseServices.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.Web/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Web.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Drawing/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Drawing.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.ComponentModel.DataAnnotations/v4.0_4.0.0.0__31bf3856ad364e35/System.ComponentModel.DataAnnotations.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Web.ApplicationServices/v4.0_4.0.0.0__31bf3856ad364e35/System.Web.ApplicationServices.dll
+
+   at fitSharp.Machine.Engine.ReflectionMember.Invoke(Object[] parameters)
+   at fitSharp.Machine.Engine.ProcessorBase`2.Operate[O](Object[] parameters)
+   at fitSharp.Fit.Operators.ParseInterpreter.MakeInterpreter(Cell classCell)
+   at fitSharp.Fit.Operators.ParseInterpreter.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorBase`2.&lt;&gt;c__DisplayClass11.&lt;&gt;c__DisplayClass13.&lt;Parse&gt;b__10(ParseOperator`1 o)
+   at fitSharp.Machine.Engine.Operators`2.Do[O](CanDoOperation`1 canDoOperation, DoOperation`1 doOperation)
+   at fitSharp.Machine.Engine.ProcessorBase`2.&lt;&gt;c__DisplayClass11.&lt;Parse&gt;b__e(OperationLogging logging)
+   at fitSharp.Machine.Engine.ProcessorBase`2.DoLoggedOperation[R](String startMessage, Func`2 operation)
+   at fitSharp.Machine.Engine.ProcessorBase`2.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Fit.Service.CellProcessorBase.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorExtension.ParseTree[T](Processor`1 processor, Type type, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorExtension.ParseTree[T,V](Processor`1 processor, Tree`1 input)
+   at fitSharp.Fit.Engine.InterpretFlow.ProcessFlowRow(Tree`1 table, Int32 rowNumber)&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;ProcessLogDetailId&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;ALL&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;span class="blue"&gt;&lt;b&gt;Delete Process Log Table contents to clear out data from previous runs&lt;/b&gt;&lt;/span&gt;&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td class="error"&gt;Delete From Process Log Table&lt;hr /&gt;&lt;pre&gt;&lt;div class="fit_stacktrace"&gt;fitSharp.Machine.Exception.TypeMissingException: Type 'DeleteFromProcessLogTable' not found in assemblies:
+    file:///C:/Windows/Microsoft.NET/Framework64/v4.0.30319/mscorlib.dll
+    file:///C:/backupdata/Training/Training/Fitnesse/Fitsharp/Runner.exe
+    file:///C:/backupdata/Training/Training/Fitnesse/Fitsharp/fitSharp.DLL
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Configuration/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Configuration.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System/v4.0_4.0.0.0__b77a5c561934e089/System.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Xml/v4.0_4.0.0.0__b77a5c561934e089/System.Xml.dll
+    file:///C:/backupdata/Training/Training/Fitnesse/Fitsharp/fit.DLL
+    file:///C:/backupdata/Training/Training/Fitnesse/Fixtures/Fitnesse_Dlls/QaTip.Fitnesse.Demo.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.Data/v4.0_4.0.0.0__b77a5c561934e089/System.Data.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.Transactions/v4.0_4.0.0.0__b77a5c561934e089/System.Transactions.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.EnterpriseServices/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.EnterpriseServices.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.Web/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Web.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Drawing/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Drawing.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.ComponentModel.DataAnnotations/v4.0_4.0.0.0__31bf3856ad364e35/System.ComponentModel.DataAnnotations.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Web.ApplicationServices/v4.0_4.0.0.0__31bf3856ad364e35/System.Web.ApplicationServices.dll
+
+   at fitSharp.Machine.Engine.ReflectionMember.Invoke(Object[] parameters)
+   at fitSharp.Machine.Engine.ProcessorBase`2.Operate[O](Object[] parameters)
+   at fitSharp.Fit.Operators.ParseInterpreter.MakeInterpreter(Cell classCell)
+   at fitSharp.Fit.Operators.ParseInterpreter.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorBase`2.&lt;&gt;c__DisplayClass11.&lt;&gt;c__DisplayClass13.&lt;Parse&gt;b__10(ParseOperator`1 o)
+   at fitSharp.Machine.Engine.Operators`2.Do[O](CanDoOperation`1 canDoOperation, DoOperation`1 doOperation)
+   at fitSharp.Machine.Engine.ProcessorBase`2.&lt;&gt;c__DisplayClass11.&lt;Parse&gt;b__e(OperationLogging logging)
+   at fitSharp.Machine.Engine.ProcessorBase`2.DoLoggedOperation[R](String startMessage, Func`2 operation)
+   at fitSharp.Machine.Engine.ProcessorBase`2.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Fit.Service.CellProcessorBase.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorExtension.ParseTree[T](Processor`1 processor, Type type, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorExtension.ParseTree[T,V](Processor`1 processor, Tree`1 input)
+   at fitSharp.Fit.Engine.InterpretFlow.ProcessFlowRow(Tree`1 table, Int32 rowNumber)&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;LogId&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;ALL&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td class="error" colspan="2"&gt;TestHelper&lt;hr /&gt;&lt;pre&gt;&lt;div class="fit_stacktrace"&gt;fitSharp.Machine.Exception.TypeMissingException: Type 'TestHelper' not found in assemblies:
+    file:///C:/Windows/Microsoft.NET/Framework64/v4.0.30319/mscorlib.dll
+    file:///C:/backupdata/Training/Training/Fitnesse/Fitsharp/Runner.exe
+    file:///C:/backupdata/Training/Training/Fitnesse/Fitsharp/fitSharp.DLL
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Configuration/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Configuration.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System/v4.0_4.0.0.0__b77a5c561934e089/System.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Xml/v4.0_4.0.0.0__b77a5c561934e089/System.Xml.dll
+    file:///C:/backupdata/Training/Training/Fitnesse/Fitsharp/fit.DLL
+    file:///C:/backupdata/Training/Training/Fitnesse/Fixtures/Fitnesse_Dlls/QaTip.Fitnesse.Demo.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.Data/v4.0_4.0.0.0__b77a5c561934e089/System.Data.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.Transactions/v4.0_4.0.0.0__b77a5c561934e089/System.Transactions.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.EnterpriseServices/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.EnterpriseServices.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.Web/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Web.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Drawing/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Drawing.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.ComponentModel.DataAnnotations/v4.0_4.0.0.0__31bf3856ad364e35/System.ComponentModel.DataAnnotations.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Web.ApplicationServices/v4.0_4.0.0.0__31bf3856ad364e35/System.Web.ApplicationServices.dll
+
+   at fitSharp.Machine.Engine.ReflectionMember.Invoke(Object[] parameters)
+   at fitSharp.Machine.Engine.ProcessorBase`2.Operate[O](Object[] parameters)
+   at fitSharp.Fit.Operators.ParseInterpreter.MakeInterpreter(Cell classCell)
+   at fitSharp.Fit.Operators.ParseInterpreter.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorBase`2.&lt;&gt;c__DisplayClass11.&lt;&gt;c__DisplayClass13.&lt;Parse&gt;b__10(ParseOperator`1 o)
+   at fitSharp.Machine.Engine.Operators`2.Do[O](CanDoOperation`1 canDoOperation, DoOperation`1 doOperation)
+   at fitSharp.Machine.Engine.ProcessorBase`2.&lt;&gt;c__DisplayClass11.&lt;Parse&gt;b__e(OperationLogging logging)
+   at fitSharp.Machine.Engine.ProcessorBase`2.DoLoggedOperation[R](String startMessage, Func`2 operation)
+   at fitSharp.Machine.Engine.ProcessorBase`2.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Fit.Service.CellProcessorBase.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorExtension.ParseTree[T](Processor`1 processor, Type type, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorExtension.ParseTree[T,V](Processor`1 processor, Tree`1 input)
+   at fitSharp.Fit.Engine.InterpretFlow.ProcessFlowRow(Tree`1 table, Int32 rowNumber)&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;WaitSeconds&lt;/td&gt;
+		&lt;td&gt;Wait()&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;5&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;span class="blue"&gt;&lt;b&gt;Truncate Log File to clear out data from previous runs&lt;/b&gt;&lt;/span&gt;&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td class="error"&gt;Manage File&lt;hr /&gt;&lt;pre&gt;&lt;div class="fit_stacktrace"&gt;fitSharp.Machine.Exception.TypeMissingException: Type 'ManageFile' not found in assemblies:
+    file:///C:/Windows/Microsoft.NET/Framework64/v4.0.30319/mscorlib.dll
+    file:///C:/backupdata/Training/Training/Fitnesse/Fitsharp/Runner.exe
+    file:///C:/backupdata/Training/Training/Fitnesse/Fitsharp/fitSharp.DLL
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Configuration/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Configuration.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System/v4.0_4.0.0.0__b77a5c561934e089/System.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Xml/v4.0_4.0.0.0__b77a5c561934e089/System.Xml.dll
+    file:///C:/backupdata/Training/Training/Fitnesse/Fitsharp/fit.DLL
+    file:///C:/backupdata/Training/Training/Fitnesse/Fixtures/Fitnesse_Dlls/QaTip.Fitnesse.Demo.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.Data/v4.0_4.0.0.0__b77a5c561934e089/System.Data.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.Transactions/v4.0_4.0.0.0__b77a5c561934e089/System.Transactions.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.EnterpriseServices/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.EnterpriseServices.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.Web/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Web.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Drawing/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Drawing.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.ComponentModel.DataAnnotations/v4.0_4.0.0.0__31bf3856ad364e35/System.ComponentModel.DataAnnotations.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Web.ApplicationServices/v4.0_4.0.0.0__31bf3856ad364e35/System.Web.ApplicationServices.dll
+
+   at fitSharp.Machine.Engine.ReflectionMember.Invoke(Object[] parameters)
+   at fitSharp.Machine.Engine.ProcessorBase`2.Operate[O](Object[] parameters)
+   at fitSharp.Fit.Operators.ParseInterpreter.MakeInterpreter(Cell classCell)
+   at fitSharp.Fit.Operators.ParseInterpreter.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorBase`2.&lt;&gt;c__DisplayClass11.&lt;&gt;c__DisplayClass13.&lt;Parse&gt;b__10(ParseOperator`1 o)
+   at fitSharp.Machine.Engine.Operators`2.Do[O](CanDoOperation`1 canDoOperation, DoOperation`1 doOperation)
+   at fitSharp.Machine.Engine.ProcessorBase`2.&lt;&gt;c__DisplayClass11.&lt;Parse&gt;b__e(OperationLogging logging)
+   at fitSharp.Machine.Engine.ProcessorBase`2.DoLoggedOperation[R](String startMessage, Func`2 operation)
+   at fitSharp.Machine.Engine.ProcessorBase`2.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Fit.Service.CellProcessorBase.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorExtension.ParseTree[T](Processor`1 processor, Type type, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorExtension.ParseTree[T,V](Processor`1 processor, Tree`1 input)
+   at fitSharp.Fit.Engine.InterpretFlow.ProcessFlowRow(Tree`1 table, Int32 rowNumber)&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="meta"&gt;undefined variable: CMGR_SLPS_LOGFILE&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Log File Path?&lt;/td&gt;
+		&lt;td&gt;TruncateFile()?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="meta"&gt;undefined variable: CMGR_SLPS_LOGFILE&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;span class="blue"&gt;&lt;b&gt;Point to the targeted schema:&lt;/b&gt;&lt;/span&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td class="error" colspan="2"&gt;Test Helper&lt;hr /&gt;&lt;pre&gt;&lt;div class="fit_stacktrace"&gt;fitSharp.Machine.Exception.TypeMissingException: Type 'TestHelper' not found in assemblies:
+    file:///C:/Windows/Microsoft.NET/Framework64/v4.0.30319/mscorlib.dll
+    file:///C:/backupdata/Training/Training/Fitnesse/Fitsharp/Runner.exe
+    file:///C:/backupdata/Training/Training/Fitnesse/Fitsharp/fitSharp.DLL
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Configuration/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Configuration.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System/v4.0_4.0.0.0__b77a5c561934e089/System.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Xml/v4.0_4.0.0.0__b77a5c561934e089/System.Xml.dll
+    file:///C:/backupdata/Training/Training/Fitnesse/Fitsharp/fit.DLL
+    file:///C:/backupdata/Training/Training/Fitnesse/Fixtures/Fitnesse_Dlls/QaTip.Fitnesse.Demo.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.Data/v4.0_4.0.0.0__b77a5c561934e089/System.Data.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.Transactions/v4.0_4.0.0.0__b77a5c561934e089/System.Transactions.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.EnterpriseServices/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.EnterpriseServices.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.Web/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Web.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Drawing/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Drawing.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.ComponentModel.DataAnnotations/v4.0_4.0.0.0__31bf3856ad364e35/System.ComponentModel.DataAnnotations.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Web.ApplicationServices/v4.0_4.0.0.0__31bf3856ad364e35/System.Web.ApplicationServices.dll
+
+   at fitSharp.Machine.Engine.ReflectionMember.Invoke(Object[] parameters)
+   at fitSharp.Machine.Engine.ProcessorBase`2.Operate[O](Object[] parameters)
+   at fitSharp.Fit.Operators.ParseInterpreter.MakeInterpreter(Cell classCell)
+   at fitSharp.Fit.Operators.ParseInterpreter.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorBase`2.&lt;&gt;c__DisplayClass11.&lt;&gt;c__DisplayClass13.&lt;Parse&gt;b__10(ParseOperator`1 o)
+   at fitSharp.Machine.Engine.Operators`2.Do[O](CanDoOperation`1 canDoOperation, DoOperation`1 doOperation)
+   at fitSharp.Machine.Engine.ProcessorBase`2.&lt;&gt;c__DisplayClass11.&lt;Parse&gt;b__e(OperationLogging logging)
+   at fitSharp.Machine.Engine.ProcessorBase`2.DoLoggedOperation[R](String startMessage, Func`2 operation)
+   at fitSharp.Machine.Engine.ProcessorBase`2.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Fit.Service.CellProcessorBase.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorExtension.ParseTree[T](Processor`1 processor, Type type, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorExtension.ParseTree[T,V](Processor`1 processor, Tree`1 input)
+   at fitSharp.Fit.Engine.InterpretFlow.ProcessFlowRow(Tree`1 table, Int32 rowNumber)&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;FitNesse Db ConnectionString?&lt;/td&gt;
+		&lt;td&gt;FitNesse Db ConnectionString&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;Data Source=&lt;span class="meta"&gt;undefined variable: SCHEMA_SERVER&lt;/span&gt;; Persist Security Info=True; User ID=&lt;span class="meta"&gt;undefined variable: SCHEMA&lt;/span&gt;; Password=iclaim&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;span class="blue"&gt;&lt;b&gt;Make sure Service is running&lt;/b&gt;&lt;/span&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td class="error" colspan="3"&gt;Manage Services&lt;hr /&gt;&lt;pre&gt;&lt;div class="fit_stacktrace"&gt;fitSharp.Machine.Exception.TypeMissingException: Type 'ManageServices' not found in assemblies:
+    file:///C:/Windows/Microsoft.NET/Framework64/v4.0.30319/mscorlib.dll
+    file:///C:/backupdata/Training/Training/Fitnesse/Fitsharp/Runner.exe
+    file:///C:/backupdata/Training/Training/Fitnesse/Fitsharp/fitSharp.DLL
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Configuration/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Configuration.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System/v4.0_4.0.0.0__b77a5c561934e089/System.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Xml/v4.0_4.0.0.0__b77a5c561934e089/System.Xml.dll
+    file:///C:/backupdata/Training/Training/Fitnesse/Fitsharp/fit.DLL
+    file:///C:/backupdata/Training/Training/Fitnesse/Fixtures/Fitnesse_Dlls/QaTip.Fitnesse.Demo.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.Data/v4.0_4.0.0.0__b77a5c561934e089/System.Data.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.Transactions/v4.0_4.0.0.0__b77a5c561934e089/System.Transactions.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.EnterpriseServices/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.EnterpriseServices.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_64/System.Web/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Web.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Drawing/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Drawing.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.ComponentModel.DataAnnotations/v4.0_4.0.0.0__31bf3856ad364e35/System.ComponentModel.DataAnnotations.dll
+    file:///C:/windows/Microsoft.Net/assembly/GAC_MSIL/System.Web.ApplicationServices/v4.0_4.0.0.0__31bf3856ad364e35/System.Web.ApplicationServices.dll
+
+   at fitSharp.Machine.Engine.ReflectionMember.Invoke(Object[] parameters)
+   at fitSharp.Machine.Engine.ProcessorBase`2.Operate[O](Object[] parameters)
+   at fitSharp.Fit.Operators.ParseInterpreter.MakeInterpreter(Cell classCell)
+   at fitSharp.Fit.Operators.ParseInterpreter.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorBase`2.&lt;&gt;c__DisplayClass11.&lt;&gt;c__DisplayClass13.&lt;Parse&gt;b__10(ParseOperator`1 o)
+   at fitSharp.Machine.Engine.Operators`2.Do[O](CanDoOperation`1 canDoOperation, DoOperation`1 doOperation)
+   at fitSharp.Machine.Engine.ProcessorBase`2.&lt;&gt;c__DisplayClass11.&lt;Parse&gt;b__e(OperationLogging logging)
+   at fitSharp.Machine.Engine.ProcessorBase`2.DoLoggedOperation[R](String startMessage, Func`2 operation)
+   at fitSharp.Machine.Engine.ProcessorBase`2.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Fit.Service.CellProcessorBase.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorExtension.ParseTree[T](Processor`1 processor, Type type, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorExtension.ParseTree[T,V](Processor`1 processor, Tree`1 input)
+   at fitSharp.Fit.Engine.InterpretFlow.ProcessFlowRow(Tree`1 table, Int32 rowNumber)&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;ServiceName&lt;/td&gt;
+		&lt;td&gt;Ensure Service Started?&lt;/td&gt;
+		&lt;td&gt;Output&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;CMGR Scheduled Load Processor Service&lt;/td&gt;
+		&lt;td&gt;SUCCESS&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;</content>
+    <relativePageName>SampleTestGettingAndSettingValuesInConfigFiles</relativePageName>
+          </result>
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>1</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>392</totalRunTimeInMillis>
+</testResults>
+

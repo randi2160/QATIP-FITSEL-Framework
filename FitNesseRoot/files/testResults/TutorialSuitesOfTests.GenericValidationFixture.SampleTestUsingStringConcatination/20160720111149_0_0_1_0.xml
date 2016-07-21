@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20160515</FitNesseVersion>
+  <rootPath>TutorialSuitesOfTests.GenericValidationFixture.SampleTestUsingStringConcatination</rootPath>
+    <result>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <date>2016-07-20T11:11:49-04:00</date>
+    <runTimeInMillis>4</runTimeInMillis>
+    <content>&lt;br/&gt;&amp;lt;test page&amp;gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fit_SUT"&gt;QaTip.Fitnesse.Demo.DoTestFixture&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+</content>
+    <relativePageName>SampleTestUsingStringConcatination</relativePageName>
+          </result>
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>1</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>4</totalRunTimeInMillis>
+</testResults>
+

@@ -1,0 +1,9 @@
+C:\backupdata\Training\Training\Fitnesse\Fixtures\QaTip.Fitnesse.Demo\specflow\bin\Debug\specflow.dll.config
+C:\backupdata\Training\Training\Fitnesse\Fixtures\QaTip.Fitnesse.Demo\specflow\bin\Debug\specflow.dll
+C:\backupdata\Training\Training\Fitnesse\Fixtures\QaTip.Fitnesse.Demo\specflow\bin\Debug\specflow.pdb
+C:\backupdata\Training\Training\Fitnesse\Fixtures\QaTip.Fitnesse.Demo\specflow\bin\Debug\nunit.framework.dll
+C:\backupdata\Training\Training\Fitnesse\Fixtures\QaTip.Fitnesse.Demo\specflow\bin\Debug\TechTalk.SpecFlow.dll
+C:\backupdata\Training\Training\Fitnesse\Fixtures\QaTip.Fitnesse.Demo\specflow\bin\Debug\nunit.framework.xml
+C:\backupdata\Training\Training\Fitnesse\Fixtures\QaTip.Fitnesse.Demo\specflow\obj\Debug\specflow.dll
+C:\backupdata\Training\Training\Fitnesse\Fixtures\QaTip.Fitnesse.Demo\specflow\obj\Debug\specflow.pdb
+C:\backupdata\Training\Training\Fitnesse\Fixtures\QaTip.Fitnesse.Demo\specflow\obj\Debug\specflow.csprojResolveAssemblyReference.cache

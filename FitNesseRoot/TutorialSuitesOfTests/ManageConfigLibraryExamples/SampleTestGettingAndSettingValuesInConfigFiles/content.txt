@@ -1,15 +1,23 @@
 <test page>
+!|QaTip.Fitnesse.Demo.DoTestFixture|
+
+!define configpath {C:\backupdata\Training\Training\Fitnesse\ConfigurationExample\configruationexample.config} 
+!define servicename {Jenkins}
+!define DictionaryPath {C:\temp\Dictionaries}
+!define RuleMetadataPath {C:\temp\RuleMetadataFiles}
+!define EnableXsrfVerification {N}
+!define DictionarySourcePath {C:\RFMDEFAULTDICTIONARY}
 
 !style_blue['''Set Processing Interval to Use Testing Scheduler''']
-!| Manage Config                                                                                       |
-|ConfigFileName     |ConfigValue                |Target Value   |SetConfigSetting()|GetConfigSetting()?|
-|${CMGR_SLPS_CONFIG}|ProcessingIntervalInSeconds|5              |                  |5                  |
-|${CMGR_SLPS_CONFIG}|LcdMode                    |TEST_PROCESSING|                  |TEST_PROCESSING    |
+!| manageconfigs                                                                                  |
+|ConfigFileName|ConfigValue                |Target Value   |SetConfigSetting()|GetConfigSetting()?|
+|${configpath} |ProcessingIntervalInSeconds|5              |                  |5                  |
+|${configpath} |LcdMode                    |TEST_PROCESSING|                  |TEST_PROCESSING    |
 
 !style_blue['''Start Service''']
-!|ManageServices                                                     |
-|ServiceName                          |Ensure Service Started?|Output|
-|CMGR Scheduled Load Processor Service|SUCCESS                |      |
+!|ManageServices                              |
+|ServiceName   |Ensure Service Started?|Output|
+|${servicename}|SUCCESS                |      |
 
 !style_blue['''Point to the targeted schema:''']
 !|Test Helper                 |
@@ -22,13 +30,13 @@
 |>>currentDateTime     |
 
 !style_blue['''Stop services:''']
-!|Manage Services                                          |
-|Service Name                         |Stop Service?|Output|
-|CMGR Scheduled Load Processor Service|SUCCESS      |      |
+!|Manage Services                   |
+|Service Name  |Stop Service?|Output|
+|${servicename}|SUCCESS      |      |
 
-!| Manage Config                                                                                 |
-|ConfigFileName  |ConfigValue                |Target Value|SetConfigSetting()|GetConfigSetting()?|
-|${CM_SQS_CONFIG}|ProcessingIntervalInSeconds|0           |                  |0                  |
+!| manageconfigs                                                                       |
+|ConfigFileName  |ConfigValue      |Target Value|SetConfigSetting()|GetConfigSetting()?|
+|${CM_SQS_CONFIG}|${DictionaryPath}|0           |                  |0                  |
 
 !style_blue['''Adjust Current Date Time''']
 
@@ -37,28 +45,28 @@
 |                    |0               |>>currentProcessingDate  |1               |>>nextProcessingDate     |30                 |>>timeAdjustment            |
 
 
-!|ManageConfig                                                                                                      |
-|ConfigFileName     |ConfigValue        |GetConfigSetting()?|TargetValue     |SetConfigSetting()|GetConfigSetting()?|
-|${CMGR_SLPS_CONFIG}|ProcessingStartTime|                   |<<timeAdjustment|                  |                   |
+!|manageconfigs                                                                                                |
+|ConfigFileName|ConfigValue        |GetConfigSetting()?|TargetValue     |SetConfigSetting()|GetConfigSetting()?|
+|${configpath} |ProcessingStartTime|                   |<<timeAdjustment|                  |                   |
 
 
 temporary
-!| Manage Config                                                                               |
-|ConfigFileName  |ConfigValue|Target Value              |SetConfigSetting()|GetConfigSetting()?|
-|${CM_SQS_CONFIG}|InputFolder|<<stagingFolderPathSetting|                  |                   |
+!| manageconfigs                                                                             |
+|ConfigFileName|ConfigValue|Target Value              |SetConfigSetting()|GetConfigSetting()?|
+|${configpath} |InputFolder|<<stagingFolderPathSetting|                  |                   |
 
 !|Validate             |
 |Get Current DateTime()|
 
 
-!|ManageConfig                                                                                                  |
-|ConfigFileName  |ConfigValue            |GetConfigSetting()?|TargetValue|SetConfigSetting()|GetConfigSetting()?|
-|${CM_SQS_CONFIG}|EnableEmailNotification|                   |true       |                  |                   |
+!|manageconfigs                                                                                               |
+|ConfigFileName|ConfigValue            |GetConfigSetting()?|TargetValue|SetConfigSetting()|GetConfigSetting()?|
+|${configpath} |EnableEmailNotification|                   |true       |                  |                   |
 
-!|ManageConfig                                                                                                                                   |
-|ConfigFileName  |ConfigValue                                                    |TargetValue                 |SetXPATHConfigValueToTargetValue()|
-|${CM_SQS_CONFIG}|/configuration/emailNotifications/emailNotification/@mailServer|localhost        |                                  |
-|${CM_SQS_CONFIG}|/configuration/emailNotifications/emailNotification/@mailToRole|QA.Tester@McKesson.com|                                  |
+!|manageconfigs                                                                                                                          |
+|ConfigFileName|ConfigValue                                                    |TargetValue           |SetXPATHConfigValueToTargetValue()|
+|${configpath} |/configuration/emailNotifications/emailNotification/@mailServer|localhost             |                                  |
+|${configpath} |/configuration/emailNotifications/emailNotification/@mailToRole|QA.Tester@McKesson.com|                                  |
 #|${CM_SQS_CONFIG}|/configuration/emailNotifications/emailNotification/@mailServer|localhost           |                                  |
 #|${CM_SQS_CONFIG}|/configuration/emailNotifications/emailNotification/@mailToRole|QA.Tester@McKesson.com|                                  |
 

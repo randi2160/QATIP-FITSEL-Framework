@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<suiteResults>
+  <FitNesseVersion>v20160515</FitNesseVersion>
+  <rootPath>TutorialSuitesOfTests.FileManipulationTestSuite</rootPath>
+  <pageHistoryReference>
+    <name>TutorialSuitesOfTests.FileManipulationTestSuite.BackUpAndRestoreExample</name>
+    <date>2016-07-20T09:38:01-04:00</date>
+    <pageHistoryLink>TutorialSuitesOfTests.FileManipulationTestSuite.BackUpAndRestoreExample?pageHistory&amp;resultDate=20160720093801</pageHistoryLink>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>4</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>TutorialSuitesOfTests.FileManipulationTestSuite.CopyAndMoveFiles</name>
+    <date>2016-07-20T09:38:01-04:00</date>
+    <pageHistoryLink>TutorialSuitesOfTests.FileManipulationTestSuite.CopyAndMoveFiles?pageHistory&amp;resultDate=20160720093801</pageHistoryLink>
+    <counts>
+      <right>1</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>38</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>TutorialSuitesOfTests.FileManipulationTestSuite.ExcuteCommand</name>
+    <date>2016-07-20T09:38:01-04:00</date>
+    <pageHistoryLink>TutorialSuitesOfTests.FileManipulationTestSuite.ExcuteCommand?pageHistory&amp;resultDate=20160720093801</pageHistoryLink>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>3</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>TutorialSuitesOfTests.FileManipulationTestSuite.GetLatestFileCreatedExample</name>
+    <date>2016-07-20T09:38:01-04:00</date>
+    <pageHistoryLink>TutorialSuitesOfTests.FileManipulationTestSuite.GetLatestFileCreatedExample?pageHistory&amp;resultDate=20160720093801</pageHistoryLink>
+    <counts>
+      <right>1</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>17</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>TutorialSuitesOfTests.FileManipulationTestSuite.UnzipFiles</name>
+    <date>2016-07-20T09:38:01-04:00</date>
+    <pageHistoryLink>TutorialSuitesOfTests.FileManipulationTestSuite.UnzipFiles?pageHistory&amp;resultDate=20160720093801</pageHistoryLink>
+    <counts>
+      <right>0</right>
+      <wrong>1</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>45</runTimeInMillis>
+  </pageHistoryReference>
+  <executionLog>
+    <testSystem>fit:Fitsharp\Runner.exe</testSystem>
+    <command>Fitsharp\Runner.exe -r fitnesse.fitserver.FitServer,FitSharp\fit.dll,FitSharp\fitLibrary.dll -c FitSharp\suite.config.xml ..\Fitnesse\Fixtures\Fitnesse_Dlls\QaTip.Fitnesse.Demo.dll A5Q55S72 56052 3863</command>
+    <exitCode>1</exitCode>
+    <stdOut>File path: C:\backupdata\Training\Training\Fitnesse\Fixtures\Fitnesse_Dlls\QaTip.Fitnesse.Demo.dll.config
+7/20/2016 9:38:01 AM: Found ConnectionString: FitNesseqatipDbConString
+7/20/2016 9:38:01 AM: DbConnectionString = Data Source=SQLEXPRESS; Integrated Security=SSPI;AttachDBFilename=DataDirectoryaspnetdb.mdf;User Instance=true
+File path: C:\backupdata\Training\Training\Fitnesse\Fixtures\Fitnesse_Dlls\QaTip.Fitnesse.Demo.dll.config
+7/20/2016 9:38:01 AM: Found ConnectionString: FitNesseqatipDbConString
+7/20/2016 9:38:01 AM: DbConnectionString = Data Source=SQLEXPRESS; Integrated Security=SSPI;AttachDBFilename=DataDirectoryaspnetdb.mdf;User Instance=true
+File path: C:\backupdata\Training\Training\Fitnesse\Fixtures\Fitnesse_Dlls\QaTip.Fitnesse.Demo.dll.config
+7/20/2016 9:38:01 AM: Found ConnectionString: FitNesseqatipDbConString
+7/20/2016 9:38:01 AM: DbConnectionString = Data Source=SQLEXPRESS; Integrated Security=SSPI;AttachDBFilename=DataDirectoryaspnetdb.mdf;User Instance=true
+File path: C:\backupdata\Training\Training\Fitnesse\Fixtures\Fitnesse_Dlls\QaTip.Fitnesse.Demo.dll.config
+7/20/2016 9:38:01 AM: Found ConnectionString: FitNesseqatipDbConString
+7/20/2016 9:38:01 AM: DbConnectionString = Data Source=SQLEXPRESS; Integrated Security=SSPI;AttachDBFilename=DataDirectoryaspnetdb.mdf;User Instance=true
+File path: C:\backupdata\Training\Training\Fitnesse\Fixtures\Fitnesse_Dlls\QaTip.Fitnesse.Demo.dll.config
+7/20/2016 9:38:01 AM: Found ConnectionString: FitNesseqatipDbConString
+7/20/2016 9:38:01 AM: DbConnectionString = Data Source=SQLEXPRESS; Integrated Security=SSPI;AttachDBFilename=DataDirectoryaspnetdb.mdf;User Instance=true
+</stdOut>
+    <stdErr></stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>2</right>
+    <wrong>1</wrong>
+    <ignores>2</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>580</totalRunTimeInMillis>
+</suiteResults>
+
