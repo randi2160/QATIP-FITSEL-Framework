@@ -6,4 +6,3 @@ C:\backupdata\Training\Training\Fitnesse\Fixtures\QaTip.Fitnesse.Demo\specflow\b
 C:\backupdata\Training\Training\Fitnesse\Fixtures\QaTip.Fitnesse.Demo\specflow\bin\Debug\nunit.framework.xml
 C:\backupdata\Training\Training\Fitnesse\Fixtures\QaTip.Fitnesse.Demo\specflow\obj\Debug\specflow.dll
 C:\backupdata\Training\Training\Fitnesse\Fixtures\QaTip.Fitnesse.Demo\specflow\obj\Debug\specflow.pdb
-C:\backupdata\Training\Training\Fitnesse\Fixtures\QaTip.Fitnesse.Demo\specflow\obj\Debug\specflow.csprojResolveAssemblyReference.cache

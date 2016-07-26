@@ -21,9 +21,9 @@ namespace specflow
         [Then(@"the result should be (.*) on the screen")]
         public void ThenTheResultShouldBeOnTheScreen(int p0)
         {
-            int P1 = 0;
+            
             ScenarioContext.Current.Pending();
-            p0 = p0 + P1;
+       
         }
     }
 }
