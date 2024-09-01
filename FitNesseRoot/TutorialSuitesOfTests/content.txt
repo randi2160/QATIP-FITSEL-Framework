@@ -1,19 +1,8 @@
 !|QaTip.Fitnesse.Demo.DoTestFixture|
 
-#!define COMMAND_PATTERN {%m -r fitnesse.fitserver.FitServer,C:\QATIP-FITSEL-Framework\Fixtures\QaTip.Fitnesse.Demo\QaTip.Fitnesse.Demo\Fitsharp\fit.dll,C:\QATIP-FITSEL-Framework\Fixtures\QaTip.Fitnesse.Demo\QaTip.Fitnesse.Demo\Fitsharp\fitLibrary.dll -c C:\QATIP-FITSEL-Framework\Fixtures\QaTip.Fitnesse.Demo\QaTip.Fitnesse.Demo\Fitsharp\suite.config.xml %p}
-#!define TEST_RUNNER {C:\Users\kheml\.nuget\packages\fitsharp\2024.2.27\lib\net48\Runner.exe}
-#!path  C:\QATIP-FITSEL-Framework\Fixtures\Fitnesse_Dlls\QaTip.Fitnesse.Demo.dll
-
-//Publix
-#!define COMMAND_PATTERN {%m -r fitnesse.fitserver.FitServer,C:\Users\kheml\.nuget\packages\fitsharp\2024.2.27\lib\net8.0-windows\fit.dll,C:\Users\kheml\.nuget\packages\fitsharp\2024.2.27\lib\net8.0-windows\fitLibrary.dll -c C:\Users\kheml\.nuget\packages\fitsharp\2024.2.27\lib\net8.0-windows\suite.config.xml %p}
-#!define TEST_RUNNER {C:\Users\kheml\.nuget\packages\fitsharp\2024.2.27\lib\net48\Runner.exe}
-#!path C:\Users\kheml\source\repos\publicsSupermarketSpecflowProj\publix.fitnesse\bin\Debug\net8.0\publix.fitnesse.dll
-
-
-
 !define COMMAND_PATTERN {%m -r fitnesse.fitserver.FitServer,FitSharp\fit.dll,FitSharp\fitLibrary.dll -c FitSharp\suite.config.xml %p}
 !define TEST_RUNNER {Fitsharp\Runner.exe}
-!path ..\Fitnesse\Fixtures\Fitnesse_Dlls\QaTip.Fitnesse.Demo.dll
+!path ..\FitnesseFramework\Fixtures\Fitnesse_Dlls\QaTip.Fitnesse.Demo.dll
 !define TEST_RUNNER {Fitsharp\Runner.exe}
 
 !contents -R2 -g -p -f -h

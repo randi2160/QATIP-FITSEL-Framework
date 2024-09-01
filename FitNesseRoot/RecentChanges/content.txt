@@ -1,4 +1,14 @@
-|TutorialSuitesOfTests||11:36:54 Sun, Sep 01, 2024|
+|TutorialSuitesOfTests.UiAutomationTestSuite.SearchTestSuite.PerformSearchByIsbn||15:06:20 Sun, Sep 01, 2024|
+|SlimExample||11:27:07 Tue, Aug 06, 2024|
+|FrontPage||11:27:03 Tue, Aug 06, 2024|
+|FrontPage.SlimExample||11:25:48 Tue, Aug 06, 2024|
+|TutorialSuitesOfTests.Spotify.PlayList.Get.Playlist||13:46:15 Mon, Aug 05, 2024|
+|TutorialSuitesOfTests.Spotify.PlayList||11:05:57 Mon, Aug 05, 2024|
+|TutorialSuitesOfTests||01:01:30 Mon, Aug 05, 2024|
+|TutorialSuitesOfTests.Spotify.PlayList.Update||23:56:37 Sun, Aug 04, 2024|
+|TutorialSuitesOfTests.Spotify.PlayList.Post||23:56:10 Sun, Aug 04, 2024|
+|TutorialSuitesOfTests.Spotify.PlayList.Get||23:55:49 Sun, Aug 04, 2024|
+|TutorialSuitesOfTests.Spotify||23:51:12 Sun, Aug 04, 2024|
 |TutorialSuitesOfTests.GenericValidationFixture.HowToConcatinateManyStringTogether||12:42:13 Wed, Jul 13, 2016|
 |TutorialSuitesOfTests.FileManipulationTestSuite.BackUpAndRestoreExample||14:35:38 Fri, Jul 08, 2016|
 |TutorialSuitesOfTests.UiAutomationTestSuite.SearchTestSuite||14:18:58 Fri, Jul 08, 2016|
@@ -14,11 +24,9 @@
 |TutorialSuitesOfTests.FileManipulationTestSuite.UnzipFiles||10:39:02 Tue, Jun 28, 2016|
 |TutorialSuitesOfTests.FileManipulationTestSuite.ExcuteCommand||10:10:39 Tue, Jun 28, 2016|
 |TutorialSuitesOfTests.FileManipulationTestSuite.CopyAndMoveFiles||19:36:55 Sat, Jun 25, 2016|
-|TutorialSuitesOfTests.UiAutomationTestSuite.SearchTestSuite.PerformSearchByIsbn||19:31:21 Thu, Jun 23, 2016|
 |TutorialSuitesOfTests.BackEndAutomationExample.CustomizeConnection||16:49:49 Tue, Jun 21, 2016|
 |TutorialSuitesOfTests.FileManipulationTestSuite||16:29:51 Mon, Jun 13, 2016|
 |TutorialSuitesOfTests.BackEndAutomationExample.StandardDbFitTest||09:34:33 Mon, Jun 13, 2016|
 |TutorialSuitesOfTests.UiAutomationTestSuite||20:32:25 Sun, Jun 05, 2016|
 |TutorialSuitesOfTests.SeleniumFirstTest||14:17:00 Thu, Jun 02, 2016|
-|FrontPage||15:39:23 Wed, Jun 01, 2016|
 |TutorialSuitesOfTests.FirstTestSayHello||13:36:30 Wed, Jun 01, 2016|

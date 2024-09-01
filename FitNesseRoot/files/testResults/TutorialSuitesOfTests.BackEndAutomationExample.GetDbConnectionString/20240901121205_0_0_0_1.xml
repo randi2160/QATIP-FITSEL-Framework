@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20160515</FitNesseVersion>
+  <rootPath>TutorialSuitesOfTests.BackEndAutomationExample.GetDbConnectionString</rootPath>
+    <executionLog>
+    <testSystem>fit:C:\Users\kheml\.nuget\packages\fitsharp\2024.2.27\lib\net48\Runner.exe</testSystem>
+    <command>C:\Users\kheml\.nuget\packages\fitsharp\2024.2.27\lib\net48\Runner.exe -r fitnesse.fitserver.FitServer,C:\Users\kheml\.nuget\packages\fitsharp\2024.2.27\lib\net8.0-windows\fit.dll,C:\Users\kheml\.nuget\packages\fitsharp\2024.2.27\lib\net8.0-windows\fitLibrary.dll -c C:\Users\kheml\.nuget\packages\fitsharp\2024.2.27\lib\net8.0-windows\suite.config.xml C:\Users\kheml\source\repos\publicsSupermarketSpecflowProj\publix.fitnesse\bin\Debug\net8.0\publix.fitnesse.dll LAPTOP-9BC19LUV 59296 3863</command>
+    <exitCode>1</exitCode>
+    <stdOut>System.IO.FileNotFoundException: Could not load file or assembly 'System.Runtime, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' or one of its dependencies. The system cannot find the file specified.
+File name: 'System.Runtime, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'
+   at System.Reflection.RuntimeAssembly.GetExportedTypes(RuntimeAssembly assembly, ObjectHandleOnStack retTypes)
+   at System.Reflection.RuntimeAssembly.GetExportedTypes()
+   at fitSharp.Machine.Engine.CurrentDomain.LoadAssembly(String assemblyPath)
+   at fitSharp.Machine.Engine.ApplicationUnderTest.Assemblies.AddAssembly(String name)
+   at fitSharp.Machine.Application.ShellArguments.ParseRunner(Memory memory, Settings settings)
+   at fitSharp.Machine.Model.Maybe`1.IfPresent(Action`1 action)
+   at fitSharp.Machine.Application.ShellArguments.LoadMemory()
+   at fitSharp.Machine.Application.Shell.Run()
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+</stdOut>
+    <stdErr></stdErr>
+    <exception>FitClient: external process terminated before a connection could be established.</exception>
+    <exception>FitClient: external process terminated before a connection could be established.</exception>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>1</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>1442</totalRunTimeInMillis>
+</testResults>
+
