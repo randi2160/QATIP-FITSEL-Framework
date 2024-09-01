@@ -1,3 +1,4 @@
+|TutorialSuitesOfTests||11:36:54 Sun, Sep 01, 2024|
 |TutorialSuitesOfTests.GenericValidationFixture.HowToConcatinateManyStringTogether||12:42:13 Wed, Jul 13, 2016|
 |TutorialSuitesOfTests.FileManipulationTestSuite.BackUpAndRestoreExample||14:35:38 Fri, Jul 08, 2016|
 |TutorialSuitesOfTests.UiAutomationTestSuite.SearchTestSuite||14:18:58 Fri, Jul 08, 2016|
@@ -11,7 +12,6 @@
 |TutorialSuitesOfTests.BackEndAutomationExample.GetDbConnectionString||09:16:46 Wed, Jun 29, 2016|
 |TutorialSuitesOfTests.BackEndAutomationExample.ValidateRowFixture||08:41:03 Wed, Jun 29, 2016|
 |TutorialSuitesOfTests.FileManipulationTestSuite.UnzipFiles||10:39:02 Tue, Jun 28, 2016|
-|TutorialSuitesOfTests||10:12:53 Tue, Jun 28, 2016|
 |TutorialSuitesOfTests.FileManipulationTestSuite.ExcuteCommand||10:10:39 Tue, Jun 28, 2016|
 |TutorialSuitesOfTests.FileManipulationTestSuite.CopyAndMoveFiles||19:36:55 Sat, Jun 25, 2016|
 |TutorialSuitesOfTests.UiAutomationTestSuite.SearchTestSuite.PerformSearchByIsbn||19:31:21 Thu, Jun 23, 2016|

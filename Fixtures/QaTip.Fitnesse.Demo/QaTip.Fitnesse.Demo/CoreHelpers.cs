@@ -13,6 +13,7 @@ using System.Configuration;
 using System.IO;
 using System.Threading;
 using System.Xml.Linq;
+using OpenQA.Selenium.Firefox;
 
 
 namespace QaTip.Fitnesse.Demo
@@ -194,7 +195,36 @@ namespace QaTip.Fitnesse.Demo
             Console.WriteLine("{0}: {1}", DateTime.Now, message);
         }
 
-        public static IWebDriver InitializeSeleniumBrowser()
+
+        public static IWebDriver InitializeSeleniumBrowser(string browserType = "Chrome")
+        {
+            IWebDriver driver = null;
+
+            switch (browserType.ToLower())
+            {
+                case "chrome":
+                    driver = new ChromeDriver(); // Ensure chromedriver.exe is in the PATH or provide the path
+                    break;
+                case "firefox":
+                    driver = new FirefoxDriver(); // Ensure geckodriver.exe is in the PATH or provide the path
+                    break;
+                case "ie":
+                case "internetexplorer":
+                    driver = new InternetExplorerDriver(); // Ensure IEDriverServer.exe is in the PATH or provide the path
+                    break;
+                default:
+                    throw new ArgumentException("Browser type not supported: " + browserType);
+            }
+
+            // Common configurations
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5);
+            driver.Manage().Window.Maximize();
+
+            return driver;
+        }
+
+
+        public static IWebDriver InitializeSeleniumBrowser1()
         {
             IWebDriver selDriver;
            // string targetedBrowser = System.Configuration.ConfigurationManager.AppSettings.Get("TargetedBrowser");

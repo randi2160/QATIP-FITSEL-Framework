@@ -1,0 +1,306 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20160515</FitNesseVersion>
+  <rootPath>TutorialSuitesOfTests.UiAutomationTestSuite.SearchTestSuite.PerformSearchByIsbn</rootPath>
+    <result>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>6</exceptions>
+    </counts>
+    <date>2024-09-01T08:17:19-04:00</date>
+    <runTimeInMillis>369</runTimeInMillis>
+    <content>&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td class="error"&gt;QaTip.Fitnesse.Demo.DoTestFixture&lt;hr /&gt;&lt;pre&gt;&lt;div class="fit_stacktrace"&gt;System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---&gt; fitSharp.Machine.Exception.CreateException: Constructor with 0 parameter(s) failed for type 'QaTip.Fitnesse.Demo.DoTestFixture'. ---&gt; System.AggregateException: One or more errors occurred. ---&gt; System.Net.Http.HttpRequestException: An error occurred while sending the request. ---&gt; System.Net.WebException: The request was aborted: Could not create SSL/TLS secure channel.
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at WebDriverManager.Clients.ChromeForTestingClient.GetResultFromHttpTask[TResult](Task`1 taskToRun)
+   at WebDriverManager.Clients.ChromeForTestingClient.GetLastKnownGoodVersions()
+   at WebDriverManager.DriverConfigs.Impl.ChromeConfig.GetLatestVersion()
+   at WebDriverManager.DriverManager.GetVersionToDownload(IDriverConfig config, String version)
+   at WebDriverManager.DriverManager.SetUpDriver(IDriverConfig config, String version, Architecture architecture)
+   at QaTip.Fitnesse.Demo.DoTestFixture..ctor() in C:\QATIP-FITSEL-Framework\Fixtures\QaTip.Fitnesse.Demo\QaTip.Fitnesse.Demo\DoFixture\DoTestFixture.cs:line 41
+   --- End of inner exception stack trace ---
+   at fitSharp.Machine.Engine.CreateDefault`2.CreateWithoutParameters(RuntimeType runtimeType)
+   at fitSharp.Machine.Engine.CreateDefault`2.Create(NameMatcher memberName, Tree`1 parameters)
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.RuntimeType.InvokeMember(String name, BindingFlags bindingFlags, Binder binder, Object target, Object[] providedArgs, ParameterModifier[] modifiers, CultureInfo culture, String[] namedParams)
+   at fitSharp.Machine.Engine.MethodMember.TryInvoke(Object[] parameters)
+   at fitSharp.Machine.Engine.ReflectionMember.Invoke(Object[] parameters)
+   at fitSharp.Machine.Engine.ProcessorBase`2.Operate[O](Object[] parameters)
+   at fitSharp.Fit.Operators.ParseInterpreter.MakeInterpreter(Cell classCell)
+   at fitSharp.Fit.Operators.ParseInterpreter.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorBase`2.&lt;&gt;c__DisplayClass11.&lt;&gt;c__DisplayClass13.&lt;Parse&gt;b__10(ParseOperator`1 o)
+   at fitSharp.Machine.Engine.Operators`2.Do[O](CanDoOperation`1 canDoOperation, DoOperation`1 doOperation)
+   at fitSharp.Machine.Engine.ProcessorBase`2.&lt;&gt;c__DisplayClass11.&lt;Parse&gt;b__e(OperationLogging logging)
+   at fitSharp.Machine.Engine.ProcessorBase`2.DoLoggedOperation[R](String startMessage, Func`2 operation)
+   at fitSharp.Machine.Engine.ProcessorBase`2.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Fit.Service.CellProcessorBase.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorExtension.ParseTree[T](Processor`1 processor, Type type, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorExtension.ParseTree[T,V](Processor`1 processor, Tree`1 input)
+   at fitSharp.Fit.Engine.InterpretFlow.ProcessFlowRow(Tree`1 table, Int32 rowNumber)&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;variable defined: searchquery=9781476738024&lt;/span&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;h1&gt;&lt;span class="blue "&gt;Steps&lt;/span&gt;&lt;/h1&gt;
+&lt;h5&gt;&lt;span class="blue "&gt;&lt;i&gt;1. Navigate to Barnes and Noble.com&lt;/i&gt;&lt;/span&gt;&lt;/h5&gt;
+&lt;h5&gt;&lt;span class="blue "&gt;&lt;i&gt;2. Validate that you are on the barnes and Noble.com Website&lt;/i&gt;&lt;/span&gt;&lt;/h5&gt;
+&lt;h5&gt;&lt;span class="blue "&gt;&lt;i&gt;3. Locate the Search Box and click on Search&lt;/i&gt;&lt;/span&gt;&lt;/h5&gt;
+&lt;h5&gt;&lt;span class="blue "&gt;&lt;i&gt;4. Type ISBN into the search box and click on Search&lt;/i&gt;&lt;/span&gt;&lt;/h5&gt;
+&lt;h5&gt;&lt;span class="blue "&gt;&lt;i&gt;5. Verify that user can is taken to the description page&lt;/i&gt;&lt;/span&gt;&lt;/h5&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td class="error" colspan="6"&gt;NavigateTo&lt;hr /&gt;&lt;pre&gt;&lt;div class="fit_stacktrace"&gt;fitSharp.Machine.Exception.TypeMissingException: Type 'NavigateTo' not found in assemblies:
+    file:///C:/Windows/Microsoft.NET/Framework64/v4.0.30319/mscorlib.dll
+    file:///C:/QATIP-FITSEL-Framework/Fixtures/QaTip.Fitnesse.Demo/QaTip.Fitnesse.Demo/Fitsharp/Runner.exe
+    file:///C:/QATIP-FITSEL-Framework/Fixtures/QaTip.Fitnesse.Demo/QaTip.Fitnesse.Demo/Fitsharp/fitSharp.DLL
+    file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Configuration/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Configuration.dll
+    file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System/v4.0_4.0.0.0__b77a5c561934e089/System.dll
+    file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll
+    file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Xml/v4.0_4.0.0.0__b77a5c561934e089/System.Xml.dll
+    file:///C:/QATIP-FITSEL-Framework/Fixtures/QaTip.Fitnesse.Demo/QaTip.Fitnesse.Demo/Fitsharp/fit.DLL
+    file:///C:/QATIP-FITSEL-Framework/Fixtures/Fitnesse_Dlls/QaTip.Fitnesse.Demo.dll
+    file:///C:/Windows/Microsoft.Net/assembly/GAC_64/System.Data/v4.0_4.0.0.0__b77a5c561934e089/System.Data.dll
+    file:///C:/QATIP-FITSEL-Framework/Fixtures/Fitnesse_Dlls/WebDriverManager.DLL
+    file:///C:/QATIP-FITSEL-Framework/Fixtures/Fitnesse_Dlls/WebDriver.DLL
+    file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/netstandard/v4.0_2.0.0.0__cc7b13ffcd2ddd51/netstandard.dll
+    file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Net.Http/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Net.Http.dll
+    file:///C:/QATIP-FITSEL-Framework/Fixtures/Fitnesse_Dlls/Newtonsoft.Json.DLL
+    file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Drawing/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Drawing.dll
+
+   at fitSharp.Machine.Engine.ReflectionMember.Invoke(Object[] parameters)
+   at fitSharp.Machine.Engine.ProcessorBase`2.Operate[O](Object[] parameters)
+   at fitSharp.Fit.Operators.ParseInterpreter.MakeInterpreter(Cell classCell)
+   at fitSharp.Fit.Operators.ParseInterpreter.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorBase`2.&lt;&gt;c__DisplayClass11.&lt;&gt;c__DisplayClass13.&lt;Parse&gt;b__10(ParseOperator`1 o)
+   at fitSharp.Machine.Engine.Operators`2.Do[O](CanDoOperation`1 canDoOperation, DoOperation`1 doOperation)
+   at fitSharp.Machine.Engine.ProcessorBase`2.&lt;&gt;c__DisplayClass11.&lt;Parse&gt;b__e(OperationLogging logging)
+   at fitSharp.Machine.Engine.ProcessorBase`2.DoLoggedOperation[R](String startMessage, Func`2 operation)
+   at fitSharp.Machine.Engine.ProcessorBase`2.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Fit.Service.CellProcessorBase.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorExtension.ParseTree[T](Processor`1 processor, Type type, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorExtension.ParseTree[T,V](Processor`1 processor, Tree`1 input)
+   at fitSharp.Fit.Engine.InterpretFlow.ProcessFlowRow(Tree`1 table, Int32 rowNumber)&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;url&lt;/td&gt;
+		&lt;td&gt;KeywordContainedInTitle&lt;/td&gt;
+		&lt;td&gt;NavigateToUrl&lt;/td&gt;
+		&lt;td&gt;KeywordContainedInTitle?&lt;/td&gt;
+		&lt;td&gt;NavigationSuccessful?&lt;/td&gt;
+		&lt;td&gt;getpagetitle&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;http://bn.com&lt;/td&gt;
+		&lt;td&gt;Barnes&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;Barnes&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td class="error" colspan="4"&gt;Perform Search&lt;hr /&gt;&lt;pre&gt;&lt;div class="fit_stacktrace"&gt;fitSharp.Machine.Exception.TypeMissingException: Type 'PerformSearch' not found in assemblies:
+    file:///C:/Windows/Microsoft.NET/Framework64/v4.0.30319/mscorlib.dll
+    file:///C:/QATIP-FITSEL-Framework/Fixtures/QaTip.Fitnesse.Demo/QaTip.Fitnesse.Demo/Fitsharp/Runner.exe
+    file:///C:/QATIP-FITSEL-Framework/Fixtures/QaTip.Fitnesse.Demo/QaTip.Fitnesse.Demo/Fitsharp/fitSharp.DLL
+    file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Configuration/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Configuration.dll
+    file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System/v4.0_4.0.0.0__b77a5c561934e089/System.dll
+    file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll
+    file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Xml/v4.0_4.0.0.0__b77a5c561934e089/System.Xml.dll
+    file:///C:/QATIP-FITSEL-Framework/Fixtures/QaTip.Fitnesse.Demo/QaTip.Fitnesse.Demo/Fitsharp/fit.DLL
+    file:///C:/QATIP-FITSEL-Framework/Fixtures/Fitnesse_Dlls/QaTip.Fitnesse.Demo.dll
+    file:///C:/Windows/Microsoft.Net/assembly/GAC_64/System.Data/v4.0_4.0.0.0__b77a5c561934e089/System.Data.dll
+    file:///C:/QATIP-FITSEL-Framework/Fixtures/Fitnesse_Dlls/WebDriverManager.DLL
+    file:///C:/QATIP-FITSEL-Framework/Fixtures/Fitnesse_Dlls/WebDriver.DLL
+    file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/netstandard/v4.0_2.0.0.0__cc7b13ffcd2ddd51/netstandard.dll
+    file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Net.Http/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Net.Http.dll
+    file:///C:/QATIP-FITSEL-Framework/Fixtures/Fitnesse_Dlls/Newtonsoft.Json.DLL
+    file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Drawing/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Drawing.dll
+
+   at fitSharp.Machine.Engine.ReflectionMember.Invoke(Object[] parameters)
+   at fitSharp.Machine.Engine.ProcessorBase`2.Operate[O](Object[] parameters)
+   at fitSharp.Fit.Operators.ParseInterpreter.MakeInterpreter(Cell classCell)
+   at fitSharp.Fit.Operators.ParseInterpreter.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorBase`2.&lt;&gt;c__DisplayClass11.&lt;&gt;c__DisplayClass13.&lt;Parse&gt;b__10(ParseOperator`1 o)
+   at fitSharp.Machine.Engine.Operators`2.Do[O](CanDoOperation`1 canDoOperation, DoOperation`1 doOperation)
+   at fitSharp.Machine.Engine.ProcessorBase`2.&lt;&gt;c__DisplayClass11.&lt;Parse&gt;b__e(OperationLogging logging)
+   at fitSharp.Machine.Engine.ProcessorBase`2.DoLoggedOperation[R](String startMessage, Func`2 operation)
+   at fitSharp.Machine.Engine.ProcessorBase`2.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Fit.Service.CellProcessorBase.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorExtension.ParseTree[T](Processor`1 processor, Type type, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorExtension.ParseTree[T,V](Processor`1 processor, Tree`1 input)
+   at fitSharp.Fit.Engine.InterpretFlow.ProcessFlowRow(Tree`1 table, Int32 rowNumber)&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;SearchBoxExist?&lt;/td&gt;
+		&lt;td&gt;searchbox?&lt;/td&gt;
+		&lt;td&gt;searchQuery&lt;/td&gt;
+		&lt;td&gt;Execute Search&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;YES&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;9781476738024&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td class="error" colspan="2"&gt;testhelper&lt;hr /&gt;&lt;pre&gt;&lt;div class="fit_stacktrace"&gt;fitSharp.Machine.Exception.TypeMissingException: Type 'testhelper' not found in assemblies:
+    file:///C:/Windows/Microsoft.NET/Framework64/v4.0.30319/mscorlib.dll
+    file:///C:/QATIP-FITSEL-Framework/Fixtures/QaTip.Fitnesse.Demo/QaTip.Fitnesse.Demo/Fitsharp/Runner.exe
+    file:///C:/QATIP-FITSEL-Framework/Fixtures/QaTip.Fitnesse.Demo/QaTip.Fitnesse.Demo/Fitsharp/fitSharp.DLL
+    file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Configuration/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Configuration.dll
+    file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System/v4.0_4.0.0.0__b77a5c561934e089/System.dll
+    file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll
+    file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Xml/v4.0_4.0.0.0__b77a5c561934e089/System.Xml.dll
+    file:///C:/QATIP-FITSEL-Framework/Fixtures/QaTip.Fitnesse.Demo/QaTip.Fitnesse.Demo/Fitsharp/fit.DLL
+    file:///C:/QATIP-FITSEL-Framework/Fixtures/Fitnesse_Dlls/QaTip.Fitnesse.Demo.dll
+    file:///C:/Windows/Microsoft.Net/assembly/GAC_64/System.Data/v4.0_4.0.0.0__b77a5c561934e089/System.Data.dll
+    file:///C:/QATIP-FITSEL-Framework/Fixtures/Fitnesse_Dlls/WebDriverManager.DLL
+    file:///C:/QATIP-FITSEL-Framework/Fixtures/Fitnesse_Dlls/WebDriver.DLL
+    file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/netstandard/v4.0_2.0.0.0__cc7b13ffcd2ddd51/netstandard.dll
+    file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Net.Http/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Net.Http.dll
+    file:///C:/QATIP-FITSEL-Framework/Fixtures/Fitnesse_Dlls/Newtonsoft.Json.DLL
+    file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Drawing/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Drawing.dll
+
+   at fitSharp.Machine.Engine.ReflectionMember.Invoke(Object[] parameters)
+   at fitSharp.Machine.Engine.ProcessorBase`2.Operate[O](Object[] parameters)
+   at fitSharp.Fit.Operators.ParseInterpreter.MakeInterpreter(Cell classCell)
+   at fitSharp.Fit.Operators.ParseInterpreter.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorBase`2.&lt;&gt;c__DisplayClass11.&lt;&gt;c__DisplayClass13.&lt;Parse&gt;b__10(ParseOperator`1 o)
+   at fitSharp.Machine.Engine.Operators`2.Do[O](CanDoOperation`1 canDoOperation, DoOperation`1 doOperation)
+   at fitSharp.Machine.Engine.ProcessorBase`2.&lt;&gt;c__DisplayClass11.&lt;Parse&gt;b__e(OperationLogging logging)
+   at fitSharp.Machine.Engine.ProcessorBase`2.DoLoggedOperation[R](String startMessage, Func`2 operation)
+   at fitSharp.Machine.Engine.ProcessorBase`2.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Fit.Service.CellProcessorBase.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorExtension.ParseTree[T](Processor`1 processor, Type type, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorExtension.ParseTree[T,V](Processor`1 processor, Tree`1 input)
+   at fitSharp.Fit.Engine.InterpretFlow.ProcessFlowRow(Tree`1 table, Int32 rowNumber)&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;WaitSeconds&lt;/td&gt;
+		&lt;td&gt;wait&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;15&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td class="error" colspan="3"&gt;GetSearchResults&lt;hr /&gt;&lt;pre&gt;&lt;div class="fit_stacktrace"&gt;fitSharp.Machine.Exception.TypeMissingException: Type 'GetSearchResults' not found in assemblies:
+    file:///C:/Windows/Microsoft.NET/Framework64/v4.0.30319/mscorlib.dll
+    file:///C:/QATIP-FITSEL-Framework/Fixtures/QaTip.Fitnesse.Demo/QaTip.Fitnesse.Demo/Fitsharp/Runner.exe
+    file:///C:/QATIP-FITSEL-Framework/Fixtures/QaTip.Fitnesse.Demo/QaTip.Fitnesse.Demo/Fitsharp/fitSharp.DLL
+    file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Configuration/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Configuration.dll
+    file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System/v4.0_4.0.0.0__b77a5c561934e089/System.dll
+    file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll
+    file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Xml/v4.0_4.0.0.0__b77a5c561934e089/System.Xml.dll
+    file:///C:/QATIP-FITSEL-Framework/Fixtures/QaTip.Fitnesse.Demo/QaTip.Fitnesse.Demo/Fitsharp/fit.DLL
+    file:///C:/QATIP-FITSEL-Framework/Fixtures/Fitnesse_Dlls/QaTip.Fitnesse.Demo.dll
+    file:///C:/Windows/Microsoft.Net/assembly/GAC_64/System.Data/v4.0_4.0.0.0__b77a5c561934e089/System.Data.dll
+    file:///C:/QATIP-FITSEL-Framework/Fixtures/Fitnesse_Dlls/WebDriverManager.DLL
+    file:///C:/QATIP-FITSEL-Framework/Fixtures/Fitnesse_Dlls/WebDriver.DLL
+    file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/netstandard/v4.0_2.0.0.0__cc7b13ffcd2ddd51/netstandard.dll
+    file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Net.Http/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Net.Http.dll
+    file:///C:/QATIP-FITSEL-Framework/Fixtures/Fitnesse_Dlls/Newtonsoft.Json.DLL
+    file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Drawing/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Drawing.dll
+
+   at fitSharp.Machine.Engine.ReflectionMember.Invoke(Object[] parameters)
+   at fitSharp.Machine.Engine.ProcessorBase`2.Operate[O](Object[] parameters)
+   at fitSharp.Fit.Operators.ParseInterpreter.MakeInterpreter(Cell classCell)
+   at fitSharp.Fit.Operators.ParseInterpreter.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorBase`2.&lt;&gt;c__DisplayClass11.&lt;&gt;c__DisplayClass13.&lt;Parse&gt;b__10(ParseOperator`1 o)
+   at fitSharp.Machine.Engine.Operators`2.Do[O](CanDoOperation`1 canDoOperation, DoOperation`1 doOperation)
+   at fitSharp.Machine.Engine.ProcessorBase`2.&lt;&gt;c__DisplayClass11.&lt;Parse&gt;b__e(OperationLogging logging)
+   at fitSharp.Machine.Engine.ProcessorBase`2.DoLoggedOperation[R](String startMessage, Func`2 operation)
+   at fitSharp.Machine.Engine.ProcessorBase`2.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Fit.Service.CellProcessorBase.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorExtension.ParseTree[T](Processor`1 processor, Type type, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorExtension.ParseTree[T,V](Processor`1 processor, Tree`1 input)
+   at fitSharp.Fit.Engine.InterpretFlow.ProcessFlowRow(Tree`1 table, Int32 rowNumber)&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;productTitle?&lt;/td&gt;
+		&lt;td&gt;author?&lt;/td&gt;
+		&lt;td&gt;productPrice?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;A Man Called Ove&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td class="error"&gt;CleanUpAndCloseBrowser&lt;hr /&gt;&lt;pre&gt;&lt;div class="fit_stacktrace"&gt;fitSharp.Machine.Exception.TypeMissingException: Type 'CleanUpAndCloseBrowser' not found in assemblies:
+    file:///C:/Windows/Microsoft.NET/Framework64/v4.0.30319/mscorlib.dll
+    file:///C:/QATIP-FITSEL-Framework/Fixtures/QaTip.Fitnesse.Demo/QaTip.Fitnesse.Demo/Fitsharp/Runner.exe
+    file:///C:/QATIP-FITSEL-Framework/Fixtures/QaTip.Fitnesse.Demo/QaTip.Fitnesse.Demo/Fitsharp/fitSharp.DLL
+    file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Configuration/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Configuration.dll
+    file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System/v4.0_4.0.0.0__b77a5c561934e089/System.dll
+    file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll
+    file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Xml/v4.0_4.0.0.0__b77a5c561934e089/System.Xml.dll
+    file:///C:/QATIP-FITSEL-Framework/Fixtures/QaTip.Fitnesse.Demo/QaTip.Fitnesse.Demo/Fitsharp/fit.DLL
+    file:///C:/QATIP-FITSEL-Framework/Fixtures/Fitnesse_Dlls/QaTip.Fitnesse.Demo.dll
+    file:///C:/Windows/Microsoft.Net/assembly/GAC_64/System.Data/v4.0_4.0.0.0__b77a5c561934e089/System.Data.dll
+    file:///C:/QATIP-FITSEL-Framework/Fixtures/Fitnesse_Dlls/WebDriverManager.DLL
+    file:///C:/QATIP-FITSEL-Framework/Fixtures/Fitnesse_Dlls/WebDriver.DLL
+    file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/netstandard/v4.0_2.0.0.0__cc7b13ffcd2ddd51/netstandard.dll
+    file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Net.Http/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Net.Http.dll
+    file:///C:/QATIP-FITSEL-Framework/Fixtures/Fitnesse_Dlls/Newtonsoft.Json.DLL
+    file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Drawing/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Drawing.dll
+
+   at fitSharp.Machine.Engine.ReflectionMember.Invoke(Object[] parameters)
+   at fitSharp.Machine.Engine.ProcessorBase`2.Operate[O](Object[] parameters)
+   at fitSharp.Fit.Operators.ParseInterpreter.MakeInterpreter(Cell classCell)
+   at fitSharp.Fit.Operators.ParseInterpreter.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorBase`2.&lt;&gt;c__DisplayClass11.&lt;&gt;c__DisplayClass13.&lt;Parse&gt;b__10(ParseOperator`1 o)
+   at fitSharp.Machine.Engine.Operators`2.Do[O](CanDoOperation`1 canDoOperation, DoOperation`1 doOperation)
+   at fitSharp.Machine.Engine.ProcessorBase`2.&lt;&gt;c__DisplayClass11.&lt;Parse&gt;b__e(OperationLogging logging)
+   at fitSharp.Machine.Engine.ProcessorBase`2.DoLoggedOperation[R](String startMessage, Func`2 operation)
+   at fitSharp.Machine.Engine.ProcessorBase`2.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Fit.Service.CellProcessorBase.Parse(Type type, TypedValue instance, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorExtension.ParseTree[T](Processor`1 processor, Type type, Tree`1 parameters)
+   at fitSharp.Machine.Engine.ProcessorExtension.ParseTree[T,V](Processor`1 processor, Tree`1 input)
+   at fitSharp.Fit.Engine.InterpretFlow.ProcessFlowRow(Tree`1 table, Int32 rowNumber)&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;CloseBrowser&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+ &lt;br/&gt;</content>
+    <relativePageName>PerformSearchByIsbn</relativePageName>
+          </result>
+  <executionLog>
+    <testSystem>fit:C:\QATIP-FITSEL-Framework\Fixtures\QaTip.Fitnesse.Demo\QaTip.Fitnesse.Demo\Fitsharp\Runner.exe</testSystem>
+    <command>C:\QATIP-FITSEL-Framework\Fixtures\QaTip.Fitnesse.Demo\QaTip.Fitnesse.Demo\Fitsharp\Runner.exe -r fitnesse.fitserver.FitServer,C:\QATIP-FITSEL-Framework\Fixtures\QaTip.Fitnesse.Demo\QaTip.Fitnesse.Demo\Fitsharp\fit.dll,C:\QATIP-FITSEL-Framework\Fixtures\QaTip.Fitnesse.Demo\QaTip.Fitnesse.Demo\Fitsharp\fitLibrary.dll -c C:\QATIP-FITSEL-Framework\Fixtures\QaTip.Fitnesse.Demo\QaTip.Fitnesse.Demo\Fitsharp\suite.config.xml C:\QATIP-FITSEL-Framework\Fixtures\Fitnesse_Dlls\QaTip.Fitnesse.Demo.dll LAPTOP-9BC19LUV 58777 3863</command>
+    <exitCode>6</exitCode>
+    <stdOut></stdOut>
+    <stdErr></stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>1</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>4460</totalRunTimeInMillis>
+</testResults>
+

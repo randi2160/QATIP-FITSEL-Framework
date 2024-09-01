@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20160515</FitNesseVersion>
+  <rootPath>TutorialSuitesOfTests.UiAutomationTestSuite.SearchTestSuite.PerformSearchByIsbn</rootPath>
+    <executionLog>
+    <testSystem>fit:C:\QATIP-FITSEL-Framework\Fixtures\QaTip.Fitnesse.Demo\QaTip.Fitnesse.Demo\Fitsharp\Runner.exe</testSystem>
+    <command>C:\QATIP-FITSEL-Framework\Fixtures\QaTip.Fitnesse.Demo\QaTip.Fitnesse.Demo\Fitsharp\Runner.exe -r fitnesse.fitserver.FitServer,C:\QATIP-FITSEL-Framework\Fixtures\QaTip.Fitnesse.Demo\QaTip.Fitnesse.Demo\Fitsharp\fit.dll,C:\QATIP-FITSEL-Framework\Fixtures\QaTip.Fitnesse.Demo\QaTip.Fitnesse.Demo\Fitsharp\fitLibrary.dll -c C:\QATIP-FITSEL-Framework\Fixtures\QaTip.Fitnesse.Demo\QaTip.Fitnesse.Demo\Fitsharp\suite.config.xml {C:\QATIP-FITSEL-Framework\Fixtures\Fitnesse_Dlls\QaTip.Fitnesse.Demo.dll} LAPTOP-9BC19LUV 55349 3863</command>
+    <exitCode>-532462766</exitCode>
+    <stdOut></stdOut>
+    <stdErr>
+Unhandled Exception: System.ArgumentException: Invalid directory on URL.
+   at System.Security.Util.DirectoryString.CreateSeparatedString(String directory)
+   at System.Security.Util.URLString.ParseFileURL(String url)
+   at System.Security.Util.URLString.GetFileName()
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark&amp; stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadFrom(String assemblyFile, Evidence securityEvidence, Byte[] hashValue, AssemblyHashAlgorithm hashAlgorithm, Boolean forIntrospection, Boolean suppressSecurityChecks, StackCrawlMark&amp; stackMark)
+   at System.Reflection.Assembly.LoadFrom(String assemblyFile)
+   at fitSharp.Machine.Engine.CurrentDomain.LoadAssembly(String assemblyPath)
+   at fitSharp.Machine.Engine.ApplicationUnderTest.Assemblies.AddAssembly(String assemblyName)
+   at fitSharp.Machine.Engine.ApplicationUnderTest.AddAssemblies(IEnumerable`1 assemblyNames)
+   at fitnesse.fitserver.FitServer.ParseCommandLineArguments(IEnumerable`1 args)
+   at fitnesse.fitserver.FitServer.Run(IList`1 CommandLineArguments)
+   at fitnesse.fitserver.FitServer.Run(IList`1 commandLineArguments, Memory memory, ProgressReporter reporter)
+   at fitSharp.Machine.Application.Shell.Run()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.ThreadHelper.ThreadStart()
+</stdErr>
+    <exception>FitClient: external process terminated before a connection could be established.</exception>
+    <exception>FitClient: external process terminated before a connection could be established.</exception>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>1</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>4045</totalRunTimeInMillis>
+</testResults>
+

@@ -1,0 +1,173 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\QATIP-FITSEL-Framework\\Fixtures\\QaTip.Fitnesse.Demo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|QaTip.Fitnesse.Demo||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEC56A1C-1AD6-496A-9C34-49534F9E1374}|QaTip.Fitnesse.Demo\\QaTip.Fitnesse.Demo.csproj|c:\\qatip-fitsel-framework\\fixtures\\qatip.fitnesse.demo\\qatip.fitnesse.demo\\dofixture\\dotestfixture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEC56A1C-1AD6-496A-9C34-49534F9E1374}|QaTip.Fitnesse.Demo\\QaTip.Fitnesse.Demo.csproj|solutionrelative:qatip.fitnesse.demo\\dofixture\\dotestfixture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEC56A1C-1AD6-496A-9C34-49534F9E1374}|QaTip.Fitnesse.Demo\\QaTip.Fitnesse.Demo.csproj|C:\\QATIP-FITSEL-Framework\\Fixtures\\QaTip.Fitnesse.Demo\\qatip.fitnesse.demo\\dofixture\\uifxitures\\managenavigationfixture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEC56A1C-1AD6-496A-9C34-49534F9E1374}|QaTip.Fitnesse.Demo\\QaTip.Fitnesse.Demo.csproj|solutionrelative:qatip.fitnesse.demo\\dofixture\\uifxitures\\managenavigationfixture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEC56A1C-1AD6-496A-9C34-49534F9E1374}|QaTip.Fitnesse.Demo\\QaTip.Fitnesse.Demo.csproj|c:\\qatip-fitsel-framework\\fixtures\\qatip.fitnesse.demo\\qatip.fitnesse.demo\\webservices\\webservicefixture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEC56A1C-1AD6-496A-9C34-49534F9E1374}|QaTip.Fitnesse.Demo\\QaTip.Fitnesse.Demo.csproj|solutionrelative:qatip.fitnesse.demo\\webservices\\webservicefixture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEC56A1C-1AD6-496A-9C34-49534F9E1374}|QaTip.Fitnesse.Demo\\QaTip.Fitnesse.Demo.csproj|C:\\QATIP-FITSEL-Framework\\Fixtures\\QaTip.Fitnesse.Demo\\qatip.fitnesse.demo\\dofixture\\dbfixtures\\domainobject\\customerobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEC56A1C-1AD6-496A-9C34-49534F9E1374}|QaTip.Fitnesse.Demo\\QaTip.Fitnesse.Demo.csproj|solutionrelative:qatip.fitnesse.demo\\dofixture\\dbfixtures\\domainobject\\customerobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEC56A1C-1AD6-496A-9C34-49534F9E1374}|QaTip.Fitnesse.Demo\\QaTip.Fitnesse.Demo.csproj|C:\\QATIP-FITSEL-Framework\\Fixtures\\QaTip.Fitnesse.Demo\\qatip.fitnesse.demo\\dofixture\\qatiporaclecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEC56A1C-1AD6-496A-9C34-49534F9E1374}|QaTip.Fitnesse.Demo\\QaTip.Fitnesse.Demo.csproj|solutionrelative:qatip.fitnesse.demo\\dofixture\\qatiporaclecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEC56A1C-1AD6-496A-9C34-49534F9E1374}|QaTip.Fitnesse.Demo\\QaTip.Fitnesse.Demo.csproj|C:\\QATIP-FITSEL-Framework\\Fixtures\\QaTip.Fitnesse.Demo\\qatip.fitnesse.demo\\dofixture\\uifxitures\\managesearchfixture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEC56A1C-1AD6-496A-9C34-49534F9E1374}|QaTip.Fitnesse.Demo\\QaTip.Fitnesse.Demo.csproj|solutionrelative:qatip.fitnesse.demo\\dofixture\\uifxitures\\managesearchfixture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEC56A1C-1AD6-496A-9C34-49534F9E1374}|QaTip.Fitnesse.Demo\\QaTip.Fitnesse.Demo.csproj|C:\\QATIP-FITSEL-Framework\\Fixtures\\QaTip.Fitnesse.Demo\\qatip.fitnesse.demo\\dofixture\\uifxitures\\domainobject\\dbconnectionmap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEC56A1C-1AD6-496A-9C34-49534F9E1374}|QaTip.Fitnesse.Demo\\QaTip.Fitnesse.Demo.csproj|solutionrelative:qatip.fitnesse.demo\\dofixture\\uifxitures\\domainobject\\dbconnectionmap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEC56A1C-1AD6-496A-9C34-49534F9E1374}|QaTip.Fitnesse.Demo\\QaTip.Fitnesse.Demo.csproj|C:\\QATIP-FITSEL-Framework\\Fixtures\\QaTip.Fitnesse.Demo\\qatip.fitnesse.demo\\dofixture\\uifxitures\\domainobject\\searchmap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEC56A1C-1AD6-496A-9C34-49534F9E1374}|QaTip.Fitnesse.Demo\\QaTip.Fitnesse.Demo.csproj|solutionrelative:qatip.fitnesse.demo\\dofixture\\uifxitures\\domainobject\\searchmap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEC56A1C-1AD6-496A-9C34-49534F9E1374}|QaTip.Fitnesse.Demo\\QaTip.Fitnesse.Demo.csproj|c:\\qatip-fitsel-framework\\fixtures\\qatip.fitnesse.demo\\qatip.fitnesse.demo\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|a54ad834-9219-4aa6-b589-607af21c3e26"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "QaTip.Fitnesse.Demo",
+              "DocumentMoniker": "C:\\QATIP-FITSEL-Framework\\Fixtures\\QaTip.Fitnesse.Demo\\QaTip.Fitnesse.Demo\\QaTip.Fitnesse.Demo.csproj",
+              "RelativeDocumentMoniker": "QaTip.Fitnesse.Demo\\QaTip.Fitnesse.Demo.csproj",
+              "ToolTip": "C:\\QATIP-FITSEL-Framework\\Fixtures\\QaTip.Fitnesse.Demo\\QaTip.Fitnesse.Demo\\QaTip.Fitnesse.Demo.csproj",
+              "RelativeToolTip": "QaTip.Fitnesse.Demo\\QaTip.Fitnesse.Demo.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-09-01T15:29:05.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "webservicefixture.cs",
+              "DocumentMoniker": "C:\\QATIP-FITSEL-Framework\\Fixtures\\QaTip.Fitnesse.Demo\\QaTip.Fitnesse.Demo\\WEBSERVICES\\webservicefixture.cs",
+              "RelativeDocumentMoniker": "QaTip.Fitnesse.Demo\\WEBSERVICES\\webservicefixture.cs",
+              "ToolTip": "C:\\QATIP-FITSEL-Framework\\Fixtures\\QaTip.Fitnesse.Demo\\QaTip.Fitnesse.Demo\\WEBSERVICES\\webservicefixture.cs",
+              "RelativeToolTip": "QaTip.Fitnesse.Demo\\WEBSERVICES\\webservicefixture.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAgwAwAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T14:26:51.289Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DoTestFixture.cs",
+              "DocumentMoniker": "C:\\QATIP-FITSEL-Framework\\Fixtures\\QaTip.Fitnesse.Demo\\QaTip.Fitnesse.Demo\\DoFixture\\DoTestFixture.cs",
+              "RelativeDocumentMoniker": "QaTip.Fitnesse.Demo\\DoFixture\\DoTestFixture.cs",
+              "ToolTip": "C:\\QATIP-FITSEL-Framework\\Fixtures\\QaTip.Fitnesse.Demo\\QaTip.Fitnesse.Demo\\DoFixture\\DoTestFixture.cs",
+              "RelativeToolTip": "QaTip.Fitnesse.Demo\\DoFixture\\DoTestFixture.cs",
+              "ViewState": "AQIAAFUAAAAAAAAAAAAowG8AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T10:54:17.802Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "dbconnectionmap.cs",
+              "DocumentMoniker": "C:\\QATIP-FITSEL-Framework\\Fixtures\\QaTip.Fitnesse.Demo\\QaTip.Fitnesse.Demo\\DoFixture\\UiFxitures\\DomainObject\\dbconnectionmap.cs",
+              "RelativeDocumentMoniker": "QaTip.Fitnesse.Demo\\DoFixture\\UiFxitures\\DomainObject\\dbconnectionmap.cs",
+              "ToolTip": "C:\\QATIP-FITSEL-Framework\\Fixtures\\QaTip.Fitnesse.Demo\\QaTip.Fitnesse.Demo\\DoFixture\\UiFxitures\\DomainObject\\dbconnectionmap.cs",
+              "RelativeToolTip": "QaTip.Fitnesse.Demo\\DoFixture\\UiFxitures\\DomainObject\\dbconnectionmap.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T03:37:23.436Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ManageSearchFixture.cs",
+              "DocumentMoniker": "C:\\QATIP-FITSEL-Framework\\Fixtures\\QaTip.Fitnesse.Demo\\QaTip.Fitnesse.Demo\\DoFixture\\UiFxitures\\ManageSearchFixture.cs",
+              "RelativeDocumentMoniker": "QaTip.Fitnesse.Demo\\DoFixture\\UiFxitures\\ManageSearchFixture.cs",
+              "ToolTip": "C:\\QATIP-FITSEL-Framework\\Fixtures\\QaTip.Fitnesse.Demo\\QaTip.Fitnesse.Demo\\DoFixture\\UiFxitures\\ManageSearchFixture.cs",
+              "RelativeToolTip": "QaTip.Fitnesse.Demo\\DoFixture\\UiFxitures\\ManageSearchFixture.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T03:43:08.497Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "searchmap.cs",
+              "DocumentMoniker": "C:\\QATIP-FITSEL-Framework\\Fixtures\\QaTip.Fitnesse.Demo\\QaTip.Fitnesse.Demo\\DoFixture\\UiFxitures\\DomainObject\\searchmap.cs",
+              "RelativeDocumentMoniker": "QaTip.Fitnesse.Demo\\DoFixture\\UiFxitures\\DomainObject\\searchmap.cs",
+              "ToolTip": "C:\\QATIP-FITSEL-Framework\\Fixtures\\QaTip.Fitnesse.Demo\\QaTip.Fitnesse.Demo\\DoFixture\\UiFxitures\\DomainObject\\searchmap.cs",
+              "RelativeToolTip": "QaTip.Fitnesse.Demo\\DoFixture\\UiFxitures\\DomainObject\\searchmap.cs",
+              "ViewState": "AQIAAFAAAAAAAAAAAADwv2YAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T03:40:36.076Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ManageNavigationFixture.cs",
+              "DocumentMoniker": "C:\\QATIP-FITSEL-Framework\\Fixtures\\QaTip.Fitnesse.Demo\\QaTip.Fitnesse.Demo\\DoFixture\\UiFxitures\\ManageNavigationFixture.cs",
+              "RelativeDocumentMoniker": "QaTip.Fitnesse.Demo\\DoFixture\\UiFxitures\\ManageNavigationFixture.cs",
+              "ToolTip": "C:\\QATIP-FITSEL-Framework\\Fixtures\\QaTip.Fitnesse.Demo\\QaTip.Fitnesse.Demo\\DoFixture\\UiFxitures\\ManageNavigationFixture.cs",
+              "RelativeToolTip": "QaTip.Fitnesse.Demo\\DoFixture\\UiFxitures\\ManageNavigationFixture.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAA8AAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T03:42:07.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "customerobject.cs",
+              "DocumentMoniker": "C:\\QATIP-FITSEL-Framework\\Fixtures\\QaTip.Fitnesse.Demo\\QaTip.Fitnesse.Demo\\DoFixture\\DBFixtures\\domainObject\\customerobject.cs",
+              "RelativeDocumentMoniker": "QaTip.Fitnesse.Demo\\DoFixture\\DBFixtures\\domainObject\\customerobject.cs",
+              "ToolTip": "C:\\QATIP-FITSEL-Framework\\Fixtures\\QaTip.Fitnesse.Demo\\QaTip.Fitnesse.Demo\\DoFixture\\DBFixtures\\domainObject\\customerobject.cs",
+              "RelativeToolTip": "QaTip.Fitnesse.Demo\\DoFixture\\DBFixtures\\domainObject\\customerobject.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T12:48:08.661Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "QatipOracleCommand.cs",
+              "DocumentMoniker": "C:\\QATIP-FITSEL-Framework\\Fixtures\\QaTip.Fitnesse.Demo\\QaTip.Fitnesse.Demo\\DoFixture\\QatipOracleCommand.cs",
+              "RelativeDocumentMoniker": "QaTip.Fitnesse.Demo\\DoFixture\\QatipOracleCommand.cs",
+              "ToolTip": "C:\\QATIP-FITSEL-Framework\\Fixtures\\QaTip.Fitnesse.Demo\\QaTip.Fitnesse.Demo\\DoFixture\\QatipOracleCommand.cs",
+              "RelativeToolTip": "QaTip.Fitnesse.Demo\\DoFixture\\QatipOracleCommand.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAA5wAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T03:37:15.602Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

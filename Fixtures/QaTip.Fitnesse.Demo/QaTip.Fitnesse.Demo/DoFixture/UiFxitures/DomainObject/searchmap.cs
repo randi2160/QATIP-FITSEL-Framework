@@ -84,19 +84,26 @@ namespace QaTip.Fitnesse.Demo.DoFixture.UiFxitures.DomainObject
            }
        
        }
-       
 
-       public void executeSearch()
-       {
-           selDriver.FindElement(By.Id("searchBarBN")).SendKeys(searchQuery);
-           selDriver.FindElement(By.Id("searchSubmit")).Click();
-           selDriver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(5)).SetPageLoadTimeout(TimeSpan.FromSeconds(15));
-           selDriver.Manage().Timeouts().SetScriptTimeout(TimeSpan.FromSeconds(20));
-           
-       }
 
-       
-       
+        public void executeSearch()
+        {
+            selDriver.FindElement(By.Id("searchBarBN")).SendKeys(searchQuery);
+            selDriver.FindElement(By.Id("searchSubmit")).Click();
+
+            // Setting the implicit wait timeout
+            selDriver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5);
+
+            // Setting the page load timeout
+            selDriver.Manage().Timeouts().PageLoad = TimeSpan.FromSeconds(15);
+
+            // Setting the script timeout
+            selDriver.Manage().Timeouts().AsynchronousJavaScript = TimeSpan.FromSeconds(20);
+        }
+
+
+
+
 
     }
 }

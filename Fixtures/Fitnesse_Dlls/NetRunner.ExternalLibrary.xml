@@ -1,0 +1,622 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NetRunner.ExternalLibrary</name>
+    </assembly>
+    <members>
+        <member name="T:NetRunner.ExternalLibrary.AdditionalFunctionNameAttribute">
+            <summary>
+            Add function synonym for function to have different name in the fintesse test execution.
+            </summary>
+        </member>
+        <member name="T:NetRunner.ExternalLibrary.BaseOperationMarkerAttribute">
+            <summary>
+            Base abstract class for all NetRunner attributes.
+            </summary>
+        </member>
+        <member name="T:NetRunner.ExternalLibrary.ArgumentPrepareAttribute">
+            <summary>
+            Allow to modify input text. By default all input text is cleaned up from any html markup. For example, wiki text ''123'' will be transferred to <code><![CDATA[<i>123</i>]]></code> on the html page.
+            Use <see cref="F:NetRunner.ExternalLibrary.ArgumentPrepareAttribute.ArgumentPrepareMode.CleanupHtmlContent"/> to have 123 as input line. And use <see cref="F:NetRunner.ExternalLibrary.ArgumentPrepareAttribute.ArgumentPrepareMode.RawHtml"/> to have <code><![CDATA[<i>123</i>]]></code> as input line
+            </summary>
+        </member>
+        <member name="F:NetRunner.ExternalLibrary.ArgumentPrepareAttribute.ArgumentPrepareMode.CleanupHtmlContent">
+            <summary>
+            Exclude any html markup from the input cells
+            </summary>
+        </member>
+        <member name="F:NetRunner.ExternalLibrary.ArgumentPrepareAttribute.ArgumentPrepareMode.RawHtml">
+            <summary>
+            Provide html code as-is, without any changes
+            </summary>
+        </member>
+        <member name="T:NetRunner.ExternalLibrary.BaseDictionaryParser">
+            <summary>
+            Key-value parser. To use it override <see cref="M:NetRunner.ExternalLibrary.BaseDictionaryParser.GetValues``1"/> method by the all available keys and values. <br/>
+            All spaces will be ignored. e.g. the lines "1_2" is equal with "1 2" and with "12". Override method <see cref="M:NetRunner.ExternalLibrary.BaseDictionaryParser.ReplaceWhiteSpace(System.String)"/> to change this behaviour.
+            </summary>
+        </member>
+        <member name="T:NetRunner.ExternalLibrary.BaseParser">
+            <summary>
+            Use the tutorial here: https://github.com/imanushin/NetRunner/wiki/Parsing .
+            The base type for the any parser. To add the custom parser implementation, simple inherit your parser type from this.
+            See also overrides of this type in the same namespace. 
+            </summary>
+        </member>
+        <member name="M:NetRunner.ExternalLibrary.BaseParser.#ctor">
+            <summary>
+            Create parser with the zero priority (e.g. this parser will be used <b>before</b> any embedded parser)
+            </summary>
+        </member>
+        <member name="M:NetRunner.ExternalLibrary.BaseParser.#ctor(System.Int32)">
+            <summary>
+            Create the parser with the target priority. All default parsers have priority below zero.
+            </summary>
+            <param name="priority"></param>
+        </member>
+        <member name="M:NetRunner.ExternalLibrary.BaseParser.TryParse``1(System.String,``0@)">
+            <summary>
+            Tries to parse type. Function returns false if type is not supported.
+            Function throws exception if type is supported and parsing error was occurred.
+            Return value can be null.
+            </summary>
+            <typeparam name="TResult">Expected result type</typeparam>
+            <param name="value">Value from Fitnesse input</param>
+            <param name="parsedResult">Parse result if value could be parsed.</param>
+            <returns>false is type is not supported. Exception is type is supported, however value could not be parsed. Otherwise true.</returns>
+        </member>
+        <member name="P:NetRunner.ExternalLibrary.BaseParser.Priority">
+            <summary>
+            Parser priority. Can be set once during the parser construction
+            </summary>
+        </member>
+        <member name="T:NetRunner.ExternalLibrary.BaseParser.Priorities">
+            <summary>
+            Priorities which are used by this library. All parser with the bigger priority will be used before all others.
+            </summary>
+        </member>
+        <member name="F:NetRunner.ExternalLibrary.BaseParser.Priorities.ConverterParserPriority">
+            <summary>
+            See type <see cref="T:System.Convert"/> and parser <see cref="T:NetRunner.ExternalLibrary.ConverterParser"/> for details.
+            </summary>
+        </member>
+        <member name="F:NetRunner.ExternalLibrary.BaseParser.Priorities.DefaultPriority">
+            <summary>
+            Default priority of the all user parsers. This priority is always more than all default parsers.
+            </summary>
+        </member>
+        <member name="M:NetRunner.ExternalLibrary.BaseDictionaryParser.TryParse``1(System.String,``0@)">
+            <summary>
+            Function checks that target value is existing in the dictionary and returns it in this case.
+            </summary>
+        </member>
+        <member name="M:NetRunner.ExternalLibrary.BaseDictionaryParser.ReplaceWhiteSpace(System.String)">
+            <summary>
+            By default all whitespaces in the input lines are replaced.
+            This function is called in the two cases:
+            1. New value is added to the dictionary
+            2. Parser needs to parse input value
+            </summary>
+        </member>
+        <member name="M:NetRunner.ExternalLibrary.BaseDictionaryParser.GetValues``1">
+            <summary>
+            Get possible type values
+            null if type is not supported.
+            Parser will cache this data and will try to find appropriate value with the following scheme:
+            1. If exact key was found then the value will be returned
+            2. If case insensitive key is found then it will be used to retrieve value (key aAa will equal with aaa)
+            3. If value with white spaces is found then it will be used to retrieve value (key "a_ a a" will equal with aaa)
+            </summary>
+            <typeparam name="TResult"></typeparam>
+            <returns>null if type is not supported.</returns>
+        </member>
+        <member name="T:NetRunner.ExternalLibrary.BaseTableArgument">
+            <summary>
+            Complex input argument. See wiki page: https://github.com/imanushin/NetRunner/wiki/Input-table for help.
+            </summary>
+        </member>
+        <member name="T:NetRunner.ExternalLibrary.FunctionContainer">
+            <summary>
+            System class for all types which are used from the FitNesse markup.
+            </summary>
+        </member>
+        <member name="T:NetRunner.ExternalLibrary.BaseTestContainer">
+            <summary>
+            Base class for all test containers. Each type inherited this will be used for the functions lookup.
+            </summary>
+        </member>
+        <member name="T:NetRunner.ExternalLibrary.ConverterParser">
+            <summary>
+            Parser for the standard <see cref="T:System.Convert"/> class implementation.
+            Register conversion from string to the target type to parse them automatically by using this parser.
+            </summary>
+        </member>
+        <member name="P:NetRunner.ExternalLibrary.ConverterParser.IsDisabled">
+            <summary>
+            This parser can be disabled in the any time of the execution, however it is recommended to disable it before the first function execute.
+            </summary>
+        </member>
+        <member name="T:NetRunner.ExternalLibrary.DefaultParser">
+            <summary>
+            The default parser. For the input type it tries to find public static T Parse(string). Type is not supported by this parser if the method is abcent. 
+            Otherwise parser will be this method to parse any input line.<br/>
+            Therefore many of the default types are supported, such as <see cref="T:System.Int32"/>, <see cref="T:System.Double"/>, <see cref="T:System.DateTime"/>, etc.
+            </summary>
+        </member>
+        <member name="T:NetRunner.ExternalLibrary.EmbeddedTestContainer">
+            <summary>
+            Embedded tests. They are fully supported on the all platforms where NetRunner can work.
+            </summary>
+        </member>
+        <member name="M:NetRunner.ExternalLibrary.EmbeddedTestContainer.DebbugerBreak">
+            <summary>
+            Invokes the Debugger.Launch() method.<br/>
+            Usage:<br/>
+            | ''' NetRunner:Launch Debugger ''' |
+            </summary>
+        </member>
+        <member name="T:NetRunner.ExternalLibrary.EnumParser">
+            <summary>
+            Parsed for any defined enumerable type. The system type <see cref="T:System.Enum"/> it used to retrieve all possible enumerations names.
+            </summary>
+        </member>
+        <member name="P:NetRunner.ExternalLibrary.EnumParser.IsDisabled">
+            <summary>
+            Disable this type by using this property. The type disabling should be used before the first type parsing. Use the <see cref="T:NetRunner.ExternalLibrary.BaseTestContainer"/> constructors for this purpose.
+            </summary>
+        </member>
+        <member name="T:NetRunner.ExternalLibrary.ExcludeDefaultFunctionNameAttribute">
+            <summary>
+            Exclude or not the default function name from function find procedure.
+            For functions like "MyClass.AddAnd(int a, int b)" the default name will be "AddAnd". Therefore, fitnesse can contain text like "| '''add''' | 5 | '''and''' | 3 |"
+            If the default name if disabled then additional name could be used: <seealso cref="T:NetRunner.ExternalLibrary.AdditionalFunctionNameAttribute"/>
+            Attribute can be set on class or on function. Function attribute is more important that class attribute.
+            </summary>
+        </member>
+        <member name="T:NetRunner.ExternalLibrary.CollectionExtensions">
+            <summary>
+            Help class to extend the collections
+            </summary>
+        </member>
+        <member name="M:NetRunner.ExternalLibrary.CollectionExtensions.GetOrAdd``2(System.Collections.Generic.Dictionary{``0,``1},``0)">
+            <summary>
+            Gets value from dictionary if it exists.
+            Adds new key to the dictionary otherwise
+            </summary>
+            <returns>Exiting value or created new value</returns>
+        </member>
+        <member name="M:NetRunner.ExternalLibrary.CollectionExtensions.GetOrCreate``2(System.Collections.Generic.Dictionary{``0,``1},``0,System.Func{``0,``1})">
+            <summary>
+            Gets value from dictionary if it exists.
+            Create new value and put into dictionary otherwise
+            </summary>
+            <returns>Exiting value or created new value</returns>
+        </member>
+        <member name="T:NetRunner.ExternalLibrary.GenericParser`1">
+            <summary>
+            Abstract to parse only the types inherited from the <typeparam name="TResultValue"/>.
+            </summary>
+        </member>
+        <member name="M:NetRunner.ExternalLibrary.GenericParser`1.TryParse``1(System.String,``0@)">
+            <summary>
+            Locked default parsing implementation
+            </summary>
+        </member>
+        <member name="M:NetRunner.ExternalLibrary.GenericParser`1.Parse(System.String)">
+            <summary>
+            Override this method to parse input type <typeparam name="TResultValue"/>.
+            </summary>
+        </member>
+        <member name="T:NetRunner.ExternalLibrary.Properties.CanBeNullAttribute">
+            <summary>
+            Indicates that the value of the marked element could be <c>null</c> sometimes,
+            so the check for <c>null</c> is necessary before its usage
+            </summary>
+            <example><code>
+            [CanBeNull] public object Test() { return null; }
+            public void UseTest() {
+              var p = Test();
+              var s = p.ToString(); // Warning: Possible 'System.NullReferenceException'
+            }
+            </code></example>
+        </member>
+        <member name="T:NetRunner.ExternalLibrary.Properties.NotNullAttribute">
+            <summary>
+            Indicates that the value of the marked element could never be <c>null</c>
+            </summary>
+            <example><code>
+            [NotNull] public object Foo() {
+              return null; // Warning: Possible 'null' assignment
+            }
+            </code></example>
+        </member>
+        <member name="T:NetRunner.ExternalLibrary.Properties.StringFormatMethodAttribute">
+            <summary>
+            Indicates that the marked method builds string by format pattern and (optional) arguments.
+            Parameter, which contains format string, should be given in constructor. The format string
+            should be in <see cref="M:System.String.Format(System.IFormatProvider,System.String,System.Object[])"/>-like form
+            </summary>
+            <example><code>
+            [StringFormatMethod("message")]
+            public void ShowError(string message, params object[] args) { /* do something */ }
+            public void Foo() {
+              ShowError("Failed: {0}"); // Warning: Non-existing argument in format string
+            }
+            </code></example>
+        </member>
+        <member name="M:NetRunner.ExternalLibrary.Properties.StringFormatMethodAttribute.#ctor(System.String)">
+            <param name="formatParameterName">
+            Specifies which parameter of an annotated method should be treated as format-string
+            </param>
+        </member>
+        <member name="T:NetRunner.ExternalLibrary.Properties.InvokerParameterNameAttribute">
+            <summary>
+            Indicates that the function argument should be string literal and match one
+            of the parameters of the caller function. For example, ReSharper annotates
+            the parameter of <see cref="T:System.ArgumentNullException"/>
+            </summary>
+            <example><code>
+            public void Foo(string param) {
+              if (param == null)
+                throw new ArgumentNullException("par"); // Warning: Cannot resolve symbol
+            }
+            </code></example>
+        </member>
+        <member name="T:NetRunner.ExternalLibrary.Properties.NotifyPropertyChangedInvocatorAttribute">
+             <summary>
+             Indicates that the method is contained in a type that implements
+             <see cref="T:System.ComponentModel.INotifyPropertyChanged"/> interface
+             and this method is used to notify that some property value changed
+             </summary>
+             <remarks>
+             The method should be non-static and conform to one of the supported signatures:
+             <list>
+             <item><c>NotifyChanged(string)</c></item>
+             <item><c>NotifyChanged(params string[])</c></item>
+             <item><c>NotifyChanged{T}(Expression{Func{T}})</c></item>
+             <item><c>NotifyChanged{T,U}(Expression{Func{T,U}})</c></item>
+             <item><c>SetProperty{T}(ref T, T, string)</c></item>
+             </list>
+             </remarks>
+             <example><code>
+             public class Foo : INotifyPropertyChanged {
+               public event PropertyChangedEventHandler PropertyChanged;
+               [NotifyPropertyChangedInvocator]
+               protected virtual void NotifyChanged(string propertyName) { ... }
+            
+               private string _name;
+               public string Name {
+                 get { return _name; }
+                 set { _name = value; NotifyChanged("LastName"); /* Warning */ }
+               }
+             }
+             </code>
+             Examples of generated notifications:
+             <list>
+             <item><c>NotifyChanged("Property")</c></item>
+             <item><c>NotifyChanged(() =&gt; Property)</c></item>
+             <item><c>NotifyChanged((VM x) =&gt; x.Property)</c></item>
+             <item><c>SetProperty(ref myField, value, "Property")</c></item>
+             </list>
+             </example>
+        </member>
+        <member name="T:NetRunner.ExternalLibrary.Properties.ContractAnnotationAttribute">
+            <summary>
+            Describes dependency between method input and output
+            </summary>
+            <syntax>
+            <p>Function Definition Table syntax:</p>
+            <list>
+            <item>FDT      ::= FDTRow [;FDTRow]*</item>
+            <item>FDTRow   ::= Input =&gt; Output | Output &lt;= Input</item>
+            <item>Input    ::= ParameterName: Value [, Input]*</item>
+            <item>Output   ::= [ParameterName: Value]* {halt|stop|void|nothing|Value}</item>
+            <item>Value    ::= true | false | null | notnull | canbenull</item>
+            </list>
+            If method has single input parameter, it's name could be omitted.<br/>
+            Using <c>halt</c> (or <c>void</c>/<c>nothing</c>, which is the same)
+            for method output means that the methos doesn't return normally.<br/>
+            <c>canbenull</c> annotation is only applicable for output parameters.<br/>
+            You can use multiple <c>[ContractAnnotation]</c> for each FDT row,
+            or use single attribute with rows separated by semicolon.<br/>
+            </syntax>
+            <examples><list>
+            <item><code>
+            [ContractAnnotation("=> halt")]
+            public void TerminationMethod()
+            </code></item>
+            <item><code>
+            [ContractAnnotation("halt &lt;= condition: false")]
+            public void Assert(bool condition, string text) // regular assertion method
+            </code></item>
+            <item><code>
+            [ContractAnnotation("s:null => true")]
+            public bool IsNullOrEmpty(string s) // string.IsNullOrEmpty()
+            </code></item>
+            <item><code>
+            // A method that returns null if the parameter is null, and not null if the parameter is not null
+            [ContractAnnotation("null => null; notnull => notnull")]
+            public object Transform(object data) 
+            </code></item>
+            <item><code>
+            [ContractAnnotation("s:null=>false; =>true,result:notnull; =>false, result:null")]
+            public bool TryParse(string s, out Person result)
+            </code></item>
+            </list></examples>
+        </member>
+        <member name="T:NetRunner.ExternalLibrary.Properties.LocalizationRequiredAttribute">
+            <summary>
+            Indicates that marked element should be localized or not
+            </summary>
+            <example><code>
+            [LocalizationRequiredAttribute(true)]
+            public class Foo {
+              private string str = "my string"; // Warning: Localizable string
+            }
+            </code></example>
+        </member>
+        <member name="T:NetRunner.ExternalLibrary.Properties.CannotApplyEqualityOperatorAttribute">
+            <summary>
+            Indicates that the value of the marked type (or its derivatives)
+            cannot be compared using '==' or '!=' operators and <c>Equals()</c>
+            should be used instead. However, using '==' or '!=' for comparison
+            with <c>null</c> is always permitted.
+            </summary>
+            <example><code>
+            [CannotApplyEqualityOperator]
+            class NoEquality { }
+            class UsesNoEquality {
+              public void Test() {
+                var ca1 = new NoEquality();
+                var ca2 = new NoEquality();
+                if (ca1 != null) { // OK
+                  bool condition = ca1 == ca2; // Warning
+                }
+              }
+            }
+            </code></example>
+        </member>
+        <member name="T:NetRunner.ExternalLibrary.Properties.BaseTypeRequiredAttribute">
+            <summary>
+            When applied to a target attribute, specifies a requirement for any type marked
+            with the target attribute to implement or inherit specific type or types.
+            </summary>
+            <example><code>
+            [BaseTypeRequired(typeof(IComponent)] // Specify requirement
+            public class ComponentAttribute : Attribute { }
+            [Component] // ComponentAttribute requires implementing IComponent interface
+            public class MyComponent : IComponent { }
+            </code></example>
+        </member>
+        <member name="T:NetRunner.ExternalLibrary.Properties.UsedImplicitlyAttribute">
+            <summary>
+            Indicates that the marked symbol is used implicitly
+            (e.g. via reflection, in external library), so this symbol
+            will not be marked as unused (as well as by other usage inspections)
+            </summary>
+        </member>
+        <member name="T:NetRunner.ExternalLibrary.Properties.MeansImplicitUseAttribute">
+            <summary>
+            Should be used on attributes and causes ReSharper
+            to not mark symbols marked with such attributes as unused
+            (as well as by other usage inspections)
+            </summary>
+        </member>
+        <member name="F:NetRunner.ExternalLibrary.Properties.ImplicitUseKindFlags.Access">
+            <summary>Only entity marked with attribute considered used</summary>
+        </member>
+        <member name="F:NetRunner.ExternalLibrary.Properties.ImplicitUseKindFlags.Assign">
+            <summary>Indicates implicit assignment to a member</summary>
+        </member>
+        <member name="F:NetRunner.ExternalLibrary.Properties.ImplicitUseKindFlags.InstantiatedWithFixedConstructorSignature">
+            <summary>
+            Indicates implicit instantiation of a type with fixed constructor signature.
+            That means any unused constructor parameters won't be reported as such.
+            </summary>
+        </member>
+        <member name="F:NetRunner.ExternalLibrary.Properties.ImplicitUseKindFlags.InstantiatedNoFixedConstructorSignature">
+            <summary>Indicates implicit instantiation of a type</summary>
+        </member>
+        <member name="T:NetRunner.ExternalLibrary.Properties.ImplicitUseTargetFlags">
+            <summary>
+            Specify what is considered used implicitly
+            when marked with <see cref="T:NetRunner.ExternalLibrary.Properties.MeansImplicitUseAttribute"/>
+            or <see cref="T:NetRunner.ExternalLibrary.Properties.UsedImplicitlyAttribute"/>
+            </summary>
+        </member>
+        <member name="F:NetRunner.ExternalLibrary.Properties.ImplicitUseTargetFlags.Members">
+            <summary>Members of entity marked with attribute are considered used</summary>
+        </member>
+        <member name="F:NetRunner.ExternalLibrary.Properties.ImplicitUseTargetFlags.WithMembers">
+            <summary>Entity marked with attribute and all its members considered used</summary>
+        </member>
+        <member name="T:NetRunner.ExternalLibrary.Properties.PublicAPIAttribute">
+            <summary>
+            This attribute is intended to mark publicly available API
+            which should not be removed and so is treated as used
+            </summary>
+        </member>
+        <member name="T:NetRunner.ExternalLibrary.Properties.InstantHandleAttribute">
+            <summary>
+            Tells code analysis engine if the parameter is completely handled
+            when the invoked method is on stack. If the parameter is a delegate,
+            indicates that delegate is executed while the method is executed.
+            If the parameter is an enumerable, indicates that it is enumerated
+            while the method is executed
+            </summary>
+        </member>
+        <member name="T:NetRunner.ExternalLibrary.Properties.PureAttribute">
+            <summary>
+            Indicates that a method does not make any observable state changes.
+            The same as <c>System.Diagnostics.Contracts.PureAttribute</c>
+            </summary>
+            <example><code>
+            [Pure] private int Multiply(int x, int y) { return x * y; }
+            public void Foo() {
+              const int a = 2, b = 2;
+              Multiply(a, b); // Waring: Return value of pure method is not used
+            }
+            </code></example>
+        </member>
+        <member name="T:NetRunner.ExternalLibrary.Properties.PathReferenceAttribute">
+            <summary>
+            Indicates that a parameter is a path to a file or a folder
+            within a web project. Path can be relative or absolute,
+            starting from web root (~)
+            </summary>
+        </member>
+        <member name="T:NetRunner.ExternalLibrary.Properties.AspMvcActionAttribute">
+            <summary>
+            ASP.NET MVC attribute. If applied to a parameter, indicates that the parameter
+            is an MVC action. If applied to a method, the MVC action name is calculated
+            implicitly from the context. Use this attribute for custom wrappers similar to
+            <c>System.Web.Mvc.Html.ChildActionExtensions.RenderAction(HtmlHelper, String)</c>
+            </summary>
+        </member>
+        <member name="T:NetRunner.ExternalLibrary.Properties.AspMvcAreaAttribute">
+            <summary>
+            ASP.NET MVC attribute. Indicates that a parameter is an MVC area.
+            Use this attribute for custom wrappers similar to
+            <c>System.Web.Mvc.Html.ChildActionExtensions.RenderAction(HtmlHelper, String)</c>
+            </summary>
+        </member>
+        <member name="T:NetRunner.ExternalLibrary.Properties.AspMvcControllerAttribute">
+            <summary>
+            ASP.NET MVC attribute. If applied to a parameter, indicates that
+            the parameter is an MVC controller. If applied to a method,
+            the MVC controller name is calculated implicitly from the context.
+            Use this attribute for custom wrappers similar to 
+            <c>System.Web.Mvc.Html.ChildActionExtensions.RenderAction(HtmlHelper, String, String)</c>
+            </summary>
+        </member>
+        <member name="T:NetRunner.ExternalLibrary.Properties.AspMvcMasterAttribute">
+            <summary>
+            ASP.NET MVC attribute. Indicates that a parameter is an MVC Master.
+            Use this attribute for custom wrappers similar to
+            <c>System.Web.Mvc.Controller.View(String, String)</c>
+            </summary>
+        </member>
+        <member name="T:NetRunner.ExternalLibrary.Properties.AspMvcModelTypeAttribute">
+            <summary>
+            ASP.NET MVC attribute. Indicates that a parameter is an MVC model type.
+            Use this attribute for custom wrappers similar to
+            <c>System.Web.Mvc.Controller.View(String, Object)</c>
+            </summary>
+        </member>
+        <member name="T:NetRunner.ExternalLibrary.Properties.AspMvcPartialViewAttribute">
+            <summary>
+            ASP.NET MVC attribute. If applied to a parameter, indicates that
+            the parameter is an MVC partial view. If applied to a method,
+            the MVC partial view name is calculated implicitly from the context.
+            Use this attribute for custom wrappers similar to
+            <c>System.Web.Mvc.Html.RenderPartialExtensions.RenderPartial(HtmlHelper, String)</c>
+            </summary>
+        </member>
+        <member name="T:NetRunner.ExternalLibrary.Properties.AspMvcSupressViewErrorAttribute">
+            <summary>
+            ASP.NET MVC attribute. Allows disabling all inspections
+            for MVC views within a class or a method.
+            </summary>
+        </member>
+        <member name="T:NetRunner.ExternalLibrary.Properties.AspMvcDisplayTemplateAttribute">
+            <summary>
+            ASP.NET MVC attribute. Indicates that a parameter is an MVC display template.
+            Use this attribute for custom wrappers similar to 
+            <c>System.Web.Mvc.Html.DisplayExtensions.DisplayForModel(HtmlHelper, String)</c>
+            </summary>
+        </member>
+        <member name="T:NetRunner.ExternalLibrary.Properties.AspMvcEditorTemplateAttribute">
+            <summary>
+            ASP.NET MVC attribute. Indicates that a parameter is an MVC editor template.
+            Use this attribute for custom wrappers similar to
+            <c>System.Web.Mvc.Html.EditorExtensions.EditorForModel(HtmlHelper, String)</c>
+            </summary>
+        </member>
+        <member name="T:NetRunner.ExternalLibrary.Properties.AspMvcTemplateAttribute">
+            <summary>
+            ASP.NET MVC attribute. Indicates that a parameter is an MVC template.
+            Use this attribute for custom wrappers similar to
+            <c>System.ComponentModel.DataAnnotations.UIHintAttribute(System.String)</c>
+            </summary>
+        </member>
+        <member name="T:NetRunner.ExternalLibrary.Properties.AspMvcViewAttribute">
+            <summary>
+            ASP.NET MVC attribute. If applied to a parameter, indicates that the parameter
+            is an MVC view. If applied to a method, the MVC view name is calculated implicitly
+            from the context. Use this attribute for custom wrappers similar to
+            <c>System.Web.Mvc.Controller.View(Object)</c>
+            </summary>
+        </member>
+        <member name="T:NetRunner.ExternalLibrary.Properties.AspMvcActionSelectorAttribute">
+            <summary>
+            ASP.NET MVC attribute. When applied to a parameter of an attribute,
+            indicates that this parameter is an MVC action name
+            </summary>
+            <example><code>
+            [ActionName("Foo")]
+            public ActionResult Login(string returnUrl) {
+              ViewBag.ReturnUrl = Url.Action("Foo"); // OK
+              return RedirectToAction("Bar"); // Error: Cannot resolve action
+            }
+            </code></example>
+        </member>
+        <member name="T:NetRunner.ExternalLibrary.Properties.RazorSectionAttribute">
+            <summary>
+            Razor attribute. Indicates that a parameter or a method is a Razor section.
+            Use this attribute for custom wrappers similar to 
+            <c>System.Web.WebPages.WebPageBase.RenderSection(String)</c>
+            </summary>
+        </member>
+        <member name="T:NetRunner.ExternalLibrary.StringParser">
+            <summary>
+            Internal string parser. Used to avoid any string conversion during the execution. It can be replaced to the custom, however input string conversion attributes (such as <see cref="T:NetRunner.ExternalLibrary.StringTrimAttribute"/> are applyed before any parsing)
+            </summary>
+        </member>
+        <member name="T:NetRunner.ExternalLibrary.StringTrimAttribute">
+            <summary>
+            Trim input string by default or not. False by default
+            </summary>
+        </member>
+        <member name="T:NetRunner.ExternalLibrary.TestStatistic">
+            <summary>
+            Test statistic of the functions executed.
+            This is mutable class
+            </summary>
+        </member>
+        <member name="P:NetRunner.ExternalLibrary.TestStatistic.Right">
+            <summary>
+            Count of right tests
+            </summary>
+        </member>
+        <member name="P:NetRunner.ExternalLibrary.TestStatistic.Wrong">
+            <summary>
+            Count of wrong tests (e.g. tests which executed without exception and returned incorrect result)
+            </summary>
+        </member>
+        <member name="P:NetRunner.ExternalLibrary.TestStatistic.Skipped">
+            <summary>
+            Skipped tests count
+            </summary>
+        </member>
+        <member name="P:NetRunner.ExternalLibrary.TestStatistic.Errors">
+            <summary>
+            Count of tests executed with exception
+            </summary>
+        </member>
+        <member name="P:NetRunner.ExternalLibrary.TestStatistic.SuiteStatistic">
+            <summary>
+            Common suite statistic. This field is updated after each table execution.
+            </summary>
+        </member>
+        <member name="P:NetRunner.ExternalLibrary.TestStatistic.CurrentTestStatistic">
+            <summary>
+            Statistic of the currently executed test.  This field is updated after each table execution.
+            </summary>
+        </member>
+        <member name="P:NetRunner.ExternalLibrary.TestStatistic.GlobalStatistic">
+            <summary>
+            Obsolete property. Please use <see cref="P:NetRunner.ExternalLibrary.TestStatistic.CurrentTestStatistic"/> or <see cref="P:NetRunner.ExternalLibrary.TestStatistic.SuiteStatistic"/> instead of your requirements.
+            </summary>
+        </member>
+    </members>
+</doc>

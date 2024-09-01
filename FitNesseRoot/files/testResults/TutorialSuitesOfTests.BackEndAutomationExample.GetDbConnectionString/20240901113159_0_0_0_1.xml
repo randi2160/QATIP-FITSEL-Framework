@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20160515</FitNesseVersion>
+  <rootPath>TutorialSuitesOfTests.BackEndAutomationExample.GetDbConnectionString</rootPath>
+    <executionLog>
+    <testSystem>fit:C:\Users\kheml\.nuget\packages\fitsharp\2024.2.27\lib\net48\Runner.exe</testSystem>
+    <command>C:\Users\kheml\.nuget\packages\fitsharp\2024.2.27\lib\net48\Runner.exe -r fitnesse.fitserver.FitServer,C:\QATIP-FITSEL-Framework\Fixtures\QaTip.Fitnesse.Demo\QaTip.Fitnesse.Demo\Fitsharp\fit.dll,C:\QATIP-FITSEL-Framework\Fixtures\QaTip.Fitnesse.Demo\QaTip.Fitnesse.Demo\Fitsharp\fitLibrary.dll -c C:\QATIP-FITSEL-Framework\Fixtures\QaTip.Fitnesse.Demo\QaTip.Fitnesse.Demo\Fitsharp\suite.config.xml C:\QATIP-FITSEL-Framework\Fixtures\Fitnesse_Dlls\QaTip.Fitnesse.Demo.dll LAPTOP-9BC19LUV 57235 3863</command>
+    <exitCode>1</exitCode>
+    <stdOut>System.TypeLoadException: Method 'CanInvoke' in type 'fit.Operators.InvokeProcedure' from assembly 'fit, Version=2.4.5819.38080, Culture=neutral, PublicKeyToken=null' does not have an implementation.
+   at System.Reflection.RuntimeAssembly.GetExportedTypes(RuntimeAssembly assembly, ObjectHandleOnStack retTypes)
+   at System.Reflection.RuntimeAssembly.GetExportedTypes()
+   at fitSharp.Machine.Engine.CurrentDomain.LoadAssembly(String assemblyPath)
+   at fitSharp.Machine.Engine.ApplicationUnderTest.Assemblies.AddAssembly(String name)
+   at fitSharp.Machine.Application.ShellArguments.ParseRunner(Memory memory, Settings settings)
+   at fitSharp.Machine.Model.Maybe`1.IfPresent(Action`1 action)
+   at fitSharp.Machine.Application.ShellArguments.LoadMemory()
+   at fitSharp.Machine.Application.Shell.Run()
+</stdOut>
+    <stdErr></stdErr>
+    <exception>FitClient: external process terminated before a connection could be established.</exception>
+    <exception>FitClient: external process terminated before a connection could be established.</exception>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>1</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>1020</totalRunTimeInMillis>
+</testResults>
+

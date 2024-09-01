@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20160515</FitNesseVersion>
+  <rootPath>TutorialSuitesOfTests.UiAutomationTestSuite.SearchTestSuite.PerformSearchByIsbn</rootPath>
+    <executionLog>
+    <testSystem>fit:C:\QATIP-FITSEL-Framework\Fixtures\QaTip.Fitnesse.Demo\QaTip.Fitnesse.Demo\Fitsharp\Runner.exe</testSystem>
+    <command>C:\QATIP-FITSEL-Framework\Fixtures\QaTip.Fitnesse.Demo\QaTip.Fitnesse.Demo\Fitsharp\Runner.exe -r fitnesse.fitserver.FitServer,C:\QATIP-FITSEL-Framework\Fixtures\QaTip.Fitnesse.Demo\QaTip.Fitnesse.Demo\Fitsharp\fit.dll,C:\QATIP-FITSEL-Framework\Fixtures\QaTip.Fitnesse.Demo\QaTip.Fitnesse.Demo\Fitsharp\fitLibrary.dll -c C:\QATIP-FITSEL-Framework\Fixtures\QaTip.Fitnesse.Demo\QaTip.Fitnesse.Demo\Fitsharp\suite.config.xml C:\QATIP-FITSEL-Framework\Fixtures\Fitnesse_Dlls\QaTip.Fitnesse.Demo.dll LAPTOP-9BC19LUV 49163 3863</command>
+    <exitCode>1</exitCode>
+    <stdOut></stdOut>
+    <stdErr></stdErr>
+    <exception>A size value could not be read. Fragment=||</exception>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>1</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>788493</totalRunTimeInMillis>
+</testResults>
+

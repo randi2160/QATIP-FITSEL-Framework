@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20160515</FitNesseVersion>
+  <rootPath>TutorialSuitesOfTests.UiAutomationTestSuite.SearchTestSuite.PerformSearchByIsbn</rootPath>
+    <executionLog>
+    <testSystem></testSystem>
+    <command></command>
+    <exitCode>0</exitCode>
+    <stdOut></stdOut>
+    <stdErr></stdErr>
+    <exception>Cannot run program "C:\Users\kheml\.nuget\packages\fitsharp\2024.2.27\lib\net8.0-windows\Runner.exe": CreateProcess error=2, The system cannot find the file specified</exception>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>1</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>8</totalRunTimeInMillis>
+</testResults>
+

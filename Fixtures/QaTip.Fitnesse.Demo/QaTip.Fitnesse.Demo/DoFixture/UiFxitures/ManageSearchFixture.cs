@@ -14,19 +14,26 @@ namespace QaTip.Fitnesse.Demo.DoFixture.UiFxitures
     public class ManageSearchFixture:ColumnFixture
     {
         private searchmap _SearchMap = new searchmap();
-       
-       //Creating a constructor that sets selDriver to the instance of the navigationmap class now called _pageread
+
+        //Creating a constructor that sets selDriver to the instance of the navigationmap class now called _pageread
 
         public ManageSearchFixture(IWebDriver selDriver)
         {
-           //We can setup Implicit wait etc.. will talk about this later
-            selDriver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(5)).SetPageLoadTimeout(TimeSpan.FromSeconds(15));
-            selDriver.Manage().Timeouts().SetScriptTimeout(TimeSpan.FromSeconds(20));
+            // Setting up Implicit wait
+            selDriver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5);
+
+            // Setting up Page load timeout
+            selDriver.Manage().Timeouts().PageLoad = TimeSpan.FromSeconds(15);
+
+            // Setting up Script timeout
+            selDriver.Manage().Timeouts().AsynchronousJavaScript = TimeSpan.FromSeconds(20);
+
+            // Assigning the driver to the SearchMap object
             _SearchMap.selDriver = selDriver;
-            
         }
 
-       public override object GetTargetObject()
+
+        public override object GetTargetObject()
        {
            return _SearchMap;
        }

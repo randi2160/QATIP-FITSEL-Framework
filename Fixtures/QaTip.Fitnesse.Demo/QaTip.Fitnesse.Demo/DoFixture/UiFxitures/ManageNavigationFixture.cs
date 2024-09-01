@@ -14,18 +14,25 @@ namespace QaTip.Fitnesse.Demo.DoFixture.UiFxitures
    public class ManageNavigationFixture:ColumnFixture
     {
        private navigationmap _pageread = new navigationmap();
-       
-       //Creating a constructor that sets selDriver to the instance of the navigationmap class now called _pageread
 
-       public ManageNavigationFixture(IWebDriver selDriver)
+        //Creating a constructor that sets selDriver to the instance of the navigationmap class now called _pageread
+
+        public ManageNavigationFixture(IWebDriver selDriver)
         {
-           //We can setup Implicit wait etc.. will talk about this later
-            selDriver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(5)).SetPageLoadTimeout(TimeSpan.FromSeconds(10));
-            selDriver.Manage().Timeouts().SetScriptTimeout(TimeSpan.FromSeconds(20));
-           _pageread.selDriver = selDriver;
+            // Setting up Implicit wait
+            selDriver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5);
+
+            // Setting up Page load timeout
+            selDriver.Manage().Timeouts().PageLoad = TimeSpan.FromSeconds(10);
+
+            // Setting up Script timeout
+            selDriver.Manage().Timeouts().AsynchronousJavaScript = TimeSpan.FromSeconds(20);
+
+            // Assigning the driver to the page object
+            _pageread.selDriver = selDriver;
         }
 
-       public override object GetTargetObject()
+        public override object GetTargetObject()
        {
            return _pageread;
        }
